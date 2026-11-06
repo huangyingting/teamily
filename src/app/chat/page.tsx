@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { WorkspaceShell } from "@/components/WorkspaceShell";
+import { PLATFORM_SKILLS, PLATFORM_CONNECTORS } from "@/lib/catalog";
 import {
   Search,
   Plus,
@@ -21,7 +22,16 @@ import {
   FileCode2,
   X,
   Zap,
-  ChevronDown,
+  Wrench,
+  Plug,
+  UserPlus,
+  Video,
+  Laptop,
+  CalendarClock,
+  VolumeX,
+  Languages,
+  Share2,
+  Eraser,
 } from "lucide-react";
 
 interface AgentInfo {
@@ -84,19 +94,41 @@ export default function ChatWorkspacePage() {
   const [onboardingTasks, setOnboardingTasks] = useState<OnboardingTask[]>([]);
 
   const [searchQuery, setSearchQuery] = useState("");
+  const [convFilterTab, setConvFilterTab] = useState<"All" | "Agent" | "Group" | "Pinned">("All");
   const [prompt, setPrompt] = useState("");
   const [mode, setMode] = useState<"Auto" | "Instant" | "Agentic">("Auto");
   const [sending, setSending] = useState(false);
   const [loadingWorkspace, setLoadingWorkspace] = useState(true);
 
+  // Composer Popovers & Active Attachments
+  const [skillsPopoverOpen, setSkillsPopoverOpen] = useState(false);
+  const [skillsTab, setSkillsTab] = useState<"All" | "Installed">("All");
+  const [skillSearch, setSkillSearch] = useState("");
+  const [activeSkillIds, setActiveSkillIds] = useState<string[]>(["web-search", "living-wiki"]);
+
+  const [connectorsPopoverOpen, setConnectorsPopoverOpen] = useState(false);
+  const [connectorSearch, setConnectorSearch] = useState("");
+  const [connectedIds, setConnectedIds] = useState<string[]>(["google-calendar", "github"]);
+
   // UI Drawers & Modals
   const [infoOpen, setInfoOpen] = useState(true);
+  const [drawerMessageSearch, setDrawerMessageSearch] = useState("");
+  const [isMuted, setIsMuted] = useState(false);
+  const [autoTranslate, setAutoTranslate] = useState(false);
+  const [shareToast, setShareToast] = useState(false);
+
   const [plusMenuOpen, setPlusMenuOpen] = useState(false);
   const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [createGroupOpen, setCreateGroupOpen] = useState(false);
   const [createAgentOpen, setCreateAgentOpen] = useState(false);
+  const [inviteModalOpen, setInviteModalOpen] = useState(false);
+  const [videoMeetingModal, setVideoMeetingModal] = useState<null | "start" | "join" | "local-agent">(null);
+  const [meetingCodeInput, setMeetingCodeInput] = useState("TEAM-8492");
+  const [meetingNotesInput, setMeetingNotesInput] = useState("");
 
   // New Group Modal State
+  const [groupTypeTab, setGroupTypeTab] = useState<"Custom Group" | "AI Agent Team">("AI Agent Team");
+  const [paymentMode, setPaymentMode] = useState<"Owner Pays" | "Members Pay">("Owner Pays");
   const [groupTitle, setGroupTitle] = useState("");
   const [selectedAgentIds, setSelectedAgentIds] = useState<string[]>([]);
 
@@ -184,6 +216,15 @@ export default function ChatWorkspacePage() {
     }
   }
 
+  function handleEnhancePrompt() {
+    const base = prompt.trim() || "Synthesize our top strategic priorities";
+    setPrompt(
+      `${base} — Please cross-reference my Living Wiki Memory, apply first-principles analysis (${activeSkillIds.join(
+        ", "
+      )}), and output a structured action checklist.`
+    );
+  }
+
   async function handleCreateGroup(e: React.FormEvent) {
     e.preventDefault();
     if (!groupTitle.trim()) return;
@@ -191,7 +232,7 @@ export default function ChatWorkspacePage() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        title: groupTitle.trim(),
+        title: `${groupTitle.trim()} (${paymentMode})`,
         type: "GROUP",
         mode: "Auto",
         agentIds: selectedAgentIds,
@@ -242,6 +283,57 @@ export default function ChatWorkspacePage() {
     }
   }
 
+  async function handleInviteAgentToConv(agentId: string) {
+    if (!activeConv) return;
+    const res = await fetch(`/api/conversations/${activeConv.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ addAgentId: agentId }),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      setActiveConv(data.conversation);
+      setMessages(data.conversation.messages || []);
+      setInviteModalOpen(false);
+      await loadWorkspaceData(activeConv.id);
+    }
+  }
+
+  async function handleClearHistory() {
+    if (!activeConv) return;
+    const res = await fetch(`/api/conversations/${activeConv.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ clearHistory: true }),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      setMessages(data.conversation.messages || []);
+    }
+  }
+
+  async function handleSaveMeetingToWiki(e: React.FormEvent) {
+    e.preventDefault();
+    await fetch("/api/wiki", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: `Video Meeting Notes (${meetingCodeInput})`,
+        category: "Meetings",
+        tags: ["meeting", "video-sync"],
+        content:
+          meetingNotesInput.trim() ||
+          `# Video Meeting Transcript (${meetingCodeInput})\n\n- Captured key decisions and assigned follow-up owners.\n- Synced action items to Living Wiki.`,
+      }),
+    });
+    setVideoMeetingModal(null);
+    setMeetingNotesInput("");
+    await handleSendMessage(
+      undefined,
+      `Summarize our Video Meeting (${meetingCodeInput}) and log key next actions.`
+    );
+  }
+
   async function handleTogglePin(conv: ConversationItem) {
     const res = await fetch(`/api/conversations/${conv.id}`, {
       method: "PATCH",
@@ -269,64 +361,192 @@ export default function ChatWorkspacePage() {
     }
   }
 
-  const filteredConversations = conversations.filter((c) =>
-    c.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredConversations = conversations.filter((c) => {
+    const matchesSearch = c.title.toLowerCase().includes(searchQuery.toLowerCase());
+    if (!matchesSearch) return false;
+    if (convFilterTab === "Agent") return c.type === "DIRECT_AGENT";
+    if (convFilterTab === "Group") return c.type === "GROUP";
+    if (convFilterTab === "Pinned") return c.isPinned;
+    return true;
+  });
+
   const pinnedConvs = filteredConversations.filter((c) => c.isPinned);
   const regularConvs = filteredConversations.filter((c) => !c.isPinned);
   const completedOnboardingCount = onboardingTasks.filter((t) => t.isCompleted).length;
+
+  const displayedMessages = messages.filter((m) =>
+    drawerMessageSearch.trim()
+      ? m.content.toLowerCase().includes(drawerMessageSearch.toLowerCase()) ||
+        m.senderName.toLowerCase().includes(drawerMessageSearch.toLowerCase())
+      : true
+  );
+
+  const filteredSkills = PLATFORM_SKILLS.filter((s) => {
+    if (skillsTab === "Installed" && !activeSkillIds.includes(s.id)) return false;
+    if (!skillSearch.trim()) return true;
+    return (
+      s.name.toLowerCase().includes(skillSearch.toLowerCase()) ||
+      s.id.toLowerCase().includes(skillSearch.toLowerCase())
+    );
+  });
+
+  const filteredConnectors = PLATFORM_CONNECTORS.filter((c) => {
+    if (!connectorSearch.trim()) return true;
+    return (
+      c.name.toLowerCase().includes(connectorSearch.toLowerCase()) ||
+      c.category.toLowerCase().includes(connectorSearch.toLowerCase())
+    );
+  });
 
   return (
     <WorkspaceShell>
       <div className="flex flex-1 h-full overflow-hidden">
         {/* Conversation List Sidebar */}
         <aside className="w-72 shrink-0 border-r border-teamily bg-teamily-surface flex flex-col h-full">
-          {/* Top Search + Plus Action */}
-          <div className="p-3.5 border-b border-teamily flex items-center gap-2 relative">
-            <div className="relative flex-1">
-              <Search className="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-teamily-secondary" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search chats & agents..."
-                className="w-full rounded-xl border border-teamily bg-teamily-main pl-9 pr-3 py-2 text-xs focus:border-[#087c45] focus:outline-none"
-              />
+          {/* Top Search + 8-Item Plus Action Menu */}
+          <div className="p-3.5 border-b border-teamily space-y-2.5 relative">
+            <div className="flex items-center gap-2">
+              <div className="relative flex-1">
+                <Search className="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-teamily-secondary" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search chats & agents..."
+                  className="w-full rounded-xl border border-teamily bg-teamily-main pl-9 pr-3 py-2 text-xs focus:border-[#087c45] focus:outline-none"
+                />
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setPlusMenuOpen(!plusMenuOpen)}
+                data-testid="chat-plus-button"
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#087c45] text-white hover:bg-[#066a3b] transition"
+                title="Create Agent or New Group"
+              >
+                <Plus className="h-4 w-4" />
+              </button>
             </div>
 
-            <button
-              type="button"
-              onClick={() => setPlusMenuOpen(!plusMenuOpen)}
-              data-testid="chat-plus-button"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#087c45] text-white hover:bg-[#066a3b] transition"
-              title="Create Agent or New Group"
-            >
-              <Plus className="h-4 w-4" />
-            </button>
+            {/* Conversation Filter Pills */}
+            <div className="flex items-center gap-1">
+              {(["All", "Agent", "Group", "Pinned"] as const).map((tab) => (
+                <button
+                  key={tab}
+                  type="button"
+                  onClick={() => setConvFilterTab(tab)}
+                  data-testid={`chat-filter-${tab.toLowerCase()}`}
+                  className={`flex-1 rounded-lg py-1 text-[11px] font-semibold transition ${
+                    convFilterTab === tab
+                      ? "bg-[#087c45] text-white"
+                      : "bg-teamily-main text-teamily-secondary hover:text-teamily-primary"
+                  }`}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
 
             {plusMenuOpen && (
-              <div className="absolute right-3.5 top-14 z-40 w-48 rounded-2xl border border-teamily bg-teamily-main p-1.5 shadow-xl text-xs">
+              <div
+                data-testid="chat-plus-menu"
+                className="absolute right-3.5 top-14 z-40 w-56 rounded-2xl border border-teamily bg-teamily-main p-1.5 shadow-xl text-xs space-y-0.5"
+              >
                 <button
                   type="button"
+                  data-testid="plus-create-agent"
                   onClick={() => {
                     setPlusMenuOpen(false);
                     setCreateAgentOpen(true);
                   }}
-                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 font-medium hover:bg-teamily-subtle"
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
                 >
                   <Bot className="h-4 w-4 text-[#087c45]" />
                   Create Agent
                 </button>
                 <button
                   type="button"
+                  data-testid="plus-new-group"
                   onClick={() => {
                     setPlusMenuOpen(false);
                     setCreateGroupOpen(true);
                   }}
-                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 font-medium hover:bg-teamily-subtle"
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
                 >
                   <Users className="h-4 w-4 text-[#087c45]" />
                   New Group
+                </button>
+                <button
+                  type="button"
+                  data-testid="plus-add-contact"
+                  onClick={() => {
+                    setPlusMenuOpen(false);
+                    setInviteModalOpen(true);
+                  }}
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
+                >
+                  <UserPlus className="h-4 w-4 text-[#087c45]" />
+                  Add Contact
+                </button>
+                <button
+                  type="button"
+                  data-testid="plus-create-artifacts"
+                  onClick={() => {
+                    setPlusMenuOpen(false);
+                    router.push("/artifacts");
+                  }}
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
+                >
+                  <FileCode2 className="h-4 w-4 text-[#087c45]" />
+                  Create Artifacts
+                </button>
+                <button
+                  type="button"
+                  data-testid="plus-create-automation"
+                  onClick={() => {
+                    setPlusMenuOpen(false);
+                    router.push("/discover?tab=agents&section=automations");
+                  }}
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
+                >
+                  <CalendarClock className="h-4 w-4 text-[#087c45]" />
+                  Create Automation
+                </button>
+                <button
+                  type="button"
+                  data-testid="plus-create-local-agent"
+                  onClick={() => {
+                    setPlusMenuOpen(false);
+                    setVideoMeetingModal("local-agent");
+                  }}
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
+                >
+                  <Laptop className="h-4 w-4 text-[#087c45]" />
+                  Create Local Agent
+                </button>
+                <button
+                  type="button"
+                  data-testid="plus-start-video-meeting"
+                  onClick={() => {
+                    setPlusMenuOpen(false);
+                    setVideoMeetingModal("start");
+                  }}
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
+                >
+                  <Video className="h-4 w-4 text-[#087c45]" />
+                  Start Video Meeting
+                </button>
+                <button
+                  type="button"
+                  data-testid="plus-join-video-meeting"
+                  onClick={() => {
+                    setPlusMenuOpen(false);
+                    setVideoMeetingModal("join");
+                  }}
+                  className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
+                >
+                  <Video className="h-4 w-4 text-[#087c45]" />
+                  Join Video Meeting
                 </button>
               </div>
             )}
@@ -491,6 +711,16 @@ export default function ChatWorkspacePage() {
                   <span className="rounded-md bg-[#ddf3e5] px-2 py-0.5 text-[10px] font-bold text-[#087c45]">
                     {mode}
                   </span>
+                  {isMuted && (
+                    <span className="rounded-md bg-teamily-subtle px-2 py-0.5 text-[10px] font-semibold text-teamily-secondary">
+                      Muted
+                    </span>
+                  )}
+                  {autoTranslate && (
+                    <span className="rounded-md bg-[#ddf3e5] px-2 py-0.5 text-[10px] font-semibold text-[#087c45]">
+                      Auto-Translate ON
+                    </span>
+                  )}
                 </div>
                 <p className="text-xs text-teamily-secondary truncate">
                   {activeConv?.members
@@ -504,6 +734,15 @@ export default function ChatWorkspacePage() {
             <div className="flex items-center gap-2">
               <button
                 type="button"
+                onClick={() => setInviteModalOpen(true)}
+                data-testid="chat-invite-member-button"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-teamily bg-teamily-surface px-3 py-1.5 text-xs font-semibold hover:bg-teamily-subtle transition"
+              >
+                <UserPlus className="h-3.5 w-3.5 text-[#087c45]" />
+                Invite
+              </button>
+              <button
+                type="button"
                 onClick={() => setCreateGroupOpen(true)}
                 className="hidden sm:inline-flex items-center gap-1.5 rounded-xl border border-teamily bg-teamily-surface px-3 py-1.5 text-xs font-semibold hover:bg-teamily-subtle transition"
               >
@@ -513,6 +752,7 @@ export default function ChatWorkspacePage() {
               <button
                 type="button"
                 onClick={() => setInfoOpen(!infoOpen)}
+                data-testid="chat-toggle-info-button"
                 className="rounded-xl border border-teamily bg-teamily-surface p-2 text-teamily-secondary hover:text-teamily-primary"
                 title="Toggle Room Info"
               >
@@ -523,7 +763,7 @@ export default function ChatWorkspacePage() {
 
           {/* Messages Stream */}
           <div className="flex-1 overflow-y-auto px-6 py-6 space-y-5">
-            {messages.map((msg) => {
+            {displayedMessages.map((msg) => {
               const isUser = msg.senderType === "USER";
               let meta: {
                 steps?: string[];
@@ -597,8 +837,148 @@ export default function ChatWorkspacePage() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Quick Prompt Suggestions + Composer */}
-          <div className="border-t border-teamily bg-teamily-main px-6 py-4">
+          {/* Quick Prompt Suggestions + Rich Composer with Skills & Connectors Popovers */}
+          <div className="border-t border-teamily bg-teamily-main px-6 py-4 relative">
+            {/* Skills Popover */}
+            {skillsPopoverOpen && (
+              <div
+                data-testid="chat-skills-popover"
+                className="absolute bottom-36 left-6 z-40 w-80 rounded-2xl border border-teamily bg-teamily-main p-3.5 shadow-2xl text-xs"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-bold text-sm">Agent Skills</span>
+                  <div className="flex items-center gap-1 rounded-lg bg-teamily-subtle p-0.5">
+                    {(["All", "Installed"] as const).map((t) => (
+                      <button
+                        key={t}
+                        type="button"
+                        onClick={() => setSkillsTab(t)}
+                        className={`rounded-md px-2 py-0.5 text-[11px] font-semibold ${
+                          skillsTab === t ? "bg-teamily-main shadow-xs" : "text-teamily-secondary"
+                        }`}
+                      >
+                        {t}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  value={skillSearch}
+                  onChange={(e) => setSkillSearch(e.target.value)}
+                  placeholder="Search 10+ autonomous skills..."
+                  className="w-full rounded-xl border border-teamily bg-teamily-surface px-3 py-1.5 text-xs mb-2"
+                />
+                <div className="max-h-48 overflow-y-auto space-y-1">
+                  {filteredSkills.map((sk) => {
+                    const enabled = activeSkillIds.includes(sk.id);
+                    return (
+                      <button
+                        key={sk.id}
+                        type="button"
+                        data-testid={`skill-item-${sk.id}`}
+                        onClick={() =>
+                          setActiveSkillIds((prev) =>
+                            enabled ? prev.filter((id) => id !== sk.id) : [...prev, sk.id]
+                          )
+                        }
+                        className={`flex w-full items-center justify-between rounded-xl px-2.5 py-2 text-left transition ${
+                          enabled ? "bg-[#ddf3e5]/60 text-[#087c45]" : "hover:bg-teamily-subtle"
+                        }`}
+                      >
+                        <div className="flex items-center gap-2 min-w-0">
+                          <span>{sk.icon}</span>
+                          <div className="min-w-0">
+                            <p className="font-semibold truncate">{sk.name}</p>
+                            <p className="text-[10px] text-teamily-secondary truncate">{sk.id}</p>
+                          </div>
+                        </div>
+                        <span className="text-[10px] font-bold">
+                          {enabled ? "Active ✓" : "Attach"}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+                <div className="mt-2 pt-2 border-t border-teamily flex items-center justify-between">
+                  <Link
+                    href="/settings/skill-configuration"
+                    className="text-[11px] font-semibold text-[#087c45] hover:underline"
+                  >
+                    Configure API keys →
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => setSkillsPopoverOpen(false)}
+                    className="text-[11px] text-teamily-secondary hover:text-teamily-primary"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Connectors Popover */}
+            {connectorsPopoverOpen && (
+              <div
+                data-testid="chat-connectors-popover"
+                className="absolute bottom-36 left-28 z-40 w-80 rounded-2xl border border-teamily bg-teamily-main p-3.5 shadow-2xl text-xs"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-bold text-sm">App Connectors (OAuth / MCP)</span>
+                  <button
+                    type="button"
+                    onClick={() => setConnectorsPopoverOpen(false)}
+                    className="text-[11px] text-teamily-secondary"
+                  >
+                    Close
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  value={connectorSearch}
+                  onChange={(e) => setConnectorSearch(e.target.value)}
+                  placeholder="Search Gmail, GitHub, Notion, Calendar..."
+                  className="w-full rounded-xl border border-teamily bg-teamily-surface px-3 py-1.5 text-xs mb-2"
+                />
+                <div className="max-h-48 overflow-y-auto space-y-1">
+                  {filteredConnectors.map((conn) => {
+                    const isConn = connectedIds.includes(conn.id);
+                    return (
+                      <div
+                        key={conn.id}
+                        className="flex items-center justify-between rounded-xl px-2.5 py-2 hover:bg-teamily-subtle"
+                      >
+                        <div className="flex items-center gap-2 min-w-0">
+                          <span>{conn.icon}</span>
+                          <div className="min-w-0">
+                            <p className="font-semibold truncate">{conn.name}</p>
+                            <p className="text-[10px] text-teamily-secondary">{conn.category}</p>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          data-testid={`connector-toggle-${conn.id}`}
+                          onClick={() =>
+                            setConnectedIds((prev) =>
+                              isConn ? prev.filter((id) => id !== conn.id) : [...prev, conn.id]
+                            )
+                          }
+                          className={`rounded-lg px-2.5 py-1 text-[10px] font-bold ${
+                            isConn
+                              ? "bg-[#ddf3e5] text-[#087c45]"
+                              : "border border-teamily bg-teamily-surface text-teamily-secondary"
+                          }`}
+                        >
+                          {isConn ? "Connected" : "Connect"}
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
             <div className="mb-2.5 flex flex-wrap gap-2">
               {[
                 "Summarize our Q2 priorities and save to Living Wiki",
@@ -635,12 +1015,13 @@ export default function ChatWorkspacePage() {
                 className="w-full resize-none bg-transparent px-2 py-1 text-sm focus:outline-none"
               />
 
-              <div className="flex items-center justify-between pt-2 border-t border-teamily/60">
-                <div className="flex items-center gap-1.5">
+              <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-teamily/60">
+                <div className="flex flex-wrap items-center gap-1.5">
                   {(["Auto", "Instant", "Agentic"] as const).map((m) => (
                     <button
                       key={m}
                       type="button"
+                      data-testid={`chat-mode-${m.toLowerCase()}`}
                       onClick={() => setMode(m)}
                       className={`rounded-lg px-2.5 py-1 text-xs font-semibold transition ${
                         mode === m
@@ -651,6 +1032,43 @@ export default function ChatWorkspacePage() {
                       {m}
                     </button>
                   ))}
+
+                  <button
+                    type="button"
+                    data-testid="chat-skills-button"
+                    onClick={() => {
+                      setConnectorsPopoverOpen(false);
+                      setSkillsPopoverOpen(!skillsPopoverOpen);
+                    }}
+                    className="inline-flex items-center gap-1 rounded-lg border border-teamily bg-teamily-main px-2.5 py-1 text-xs font-semibold text-teamily-secondary hover:text-[#087c45]"
+                  >
+                    <Wrench className="h-3 w-3 text-[#087c45]" />
+                    Skills ({activeSkillIds.length})
+                  </button>
+
+                  <button
+                    type="button"
+                    data-testid="chat-connectors-button"
+                    onClick={() => {
+                      setSkillsPopoverOpen(false);
+                      setConnectorsPopoverOpen(!connectorsPopoverOpen);
+                    }}
+                    className="inline-flex items-center gap-1 rounded-lg border border-teamily bg-teamily-main px-2.5 py-1 text-xs font-semibold text-teamily-secondary hover:text-[#087c45]"
+                  >
+                    <Plug className="h-3 w-3 text-[#087c45]" />
+                    Connectors ({connectedIds.length})
+                  </button>
+
+                  <button
+                    type="button"
+                    data-testid="chat-enhance-prompt-button"
+                    onClick={handleEnhancePrompt}
+                    className="inline-flex items-center gap-1 rounded-lg border border-[#087c45]/30 bg-[#ddf3e5]/60 px-2.5 py-1 text-xs font-semibold text-[#087c45] hover:bg-[#ddf3e5]"
+                    title="Enhance prompt with Living Wiki Memory"
+                  >
+                    <Sparkles className="h-3 w-3" />
+                    Enhance
+                  </button>
                 </div>
 
                 <button
@@ -667,9 +1085,12 @@ export default function ChatWorkspacePage() {
           </div>
         </section>
 
-        {/* Right Chat Info Drawer */}
+        {/* Right Conversation Profile & Controls Drawer */}
         {infoOpen && activeConv && (
-          <aside className="hidden lg:flex w-72 shrink-0 border-l border-teamily bg-teamily-surface flex-col p-4 overflow-y-auto">
+          <aside
+            data-testid="chat-info-drawer"
+            className="hidden lg:flex w-76 shrink-0 border-l border-teamily bg-teamily-surface flex-col p-4 overflow-y-auto"
+          >
             <h2 className="text-xs font-bold uppercase tracking-wider text-teamily-secondary">
               Chat Info & Members
             </h2>
@@ -679,14 +1100,73 @@ export default function ChatWorkspacePage() {
               <p className="text-xs text-teamily-secondary mt-0.5">
                 Type: {activeConv.type} • Mode: {mode}
               </p>
-              <div className="mt-3 flex items-center gap-2">
+
+              {/* Search within Conversation */}
+              <div className="mt-3">
+                <input
+                  type="text"
+                  data-testid="drawer-search-messages"
+                  value={drawerMessageSearch}
+                  onChange={(e) => setDrawerMessageSearch(e.target.value)}
+                  placeholder="Search messages, docs, links..."
+                  className="w-full rounded-xl border border-teamily bg-teamily-surface px-2.5 py-1.5 text-xs"
+                />
+              </div>
+
+              <div className="mt-3 grid grid-cols-2 gap-1.5">
                 <button
                   type="button"
+                  data-testid="drawer-pin-button"
                   onClick={() => handleTogglePin(activeConv)}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-teamily py-1.5 text-xs font-semibold hover:bg-teamily-subtle"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-teamily py-1.5 text-xs font-semibold hover:bg-teamily-subtle"
                 >
                   <Pin className="h-3.5 w-3.5" />
                   {activeConv.isPinned ? "Unpin" : "Pin"}
+                </button>
+
+                <button
+                  type="button"
+                  data-testid="drawer-mute-button"
+                  onClick={() => setIsMuted(!isMuted)}
+                  className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-teamily py-1.5 text-xs font-semibold hover:bg-teamily-subtle"
+                >
+                  <VolumeX className="h-3.5 w-3.5" />
+                  {isMuted ? "Unmute" : "Mute"}
+                </button>
+
+                <button
+                  type="button"
+                  data-testid="drawer-translate-button"
+                  onClick={() => setAutoTranslate(!autoTranslate)}
+                  className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-teamily py-1.5 text-xs font-semibold hover:bg-teamily-subtle"
+                >
+                  <Languages className="h-3.5 w-3.5" />
+                  {autoTranslate ? "Translated" : "Translate"}
+                </button>
+
+                <button
+                  type="button"
+                  data-testid="drawer-share-card-button"
+                  onClick={() => {
+                    setShareToast(true);
+                    setTimeout(() => setShareToast(false), 2000);
+                  }}
+                  className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-teamily py-1.5 text-xs font-semibold hover:bg-teamily-subtle"
+                >
+                  <Share2 className="h-3.5 w-3.5" />
+                  {shareToast ? "Copied!" : "Share Card"}
+                </button>
+              </div>
+
+              <div className="mt-2 flex items-center gap-1.5">
+                <button
+                  type="button"
+                  data-testid="drawer-clear-history-button"
+                  onClick={handleClearHistory}
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-teamily py-1.5 text-xs font-semibold text-teamily-secondary hover:text-teamily-primary hover:bg-teamily-subtle"
+                >
+                  <Eraser className="h-3.5 w-3.5" />
+                  Clear Chat History
                 </button>
                 {!activeConv.isPinned && (
                   <button
@@ -702,9 +1182,18 @@ export default function ChatWorkspacePage() {
             </div>
 
             <div className="mt-5">
-              <p className="text-xs font-bold text-teamily-secondary mb-2">
-                Participants ({activeConv.members.length})
-              </p>
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-xs font-bold text-teamily-secondary">
+                  Participants ({activeConv.members.length})
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setInviteModalOpen(true)}
+                  className="text-[11px] font-semibold text-[#087c45] hover:underline"
+                >
+                  + Add Agent
+                </button>
+              </div>
               <div className="space-y-2">
                 {activeConv.members.map((m) => (
                   <div
@@ -742,9 +1231,130 @@ export default function ChatWorkspacePage() {
         )}
       </div>
 
+      {/* Invite to Conversation Modal */}
+      {inviteModalOpen && (
+        <div
+          data-testid="chat-invite-modal"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs"
+        >
+          <div className="w-full max-w-md rounded-3xl border border-teamily bg-teamily-main p-6 shadow-2xl">
+            <div className="flex items-center justify-between border-b border-teamily pb-3">
+              <div>
+                <h3 className="text-lg font-bold">Invite Specialist Agent to Room</h3>
+                <p className="text-xs text-teamily-secondary">
+                  Add an AI specialist into this conversation to collaborate in real time
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setInviteModalOpen(false)}
+                className="rounded-lg p-1.5 text-teamily-secondary hover:bg-teamily-subtle"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <div className="mt-4 max-h-72 overflow-y-auto space-y-2">
+              {agents.map((ag) => (
+                <div
+                  key={ag.id}
+                  className="flex items-center justify-between rounded-2xl border border-teamily bg-teamily-surface p-3 text-xs"
+                >
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <span className="text-lg">{ag.avatarEmoji}</span>
+                    <div className="min-w-0">
+                      <p className="font-bold truncate">{ag.name}</p>
+                      <p className="text-[11px] text-teamily-secondary truncate">{ag.title}</p>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    data-testid={`invite-agent-${ag.slug}`}
+                    onClick={() => handleInviteAgentToConv(ag.id)}
+                    className="rounded-xl bg-[#087c45] px-3 py-1.5 text-xs font-bold text-white hover:bg-[#066a3b]"
+                  >
+                    Add to Chat
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Video Meeting / Local Agent Modal */}
+      {videoMeetingModal && (
+        <div
+          data-testid="chat-meeting-modal"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs"
+        >
+          <div className="w-full max-w-md rounded-3xl border border-teamily bg-teamily-main p-6 shadow-2xl">
+            <div className="flex items-center justify-between border-b border-teamily pb-3">
+              <h3 className="text-lg font-bold">
+                {videoMeetingModal === "start"
+                  ? "Start AI-Transcribed Video Meeting"
+                  : videoMeetingModal === "join"
+                  ? "Join Video Meeting"
+                  : "Connect Local Desktop Agent Bridge"}
+              </h3>
+              <button
+                type="button"
+                onClick={() => setVideoMeetingModal(null)}
+                className="rounded-lg p-1.5 text-teamily-secondary hover:bg-teamily-subtle"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <form onSubmit={handleSaveMeetingToWiki} className="mt-4 space-y-3 text-xs">
+              <div>
+                <label className="block font-semibold text-teamily-secondary mb-1">
+                  {videoMeetingModal === "local-agent" ? "Local Runtime Endpoint" : "Meeting Room Code"}
+                </label>
+                <input
+                  type="text"
+                  value={meetingCodeInput}
+                  onChange={(e) => setMeetingCodeInput(e.target.value)}
+                  className="w-full rounded-xl border border-teamily bg-teamily-surface px-3 py-2 text-sm font-mono"
+                />
+              </div>
+              <div>
+                <label className="block font-semibold text-teamily-secondary mb-1">
+                  Meeting Agenda / Live Notes (auto-synced to Living Wiki)
+                </label>
+                <textarea
+                  rows={3}
+                  value={meetingNotesInput}
+                  onChange={(e) => setMeetingNotesInput(e.target.value)}
+                  placeholder="Key discussion points, decisions, and action items..."
+                  className="w-full rounded-xl border border-teamily bg-teamily-surface px-3 py-2 text-xs"
+                />
+              </div>
+              <div className="flex justify-end gap-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => setVideoMeetingModal(null)}
+                  className="rounded-xl border border-teamily px-4 py-2 font-semibold"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  data-testid="meeting-modal-submit"
+                  className="rounded-xl bg-[#087c45] px-4 py-2 font-bold text-white hover:bg-[#066a3b]"
+                >
+                  Sync & Launch
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
       {/* Create Multi-Agent Group Modal */}
       {createGroupOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs">
+        <div
+          data-testid="create-group-modal"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs"
+        >
           <div className="w-full max-w-lg rounded-3xl border border-teamily bg-teamily-main p-6 shadow-2xl">
             <div className="flex items-center justify-between border-b border-teamily pb-3">
               <div>
@@ -762,26 +1372,57 @@ export default function ChatWorkspacePage() {
               </button>
             </div>
 
+            <div className="mt-3 grid grid-cols-2 rounded-xl bg-teamily-subtle p-1 text-xs font-semibold">
+              {(["Custom Group", "AI Agent Team"] as const).map((t) => (
+                <button
+                  key={t}
+                  type="button"
+                  onClick={() => setGroupTypeTab(t)}
+                  className={`rounded-lg py-1.5 transition ${
+                    groupTypeTab === t ? "bg-teamily-main shadow-xs" : "text-teamily-secondary"
+                  }`}
+                >
+                  {t}
+                </button>
+              ))}
+            </div>
+
             <form onSubmit={handleCreateGroup} className="mt-4 space-y-4">
-              <div>
-                <label className="block text-xs font-semibold text-teamily-secondary mb-1">
-                  Group Room Name *
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={groupTitle}
-                  onChange={(e) => setGroupTitle(e.target.value)}
-                  placeholder="e.g. Q3 Product Launch War Room"
-                  className="w-full rounded-xl border border-teamily bg-teamily-surface px-3.5 py-2.5 text-sm"
-                />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="sm:col-span-2">
+                  <label className="block text-xs font-semibold text-teamily-secondary mb-1">
+                    Group Room Name *
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    data-testid="group-name-input"
+                    value={groupTitle}
+                    onChange={(e) => setGroupTitle(e.target.value)}
+                    placeholder="e.g. Q3 Product Launch War Room"
+                    className="w-full rounded-xl border border-teamily bg-teamily-surface px-3.5 py-2 text-sm"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-teamily-secondary mb-1">
+                    Credit Sponsorship
+                  </label>
+                  <select
+                    value={paymentMode}
+                    onChange={(e) => setPaymentMode(e.target.value as "Owner Pays" | "Members Pay")}
+                    className="w-full rounded-xl border border-teamily bg-teamily-surface px-2.5 py-2 text-xs font-semibold"
+                  >
+                    <option value="Owner Pays">Owner Pays</option>
+                    <option value="Members Pay">Members Pay</option>
+                  </select>
+                </div>
               </div>
 
               <div>
                 <label className="block text-xs font-semibold text-teamily-secondary mb-1.5">
                   Select Specialist Agents ({selectedAgentIds.length} selected)
                 </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-60 overflow-y-auto pr-1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-56 overflow-y-auto pr-1">
                   {agents.map((ag) => {
                     const checked = selectedAgentIds.includes(ag.id);
                     return (
@@ -820,6 +1461,7 @@ export default function ChatWorkspacePage() {
                 </button>
                 <button
                   type="submit"
+                  data-testid="create-group-submit"
                   className="rounded-xl bg-[#087c45] px-5 py-2 text-xs font-bold text-white hover:bg-[#066a3b]"
                 >
                   Launch Group Room
@@ -832,7 +1474,10 @@ export default function ChatWorkspacePage() {
 
       {/* Create Custom Agent Modal (Simple / Pro) */}
       {createAgentOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs">
+        <div
+          data-testid="create-agent-modal"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs"
+        >
           <div className="w-full max-w-lg rounded-3xl border border-teamily bg-teamily-main p-6 shadow-2xl">
             <div className="flex items-center justify-between border-b border-teamily pb-3">
               <div>
@@ -855,6 +1500,7 @@ export default function ChatWorkspacePage() {
                 <button
                   key={t}
                   type="button"
+                  data-testid={`agent-builder-tab-${t.toLowerCase()}`}
                   onClick={() => setAgentBuilderTab(t)}
                   className={`rounded-lg py-1.5 transition ${
                     agentBuilderTab === t ? "bg-teamily-main shadow-xs" : "text-teamily-secondary"
@@ -885,6 +1531,7 @@ export default function ChatWorkspacePage() {
                   <input
                     type="text"
                     required
+                    data-testid="new-agent-name-input"
                     value={newAgentName}
                     onChange={(e) => setNewAgentName(e.target.value)}
                     placeholder="e.g. FinOps Strategist"
@@ -899,6 +1546,7 @@ export default function ChatWorkspacePage() {
                 </label>
                 <input
                   type="text"
+                  data-testid="new-agent-title-input"
                   value={newAgentTitle}
                   onChange={(e) => setNewAgentTitle(e.target.value)}
                   placeholder="e.g. Cloud Cost & Unit Economics Advisor"
@@ -926,6 +1574,7 @@ export default function ChatWorkspacePage() {
                   </label>
                   <textarea
                     rows={3}
+                    data-testid="new-agent-prompt-input"
                     value={newAgentPrompt}
                     onChange={(e) => setNewAgentPrompt(e.target.value)}
                     placeholder="You are a principal FinOps architect. Always quantify unit-economic impact..."
@@ -944,6 +1593,7 @@ export default function ChatWorkspacePage() {
                 </button>
                 <button
                   type="submit"
+                  data-testid="create-agent-submit"
                   className="rounded-xl bg-[#087c45] px-5 py-2 text-xs font-bold text-white hover:bg-[#066a3b]"
                 >
                   Create & Start Chat

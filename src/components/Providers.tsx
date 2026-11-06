@@ -41,6 +41,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         : "light";
     }
     setResolvedTheme(effective);
+    root.setAttribute("data-theme", effective);
     if (effective === "dark") {
       root.classList.add("dark");
     } else {

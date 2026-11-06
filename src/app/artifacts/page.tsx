@@ -46,21 +46,25 @@ export default function ArtifactsPage() {
     }
   }
 
-  async function handleCreateArtifact(type: "DOCUMENT" | "HTML") {
+  async function handleCreateArtifact(type: "DOCUMENT" | "HTML" | "WHITEBOARD") {
     setNewMenuOpen(false);
     const title =
       type === "DOCUMENT"
         ? "Untitled Cloud Document"
+        : type === "WHITEBOARD"
+        ? "Architecture Whiteboard Canvas"
         : "Interactive Workspace Dashboard Artifact";
     const res = await fetch("/api/artifacts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         title,
-        type,
+        type: type === "WHITEBOARD" ? "HTML" : type,
         content:
           type === "DOCUMENT"
             ? `<h1>${title}</h1><p>Draft specifications, memos, and collaborative docs with your Teamily AI agents.</p>`
+            : type === "WHITEBOARD"
+            ? `<div style="padding:24px;border-radius:16px;background:#f6f8f5;border:2px dashed #087c45"><h2 style="color:#087c45;margin:0 0 8px 0">🎨 Collaborative Whiteboard Canvas</h2><p style="margin:0;color:#56665c">System architecture nodes, sticky notes, and multi-agent flow diagrams.</p></div>`
             : `<div style="padding:20px;border-radius:16px;background:#f6f8f5;border:1px solid #dde6e0"><h2 style="color:#087c45;margin:0 0 8px 0">Interactive KPI Dashboard Artifact</h2><p style="margin:0;color:#56665c">Live HTML/CSS Deliverable generated in Teamily Studio.</p></div>`,
       }),
     });
@@ -112,7 +116,7 @@ export default function ArtifactsPage() {
               </button>
 
               {newMenuOpen && (
-                <div className="absolute right-0 top-12 z-40 w-56 rounded-2xl border border-teamily bg-teamily-main p-1.5 shadow-xl text-xs">
+                <div className="absolute right-0 top-12 z-40 w-60 rounded-2xl border border-teamily bg-teamily-main p-1.5 shadow-xl text-xs space-y-0.5">
                   <button
                     type="button"
                     onClick={() => handleCreateArtifact("DOCUMENT")}
@@ -124,7 +128,17 @@ export default function ArtifactsPage() {
                   </button>
                   <button
                     type="button"
+                    onClick={() => handleCreateArtifact("WHITEBOARD")}
+                    data-testid="create-whiteboard-button"
+                    className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 font-semibold hover:bg-teamily-subtle"
+                  >
+                    <FileCode2 className="h-4 w-4 text-[#087c45]" />
+                    Whiteboard Canvas
+                  </button>
+                  <button
+                    type="button"
                     onClick={() => handleCreateArtifact("HTML")}
+                    data-testid="create-html-artifact-button"
                     className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 font-semibold hover:bg-teamily-subtle"
                   >
                     <Code className="h-4 w-4 text-[#087c45]" />

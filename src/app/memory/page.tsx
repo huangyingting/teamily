@@ -35,10 +35,14 @@ interface NextActionItem {
 }
 
 export default function MemoryPage() {
-  const [tab, setTab] = useState<"overview" | "wiki" | "actions" | "meetings">("overview");
+  const [tab, setTab] = useState<
+    "overview" | "wiki" | "profile" | "actions" | "artifacts" | "meetings"
+  >("overview");
   const [pages, setPages] = useState<WikiPageItem[]>([]);
   const [selectedPage, setSelectedPage] = useState<WikiPageItem | null>(null);
   const [nextActions, setNextActions] = useState<NextActionItem[]>([]);
+  const [newMeetingTitle, setNewMeetingTitle] = useState("");
+  const [newMeetingNotes, setNewMeetingNotes] = useState("");
 
   // Wiki editor state
   const [editTitle, setEditTitle] = useState("");
@@ -151,11 +155,13 @@ export default function MemoryPage() {
           </div>
 
           <div className="flex items-center gap-2">
-            <div className="flex rounded-2xl border border-teamily bg-teamily-surface p-1 text-xs font-semibold">
+            <div className="flex flex-wrap rounded-2xl border border-teamily bg-teamily-surface p-1 text-xs font-semibold">
               {[
                 { id: "overview", label: "Overview", icon: Brain },
                 { id: "wiki", label: "Wiki", icon: BookOpen },
+                { id: "profile", label: "My Profile", icon: Sparkles },
                 { id: "actions", label: "Next Actions", icon: CheckSquare },
+                { id: "artifacts", label: "My Artifacts", icon: BookOpen },
                 { id: "meetings", label: "Meetings", icon: Calendar },
               ].map((t) => {
                 const Icon = t.icon;
@@ -165,7 +171,7 @@ export default function MemoryPage() {
                     type="button"
                     onClick={() => setTab(t.id as typeof tab)}
                     data-testid={`memory-tab-${t.id}`}
-                    className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 transition ${
+                    className={`inline-flex items-center gap-1.5 rounded-xl px-3 py-1.5 transition ${
                       tab === t.id
                         ? "bg-[#087c45] text-white"
                         : "text-teamily-secondary hover:text-teamily-primary"
@@ -432,6 +438,91 @@ export default function MemoryPage() {
           </div>
         )}
 
+        {/* MY PROFILE MEMORY TAB */}
+        {tab === "profile" && (
+          <div className="flex-1 overflow-y-auto p-6">
+            <div className="mx-auto max-w-3xl rounded-3xl border border-teamily bg-teamily-surface p-6 space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-lg font-bold">Personal AI Context & Life Goals Memory</h2>
+                  <p className="text-xs text-teamily-secondary">
+                    Automatically injected into Personal Agent and Swarm war rooms
+                  </p>
+                </div>
+                <a
+                  href="/profile/edit"
+                  className="rounded-xl bg-[#087c45] px-3.5 py-2 text-xs font-bold text-white"
+                >
+                  Edit Profile & Life Goals →
+                </a>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                {[
+                  { label: "Decision Style", value: "First-principles, data-backed, concise memos" },
+                  { label: "Active Workspace Focus", value: "Multi-agent orchestration & product velocity" },
+                  { label: "Communication Tone", value: "Direct, analytical, zero fluff" },
+                  { label: "Memory Conflict Resolution", value: "Auto-flag conflicting numbers before overwriting" },
+                ].map((item) => (
+                  <div key={item.label} className="rounded-2xl border border-teamily bg-teamily-main p-4">
+                    <p className="font-bold text-[#087c45]">{item.label}</p>
+                    <p className="mt-1 text-teamily-secondary">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* MY ARTIFACTS MEMORY TAB */}
+        {tab === "artifacts" && (
+          <div className="flex-1 overflow-y-auto p-6">
+            <div className="mx-auto max-w-3xl rounded-3xl border border-teamily bg-teamily-surface p-6 space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-lg font-bold">Memory-Indexed Deliverables & Artifacts</h2>
+                  <p className="text-xs text-teamily-secondary">
+                    Cloud Documents, HTML prototypes, and Whiteboards linked to your Knowledge Graph
+                  </p>
+                </div>
+                <a
+                  href="/artifacts"
+                  className="rounded-xl bg-[#087c45] px-3.5 py-2 text-xs font-bold text-white"
+                >
+                  Open Artifacts Studio →
+                </a>
+              </div>
+              <div className="space-y-2 text-xs">
+                {pages.map((p) => (
+                  <div
+                    key={p.id}
+                    className="flex items-center justify-between rounded-2xl border border-teamily bg-teamily-main p-3.5"
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <span>{p.icon}</span>
+                      <div>
+                        <p className="font-bold">{p.title}</p>
+                        <p className="text-[10px] text-teamily-secondary">
+                          Category: {p.category} • v{p.version}
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        selectWikiPage(p);
+                        setTab("wiki");
+                      }}
+                      className="rounded-lg bg-[#ddf3e5] px-3 py-1 font-bold text-[#087c45]"
+                    >
+                      Inspect Node
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* NEXT ACTIONS TAB */}
         {tab === "actions" && (
           <div className="flex-1 overflow-y-auto p-6">
@@ -469,12 +560,60 @@ export default function MemoryPage() {
         {/* MEETINGS TAB */}
         {tab === "meetings" && (
           <div className="flex-1 overflow-y-auto p-6">
-            <div className="mx-auto max-w-3xl rounded-3xl border border-teamily bg-teamily-surface p-8 text-center">
-              <Calendar className="h-10 w-10 text-[#087c45] mx-auto mb-3" />
-              <h2 className="text-lg font-bold">Meeting Dossiers & Transcript Memory</h2>
-              <p className="mt-1 text-xs text-teamily-secondary max-w-md mx-auto">
-                Connect Google Calendar or Feishu in Settings → Connectors, or paste any meeting transcript into Chat to automatically extract decisions into your Living Wiki.
-              </p>
+            <div className="mx-auto max-w-3xl space-y-5">
+              <div className="rounded-3xl border border-teamily bg-teamily-surface p-6">
+                <h2 className="text-lg font-bold">Log Meeting Transcript & Extract Decisions</h2>
+                <p className="mt-1 text-xs text-teamily-secondary">
+                  Paste meeting notes or transcripts to automatically synthesize a Living Wiki dossier.
+                </p>
+                <div className="mt-4 space-y-3">
+                  <input
+                    type="text"
+                    data-testid="meeting-title-input"
+                    value={newMeetingTitle}
+                    onChange={(e) => setNewMeetingTitle(e.target.value)}
+                    placeholder="e.g. Weekly Product & Engineering Sync"
+                    className="w-full rounded-xl border border-teamily bg-teamily-main px-3.5 py-2 text-xs"
+                  />
+                  <textarea
+                    rows={3}
+                    data-testid="meeting-notes-textarea"
+                    value={newMeetingNotes}
+                    onChange={(e) => setNewMeetingNotes(e.target.value)}
+                    placeholder="Paste transcript or key takeaways..."
+                    className="w-full rounded-xl border border-teamily bg-teamily-main p-3 text-xs"
+                  />
+                  <button
+                    type="button"
+                    data-testid="save-meeting-dossier-button"
+                    onClick={async () => {
+                      if (!newMeetingTitle.trim()) return;
+                      const res = await fetch("/api/wiki", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                          title: newMeetingTitle.trim(),
+                          icon: "🎙️",
+                          category: "Meetings",
+                          content: `# ${newMeetingTitle.trim()}\n\n${
+                            newMeetingNotes.trim() || "Synthesized meeting decisions and action owners."
+                          }`,
+                        }),
+                      });
+                      const data = await res.json();
+                      setNewMeetingTitle("");
+                      setNewMeetingNotes("");
+                      if (res.ok && data.page) {
+                        setTab("wiki");
+                        await loadMemoryData(data.page.id);
+                      }
+                    }}
+                    className="rounded-xl bg-[#087c45] px-4 py-2 text-xs font-bold text-white hover:bg-[#066a3b]"
+                  >
+                    Save Meeting to Living Wiki
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         )}

@@ -62,11 +62,61 @@ export async function PATCH(
     data.mode = body.mode;
   }
 
+  if (typeof body.addAgentId === "string" && body.addAgentId.trim()) {
+    const agent = await prisma.agent.findUnique({
+      where: { id: body.addAgentId.trim() },
+    });
+    if (agent) {
+      const alreadyMember = await prisma.conversationMember.findFirst({
+        where: { conversationId: existing.id, agentId: agent.id },
+      });
+      if (!alreadyMember) {
+        await prisma.conversationMember.create({
+          data: {
+            conversationId: existing.id,
+            memberType: "AGENT",
+            agentId: agent.id,
+            displayName: agent.name,
+            avatarEmoji: agent.avatarEmoji,
+          },
+        });
+        data.type = "GROUP";
+        data.updatedAt = new Date();
+        await prisma.message.create({
+          data: {
+            conversationId: existing.id,
+            senderType: "SYSTEM",
+            senderName: "Teamily Workspace",
+            mode: existing.mode,
+            content: `Added specialist agent **${agent.name}** (${agent.title}) to the conversation.`,
+          },
+        });
+      }
+    }
+  }
+
+  if (body.clearHistory === true) {
+    await prisma.message.deleteMany({
+      where: { conversationId: existing.id },
+    });
+    await prisma.message.create({
+      data: {
+        conversationId: existing.id,
+        senderType: "SYSTEM",
+        senderName: "Teamily Workspace",
+        mode: existing.mode,
+        content: "Chat history cleared.",
+      },
+    });
+    data.updatedAt = new Date();
+  }
+
   const updated = await prisma.conversation.update({
     where: { id: existing.id },
     data,
     include: {
       members: { include: { agent: true } },
+      messages: { orderBy: { createdAt: "asc" } },
     },
   });
 
