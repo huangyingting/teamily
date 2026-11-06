@@ -36,13 +36,29 @@ interface NextActionItem {
 
 export default function MemoryPage() {
   const [tab, setTab] = useState<
-    "overview" | "wiki" | "profile" | "actions" | "artifacts" | "meetings"
+    "overview" | "wiki" | "updates" | "profile" | "actions" | "artifacts" | "meetings"
   >("overview");
   const [pages, setPages] = useState<WikiPageItem[]>([]);
   const [selectedPage, setSelectedPage] = useState<WikiPageItem | null>(null);
   const [nextActions, setNextActions] = useState<NextActionItem[]>([]);
   const [newMeetingTitle, setNewMeetingTitle] = useState("");
   const [newMeetingNotes, setNewMeetingNotes] = useState("");
+  const [memoryConflicts, setMemoryConflicts] = useState([
+    {
+      id: "conflict-q3-budget",
+      pageTitle: "Workspace Operating Principles",
+      existingFact: "Target monthly inference spend cap: $250/month",
+      proposedFact: "Target monthly inference spend cap: $400/month (from Finance Assistant chat)",
+      status: "pending" as "pending" | "kept" | "replaced" | "merged",
+    },
+    {
+      id: "conflict-release-cadence",
+      pageTitle: "Agent Swarm Playbook",
+      existingFact: "Deploy production agent updates every Tuesday",
+      proposedFact: "Deploy production agent updates Tuesday & Thursday after E2E suite passes",
+      status: "pending" as "pending" | "kept" | "replaced" | "merged",
+    },
+  ]);
 
   // Wiki editor state
   const [editTitle, setEditTitle] = useState("");
@@ -159,6 +175,7 @@ export default function MemoryPage() {
               {[
                 { id: "overview", label: "Overview", icon: Brain },
                 { id: "wiki", label: "Wiki", icon: BookOpen },
+                { id: "updates", label: "Updates", icon: Sparkles },
                 { id: "profile", label: "My Profile", icon: Sparkles },
                 { id: "actions", label: "Next Actions", icon: CheckSquare },
                 { id: "artifacts", label: "My Artifacts", icon: BookOpen },
@@ -435,6 +452,88 @@ export default function MemoryPage() {
                 </div>
               )}
             </section>
+          </div>
+        )}
+
+        {/* UPDATES & CONFLICTS TAB */}
+        {tab === "updates" && (
+          <div className="flex-1 overflow-y-auto p-6">
+            <div className="mx-auto max-w-3xl space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-lg font-bold">Memory Updates & Conflict Resolution</h2>
+                  <p className="text-xs text-teamily-secondary">
+                    Review facts extracted from recent conversations before committing them to your Living Wiki
+                  </p>
+                </div>
+                <span className="rounded-full bg-[#ddf3e5] px-3 py-1 text-xs font-bold text-[#087c45]">
+                  {memoryConflicts.filter((c) => c.status === "pending").length} Pending Conflicts
+                </span>
+              </div>
+
+              <div className="space-y-3">
+                {memoryConflicts.map((item) => (
+                  <div
+                    key={item.id}
+                    data-testid={`memory-conflict-${item.id}`}
+                    className="rounded-2xl border border-teamily bg-teamily-surface p-5 space-y-3 text-xs"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="font-bold text-sm">{item.pageTitle}</span>
+                      <span
+                        data-testid={`conflict-status-${item.id}`}
+                        className="rounded-md bg-[#ddf3e5] px-2.5 py-0.5 text-[10px] font-bold uppercase text-[#087c45]"
+                      >
+                        {item.status}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="rounded-xl border border-teamily bg-teamily-main p-3">
+                        <p className="text-[10px] font-bold uppercase text-teamily-secondary">
+                          Existing Wiki Memory
+                        </p>
+                        <p className="mt-1 font-medium">{item.existingFact}</p>
+                      </div>
+                      <div className="rounded-xl border border-[#087c45]/40 bg-[#ddf3e5]/30 p-3">
+                        <p className="text-[10px] font-bold uppercase text-[#087c45]">
+                          Proposed Update
+                        </p>
+                        <p className="mt-1 font-medium">{item.proposedFact}</p>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-2 pt-1">
+                      {(
+                        [
+                          { action: "kept", label: "Keep Existing" },
+                          { action: "replaced", label: "Replace with New" },
+                          { action: "merged", label: "Merge Both" },
+                        ] as const
+                      ).map((btn) => (
+                        <button
+                          key={btn.action}
+                          type="button"
+                          data-testid={`resolve-${item.id}-${btn.action}`}
+                          onClick={() =>
+                            setMemoryConflicts((prev) =>
+                              prev.map((c) =>
+                                c.id === item.id ? { ...c, status: btn.action } : c
+                              )
+                            )
+                          }
+                          className={`rounded-xl px-3.5 py-1.5 font-bold transition ${
+                            item.status === btn.action
+                              ? "bg-[#087c45] text-white"
+                              : "border border-teamily bg-teamily-main hover:border-[#087c45]"
+                          }`}
+                        >
+                          {btn.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         )}
 

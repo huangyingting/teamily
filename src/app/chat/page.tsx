@@ -122,6 +122,9 @@ export default function ChatWorkspacePage() {
   const [createGroupOpen, setCreateGroupOpen] = useState(false);
   const [createAgentOpen, setCreateAgentOpen] = useState(false);
   const [inviteModalOpen, setInviteModalOpen] = useState(false);
+  const [addContactOpen, setAddContactOpen] = useState(false);
+  const [addContactTab, setAddContactTab] = useState<"Agents" | "Users">("Agents");
+  const [addContactSearch, setAddContactSearch] = useState("");
   const [videoMeetingModal, setVideoMeetingModal] = useState<null | "start" | "join" | "local-agent">(null);
   const [meetingCodeInput, setMeetingCodeInput] = useState("TEAM-8492");
   const [meetingNotesInput, setMeetingNotesInput] = useState("");
@@ -481,7 +484,7 @@ export default function ChatWorkspacePage() {
                   data-testid="plus-add-contact"
                   onClick={() => {
                     setPlusMenuOpen(false);
-                    setInviteModalOpen(true);
+                    setAddContactOpen(true);
                   }}
                   className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 font-medium hover:bg-teamily-subtle"
                 >
@@ -1232,6 +1235,110 @@ export default function ChatWorkspacePage() {
       </div>
 
       {/* Invite to Conversation Modal */}
+      {addContactOpen && (
+        <div
+          data-testid="add-contact-modal"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs"
+        >
+          <div className="w-full max-w-md rounded-3xl border border-teamily bg-teamily-main p-6 shadow-2xl">
+            <div className="flex items-center justify-between border-b border-teamily pb-3">
+              <div>
+                <h3 className="text-lg font-bold">Add Contact</h3>
+                <p className="text-xs text-teamily-secondary">
+                  Search AI specialist agents or workspace teammates by name, Teamily ID, or email
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setAddContactOpen(false)}
+                className="rounded-lg p-1.5 text-teamily-secondary hover:bg-teamily-subtle"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+
+            <div className="mt-3 grid grid-cols-2 rounded-xl bg-teamily-subtle p-1 text-xs font-semibold">
+              {(["Agents", "Users"] as const).map((t) => (
+                <button
+                  key={t}
+                  type="button"
+                  data-testid={`add-contact-tab-${t.toLowerCase()}`}
+                  onClick={() => setAddContactTab(t)}
+                  className={`rounded-lg py-1.5 transition ${
+                    addContactTab === t ? "bg-teamily-main shadow-xs" : "text-teamily-secondary"
+                  }`}
+                >
+                  {t}
+                </button>
+              ))}
+            </div>
+
+            <div className="mt-3">
+              <input
+                type="text"
+                data-testid="add-contact-search-input"
+                value={addContactSearch}
+                onChange={(e) => setAddContactSearch(e.target.value)}
+                placeholder="Search by name, Teamily ID or email..."
+                className="w-full rounded-xl border border-teamily bg-teamily-surface px-3 py-2 text-xs"
+              />
+            </div>
+
+            <div className="mt-3 max-h-60 overflow-y-auto space-y-2">
+              {addContactTab === "Agents" ? (
+                agents
+                  .filter(
+                    (ag) =>
+                      !addContactSearch.trim() ||
+                      ag.name.toLowerCase().includes(addContactSearch.toLowerCase()) ||
+                      ag.slug.toLowerCase().includes(addContactSearch.toLowerCase())
+                  )
+                  .map((ag) => (
+                    <div
+                      key={ag.id}
+                      className="flex items-center justify-between rounded-2xl border border-teamily bg-teamily-surface p-3 text-xs"
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="text-lg">{ag.avatarEmoji}</span>
+                        <div className="min-w-0">
+                          <p className="font-bold truncate">{ag.name}</p>
+                          <p className="text-[11px] text-teamily-secondary truncate">{ag.title}</p>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        data-testid={`add-contact-agent-${ag.slug}`}
+                        onClick={async () => {
+                          await handleInviteAgentToConv(ag.id);
+                          setAddContactOpen(false);
+                        }}
+                        className="rounded-xl bg-[#087c45] px-3 py-1.5 text-xs font-bold text-white hover:bg-[#066a3b]"
+                      >
+                        Add Contact
+                      </button>
+                    </div>
+                  ))
+              ) : (
+                <div className="rounded-2xl border border-teamily bg-teamily-surface p-4 text-xs text-center space-y-2">
+                  <p className="font-semibold">Invite Teammates via Single-Use Invitation Code</p>
+                  <p className="text-teamily-secondary">
+                    Generate an invite code in Security & Invites or enter a Teamily ID above to connect directly.
+                  </p>
+                  <button
+                    type="button"
+                    data-testid="add-contact-user-confirm"
+                    onClick={() => setAddContactOpen(false)}
+                    className="rounded-xl bg-[#087c45] px-4 py-1.5 text-xs font-bold text-white"
+                  >
+                    Done
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {inviteModalOpen && (
         <div
           data-testid="chat-invite-modal"
@@ -1377,6 +1484,7 @@ export default function ChatWorkspacePage() {
                 <button
                   key={t}
                   type="button"
+                  data-testid={`group-type-tab-${t.toLowerCase().replace(/\s+/g, "-")}`}
                   onClick={() => setGroupTypeTab(t)}
                   className={`rounded-lg py-1.5 transition ${
                     groupTypeTab === t ? "bg-teamily-main shadow-xs" : "text-teamily-secondary"
@@ -1408,6 +1516,7 @@ export default function ChatWorkspacePage() {
                     Credit Sponsorship
                   </label>
                   <select
+                    data-testid="group-payment-mode-select"
                     value={paymentMode}
                     onChange={(e) => setPaymentMode(e.target.value as "Owner Pays" | "Members Pay")}
                     className="w-full rounded-xl border border-teamily bg-teamily-surface px-2.5 py-2 text-xs font-semibold"

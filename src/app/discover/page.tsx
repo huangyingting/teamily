@@ -78,6 +78,7 @@ function DiscoverContent() {
 
   const [mainTab, setMainTab] = useState<"feed" | "agents">(initialTab);
   const [subTab, setSubTab] = useState<"agents" | "teams" | "automations">(initialSection);
+  const [feedSourceTab, setFeedSourceTab] = useState<"Feeds" | "Following">("Feeds");
   const [feedCategory, setFeedCategory] = useState("All");
   const [autoCategory, setAutoCategory] = useState<"All" | "Work" | "Life">("All");
 
@@ -302,6 +303,7 @@ function DiscoverContent() {
             {mainTab === "feed" && (
               <button
                 type="button"
+                data-testid="discover-publish-post-button"
                 onClick={() => setPostModalOpen(true)}
                 className="inline-flex items-center gap-1.5 rounded-xl bg-[#087c45] px-4 py-2.5 text-xs font-bold text-white hover:bg-[#066a3b]"
               >
@@ -315,21 +317,41 @@ function DiscoverContent() {
         {/* FEED TAB */}
         {mainTab === "feed" && (
           <div className="mt-6">
-            <div className="flex flex-wrap gap-2 mb-6">
-              {["All", "Agent Teams", "Automations", "Living Wiki"].map((cat) => (
-                <button
-                  key={cat}
-                  type="button"
-                  onClick={() => setFeedCategory(cat)}
-                  className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
-                    feedCategory === cat
-                      ? "bg-[#ddf3e5] text-[#087c45]"
-                      : "bg-teamily-surface text-teamily-secondary hover:text-teamily-primary"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+              <div className="flex items-center gap-1 rounded-xl border border-teamily bg-teamily-surface p-1 text-xs font-semibold">
+                {(["Feeds", "Following"] as const).map((src) => (
+                  <button
+                    key={src}
+                    type="button"
+                    data-testid={`discover-feed-source-${src.toLowerCase()}`}
+                    onClick={() => setFeedSourceTab(src)}
+                    className={`rounded-lg px-3 py-1 transition ${
+                      feedSourceTab === src
+                        ? "bg-[#087c45] text-white"
+                        : "text-teamily-secondary hover:text-teamily-primary"
+                    }`}
+                  >
+                    {src}
+                  </button>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {["All", "Agent Teams", "Automations", "Living Wiki"].map((cat) => (
+                  <button
+                    key={cat}
+                    type="button"
+                    data-testid={`discover-category-${cat.toLowerCase().replace(/\s+/g, "-")}`}
+                    onClick={() => setFeedCategory(cat)}
+                    className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
+                      feedCategory === cat
+                        ? "bg-[#ddf3e5] text-[#087c45]"
+                        : "bg-teamily-surface text-teamily-secondary hover:text-teamily-primary"
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
             </div>
 
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -550,6 +572,7 @@ function DiscoverContent() {
                         <button
                           key={c}
                           type="button"
+                          data-testid={`auto-filter-${c.toLowerCase()}`}
                           onClick={() => setAutoCategory(c)}
                           className={`rounded-lg px-3 py-1 text-xs font-semibold ${
                             autoCategory === c
@@ -738,6 +761,7 @@ function DiscoverContent() {
                 <input
                   type="text"
                   required
+                  data-testid="publish-post-title"
                   value={postTitle}
                   onChange={(e) => setPostTitle(e.target.value)}
                   placeholder="How we automated our weekly competitive radar..."
@@ -750,6 +774,7 @@ function DiscoverContent() {
                   Category
                 </label>
                 <select
+                  data-testid="publish-post-category"
                   value={postCategory}
                   onChange={(e) => setPostCategory(e.target.value)}
                   className="w-full rounded-xl border border-teamily bg-teamily-surface px-3.5 py-2 text-sm"
@@ -767,6 +792,7 @@ function DiscoverContent() {
                 <textarea
                   rows={4}
                   required
+                  data-testid="publish-post-content"
                   value={postContent}
                   onChange={(e) => setPostContent(e.target.value)}
                   placeholder="Share the agents, prompts, and Living Wiki structure you used..."
@@ -784,6 +810,7 @@ function DiscoverContent() {
                 </button>
                 <button
                   type="submit"
+                  data-testid="publish-post-submit"
                   className="rounded-xl bg-[#087c45] px-5 py-2 text-xs font-bold text-white"
                 >
                   Publish to Feed

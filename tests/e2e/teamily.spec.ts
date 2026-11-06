@@ -186,7 +186,7 @@ test.describe.serial(
       expect(verifyUsedJson.error).toBe("INVITE_EXHAUSTED");
     });
 
-    test("4. Chat Workspace (/chat): 8-Item Plus Menu, Custom Agent Builder (Simple & Pro Tabs), Multi-Agent Group Room ('Owner Pays') & Filter Tabs", async () => {
+    test("4. Chat Workspace (/chat): All 8 Plus-Menu Actions, Custom Agent Builder (Simple & Pro Tabs), Multi-Agent Group ('Custom Group' vs 'AI Agent Team' & 'Owner Pays' vs 'Members Pay'), Add Contact ('Agents' & 'Users') & Filter Tabs", async () => {
       // 1. Open 8-item `+` menu and verify all 8 items exist
       await page.getByTestId("chat-plus-button").click();
       await expect(page.getByTestId("chat-plus-menu")).toBeVisible();
@@ -199,9 +199,10 @@ test.describe.serial(
       await expect(page.getByTestId("plus-start-video-meeting")).toBeVisible();
       await expect(page.getByTestId("plus-join-video-meeting")).toBeVisible();
 
-      // 2. Create Custom Agent (Pro Mode)
+      // 2. Create Custom Agent (test both Simple Mode & Pro Mode tabs)
       await page.getByTestId("plus-create-agent").click();
       await expect(page.getByTestId("create-agent-modal")).toBeVisible();
+      await page.getByTestId("agent-builder-tab-simple").click();
       await page.getByTestId("agent-builder-tab-pro").click();
       await page.getByTestId("new-agent-name-input").fill("FinOps Strategist");
       await page.getByTestId("new-agent-title-input").fill("Cloud Economics Advisor");
@@ -214,10 +215,14 @@ test.describe.serial(
         page.getByRole("heading", { name: "FinOps Strategist" })
       ).toBeVisible();
 
-      // 3. Create Multi-Agent Group Room with Credit Sponsorship ("Owner Pays")
+      // 3. Create Multi-Agent Group Room (test both 'Custom Group' & 'AI Agent Team' tabs and 'Members Pay' & 'Owner Pays' modes)
       await page.getByTestId("chat-plus-button").click();
       await page.getByTestId("plus-new-group").click();
       await expect(page.getByTestId("create-group-modal")).toBeVisible();
+      await page.getByTestId("group-type-tab-custom-group").click();
+      await page.getByTestId("group-type-tab-ai-agent-team").click();
+      await page.getByTestId("group-payment-mode-select").selectOption("Members Pay");
+      await page.getByTestId("group-payment-mode-select").selectOption("Owner Pays");
       await page.getByTestId("group-name-input").fill("Q3 Launch War Room");
       await page.getByTestId("create-group-submit").click();
       await expect(page.getByTestId("create-group-modal")).toBeHidden();
@@ -225,25 +230,61 @@ test.describe.serial(
         page.getByRole("heading", { name: /Q3 Launch War Room/i })
       ).toBeVisible();
 
-      // 4. Conversation Filter Tabs
+      // 4. Add Contact Modal (test both 'Agents' and 'Users' tabs + search)
+      await page.getByTestId("chat-plus-button").click();
+      await page.getByTestId("plus-add-contact").click();
+      await expect(page.getByTestId("add-contact-modal")).toBeVisible();
+      await page.getByTestId("add-contact-tab-users").click();
+      await expect(
+        page.getByText("Invite Teammates via Single-Use Invitation Code")
+      ).toBeVisible();
+      await page.getByTestId("add-contact-tab-agents").click();
+      await page.getByTestId("add-contact-search-input").fill("Market");
+      await page.locator('[data-testid^="add-contact-agent-"]').first().click();
+      await expect(page.getByTestId("add-contact-modal")).toBeHidden();
+
+      // 5. Create Local Agent & Join Video Meeting modals from `+` menu
+      await page.getByTestId("chat-plus-button").click();
+      await page.getByTestId("plus-create-local-agent").click();
+      await expect(
+        page.getByText("Connect Local Desktop Agent Bridge")
+      ).toBeVisible();
+      await page.getByRole("button", { name: "Cancel" }).click();
+
+      await page.getByTestId("chat-plus-button").click();
+      await page.getByTestId("plus-join-video-meeting").click();
+      await expect(
+        page.getByRole("heading", { name: "Join Video Meeting" })
+      ).toBeVisible();
+      await page.getByRole("button", { name: "Cancel" }).click();
+
+      // 6. All 4 Conversation Filter Tabs (All, Agent, Group, Pinned)
+      await page.getByTestId("chat-filter-agent").click();
       await page.getByTestId("chat-filter-group").click();
       await page.getByTestId("chat-filter-pinned").click();
       await page.getByTestId("chat-filter-all").click();
     });
 
-    test("5. Chat Composer & Right Drawer: Auto/Instant/Agentic Modes, Skills & Connectors Popovers, Enhance Prompt, Invite Specialist, Video Meeting & Drawer Actions", async () => {
-      // Skills Popover & Connectors Popover in Chat Composer
+    test("5. Chat Composer & Right Drawer: All 3 Execution Modes (Auto/Instant/Agentic), Skills (All/Installed) & Connectors Popovers, Enhance Prompt, Multi-Agent Swarm Reply, Video Meeting Sync & Drawer Controls", async () => {
+      // Skills Popover (test All & Installed tabs + toggle skill)
       await page.getByTestId("chat-skills-button").click();
       await expect(page.getByTestId("chat-skills-popover")).toBeVisible();
       await page.getByTestId("skill-item-decision-matrix").click();
+      await page.getByTestId("chat-skills-popover").getByRole("button", { name: "Installed", exact: true }).click();
+      await page.getByTestId("chat-skills-popover").getByRole("button", { name: "All", exact: true }).click();
       await page.getByTestId("chat-skills-button").click();
 
+      // Connectors Popover
       await page.getByTestId("chat-connectors-button").click();
       await expect(page.getByTestId("chat-connectors-popover")).toBeVisible();
       await page.getByTestId("connector-toggle-notion").click();
       await page.getByTestId("chat-connectors-button").click();
 
-      // Enhance Prompt with Memory + Agentic Mode + Send Message & Synthesize Artifact
+      // Cycle all 3 Execution Modes (Auto -> Instant -> Agentic) + Enhance Prompt + Send Message
+      await page.getByTestId("chat-mode-auto").click();
+      await page.getByTestId("chat-mode-instant").click();
+      await page.getByTestId("chat-mode-agentic").click();
+
       await page
         .getByTestId("chat-composer-input")
         .fill("Generate an interactive launch dashboard artifact for our team");
@@ -251,7 +292,6 @@ test.describe.serial(
       const enhancedVal = await page.getByTestId("chat-composer-input").inputValue();
       expect(enhancedVal).toContain("Living Wiki Memory");
 
-      await page.getByTestId("chat-mode-agentic").click();
       await page.getByTestId("chat-send-button").click();
       await expect(
         page.getByText(/Saved Deliverable to Artifacts/i).first()
@@ -263,10 +303,11 @@ test.describe.serial(
       await page.locator('[data-testid^="invite-agent-"]').first().click();
       await expect(page.getByTestId("chat-invite-modal")).toBeHidden();
 
-      // Right Conversation Profile Drawer Controls (Search, Mute, Translate, Share, Clear)
+      // Right Conversation Profile Drawer Controls (Search, Pin, Mute, Translate, Share, Clear)
       await expect(page.getByTestId("chat-info-drawer")).toBeVisible();
       await page.getByTestId("drawer-search-messages").fill("dashboard");
       await page.getByTestId("drawer-search-messages").fill("");
+      await page.getByTestId("drawer-pin-button").click();
       await page.getByTestId("drawer-mute-button").click();
       await expect(page.getByText("Muted")).toBeVisible();
       await page.getByTestId("drawer-translate-button").click();
@@ -276,7 +317,7 @@ test.describe.serial(
       await page.getByTestId("drawer-clear-history-button").click();
       await expect(page.getByText("Chat history cleared.")).toBeVisible();
 
-      // Video Meeting Modal from `+` Menu
+      // Start Video Meeting Modal from `+` Menu -> Sync to Living Wiki
       await page.getByTestId("chat-plus-button").click();
       await page.getByTestId("plus-start-video-meeting").click();
       await expect(
@@ -288,12 +329,35 @@ test.describe.serial(
       ).toBeHidden();
     });
 
-    test("6. Discover Hub (/discover) & Showcase Post Detail (/post/[id]): Preview/Source Toggle, Prompt Copy, Like, Save & Discussion Comments", async () => {
+    test("6. Discover Hub (/discover) & Showcase Post Detail (/post/[id]): Feeds/Following Toggle, All Category Filters, Publish Community Post Modal, Preview/Source Toggle, Like, Save & Comments", async () => {
       await page.goto("/discover");
       await expect(
         page.getByText(/How I Replaced 4 Morning Newsletters with a 3-Agent Briefing Room/i)
       ).toBeVisible();
 
+      // Test Feeds vs Following source toggle and all category pills
+      await page.getByTestId("discover-feed-source-following").click();
+      await page.getByTestId("discover-feed-source-feeds").click();
+      await page.getByTestId("discover-category-agent-teams").click();
+      await page.getByTestId("discover-category-automations").click();
+      await page.getByTestId("discover-category-living-wiki").click();
+      await page.getByTestId("discover-category-all").click();
+
+      // Publish new workflow post to Community Feed
+      await page.getByTestId("discover-publish-post-button").click();
+      await page
+        .getByTestId("publish-post-title")
+        .fill("Autonomous FinOps & Living Wiki Swarm Playbook");
+      await page.getByTestId("publish-post-category").selectOption("Agent Teams");
+      await page
+        .getByTestId("publish-post-content")
+        .fill("We combined FinOps Strategist and Market Research with daily Living Wiki syncs.");
+      await page.getByTestId("publish-post-submit").click();
+      await expect(
+        page.getByText("Autonomous FinOps & Living Wiki Swarm Playbook")
+      ).toBeVisible();
+
+      // Post Detail (/post/showcase-1)
       await page.goto("/post/showcase-1");
       await expect(
         page.getByRole("heading", {
@@ -318,25 +382,35 @@ test.describe.serial(
       ).toBeVisible();
     });
 
-    test("7. Discover Agents, Agent Teams & Automation Composer (/discover?tab=agents): Parameterized Inline Chips & Scheduled Automation Creation", async () => {
+    test("7. Discover Agents, Agent Teams & Automation Composer (/discover?tab=agents): All Sub-Tabs, Work/Life Filters, Parameter Chip Cycling & Run Now Trigger", async () => {
       await page.goto("/discover?tab=agents");
       await expect(page.getByTestId("subtab-agents")).toBeVisible();
       await page.getByTestId("subtab-teams").click();
       await expect(page.getByText("Product Launch War Room")).toBeVisible();
 
       await page.getByTestId("subtab-automations").click();
+      // Test Work / Life / All automation category filter buttons
+      await page.getByTestId("auto-filter-work").click();
+      await page.getByTestId("auto-filter-life").click();
+      await page.getByTestId("auto-filter-all").click();
+
       await page
         .getByTestId("automation-template-auto-morning-briefing")
         .click();
       await expect(page.getByTestId("compiled-automation-prompt")).toBeVisible();
       await page.getByTestId("automation-chip-format").click();
+      await page.getByTestId("automation-chip-topic").click();
+      await page.getByTestId("automation-chip-actionCount").click();
       await page.getByTestId("save-automation-button").click();
       await expect(
         page.getByText(/Your Active Scheduled Automations/i)
       ).toBeVisible();
+
+      // Trigger "Run Now" on active automation
+      await page.getByRole("button", { name: /Run Now/i }).first().click();
     });
 
-    test("8. Memory & Living Wiki (/memory): All 6 Views (Overview Knowledge Graph, Wiki Pages CRUD, My Profile, Next Actions, My Artifacts & Meetings Dossier)", async () => {
+    test("8. Memory & Living Wiki (/memory): All 7 Views Including Updates & Conflict Resolution (Keep / Replace / Merge), Knowledge Graph, Wiki CRUD, Profile, Actions, Artifacts & Meetings", async () => {
       await page.goto("/memory");
       await expect(page.getByText("Living Wiki Knowledge Graph")).toBeVisible();
 
@@ -347,6 +421,24 @@ test.describe.serial(
         .fill("Q3 Autonomous Architecture Spec");
       await page.getByTestId("wiki-save-button").click();
       await expect(page.getByText("Saved ✓")).toBeVisible();
+
+      // Updates & Conflict Resolution Tab (Keep Existing, Replace with New, Merge Both)
+      await page.getByTestId("memory-tab-updates").click();
+      await expect(
+        page.getByText("Memory Updates & Conflict Resolution")
+      ).toBeVisible();
+      await page.getByTestId("resolve-conflict-q3-budget-kept").click();
+      await expect(page.getByTestId("conflict-status-conflict-q3-budget")).toHaveText(
+        "kept"
+      );
+      await page.getByTestId("resolve-conflict-q3-budget-replaced").click();
+      await expect(page.getByTestId("conflict-status-conflict-q3-budget")).toHaveText(
+        "replaced"
+      );
+      await page.getByTestId("resolve-conflict-release-cadence-merged").click();
+      await expect(
+        page.getByTestId("conflict-status-conflict-release-cadence")
+      ).toHaveText("merged");
 
       await page.getByTestId("memory-tab-profile").click();
       await expect(
@@ -376,14 +468,20 @@ test.describe.serial(
       );
     });
 
-    test("9. Artifacts Library (/artifacts) & TipTap Cloud Document Studio (/tiptap/[id]): Categories, Grid/List View, Upload, Whiteboard & Rich Text Editor", async () => {
+    test("9. Artifacts Library (/artifacts) & TipTap Cloud Document Studio (/tiptap/[id]): All 6 Categories + Favorites, Grid/List View, Upload, Whiteboard, HTML Artifact & Rich Text Editor", async () => {
       await page.goto("/artifacts");
-      await expect(page.getByRole("button", { name: "All Work" })).toBeVisible();
-      await expect(page.getByRole("button", { name: "Websites" })).toBeVisible();
-      await expect(page.getByRole("button", { name: "Documents" })).toBeVisible();
-      await expect(page.getByRole("button", { name: "Media" })).toBeVisible();
-      await expect(page.getByRole("button", { name: "Messages" })).toBeVisible();
-      await expect(page.getByRole("button", { name: "Meetings" })).toBeVisible();
+      for (const cat of [
+        "All Work",
+        "Websites",
+        "Documents",
+        "Media",
+        "Messages",
+        "Meetings",
+        "Favorites",
+        "All Work",
+      ]) {
+        await page.getByRole("button", { name: cat, exact: true }).click();
+      }
 
       // Toggle List view / Grid view and Upload
       await page.getByRole("button", { name: "List view" }).click();
@@ -393,11 +491,19 @@ test.describe.serial(
         page.getByText("Uploaded Workspace Specification.md").first()
       ).toBeVisible();
 
-      // Create Whiteboard Canvas -> navigates to /tiptap/[id]
+      // Create Interactive HTML Artifact -> navigates to /tiptap/[id]
+      await page.getByTestId("artifacts-new-button").click();
+      await page.getByTestId("create-html-artifact-button").click();
+      await page.waitForURL("**/tiptap/**", { timeout: 15000 });
+      await expect(page.getByTestId("tiptap-title-input")).toHaveValue(
+        "Interactive Workspace Dashboard Artifact"
+      );
+
+      // Return to /artifacts and Create Whiteboard Canvas -> navigates to /tiptap/[id]
+      await page.goto("/artifacts");
       await page.getByTestId("artifacts-new-button").click();
       await expect(page.getByTestId("create-cloud-document-button")).toBeVisible();
       await expect(page.getByTestId("create-whiteboard-button")).toBeVisible();
-      await expect(page.getByTestId("create-html-artifact-button")).toBeVisible();
       await page.getByTestId("create-whiteboard-button").click();
       await page.waitForURL("**/tiptap/**", { timeout: 15000 });
       await expect(page.getByTestId("tiptap-title-input")).toHaveValue(
@@ -427,9 +533,9 @@ test.describe.serial(
       await expect(
         page.getByRole("heading", { name: "Ada Lovelace" })
       ).toBeVisible();
-      await expect(page.getByRole("button", { name: "Posts" })).toBeVisible();
-      await expect(page.getByRole("button", { name: "Favorites" })).toBeVisible();
-      await expect(page.getByRole("button", { name: "Likes" })).toBeVisible();
+      await page.getByRole("button", { name: "Favorites" }).click();
+      await page.getByRole("button", { name: "Likes" }).click();
+      await page.getByRole("button", { name: "Posts" }).click();
     });
 
     test("11. Credits Center (/settings/credits-center): 4 Tabs (Balance & +200 Daily Claim, 7-Day Onboarding & 3-Day Streak, Invite Code Redemption & Builder Leaderboard)", async () => {
@@ -525,13 +631,16 @@ test.describe.serial(
         page.getByTestId("audit-log-INVITE_REVOKED").first()
       ).toBeVisible();
 
-      // Dark Mode Toggle & Mobile Responsive Viewport (390x844)
+      // Dark Mode Toggle & Desktop (1440x900), Tablet (768x1024) & Mobile (390x844) Viewports
       await page.goto("/chat");
       await page.getByRole("button", { name: "Toggle theme" }).first().click();
       const isDark = await page.evaluate(() =>
         document.documentElement.classList.contains("dark")
       );
       expect(isDark).toBe(true);
+
+      await page.setViewportSize({ width: 768, height: 1024 });
+      await expect(page.getByTestId("chat-composer-input")).toBeVisible();
 
       await page.setViewportSize({ width: 390, height: 844 });
       await expect(page.getByTestId("chat-composer-input")).toBeVisible();
