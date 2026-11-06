@@ -290,6 +290,158 @@ export const OFFICIAL_AGENTS: SystemAgentTemplate[] = [
       "Build an interactive ROI calculator artifact for enterprise buyers",
     ],
   },
+  {
+    slug: "market-research-assistant",
+    name: "Market Research",
+    title: "Market Research & Competitive Intelligence Assistant",
+    category: "Research",
+    description:
+      "Specialized AI agent for deep market sizing, competitor tracking, consumer insights, and cited industry reports.",
+    avatarEmoji: "📊",
+    avatarBg: "#0284c7",
+    skills: ["web-search", "academic-digest", "artifact-builder"],
+    connectors: ["notion", "google-drive"],
+    systemPrompt:
+      "You are the Market Research assistant on Teamily AI. Deliver structured, source-cited market analysis and competitive intelligence.",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Run a competitive landscape analysis on AI workspace tools",
+      "Size the global TAM/SAM/SOM for autonomous coding agents",
+    ],
+  },
+  {
+    slug: "health-assistant",
+    name: "Health Assistant",
+    title: "Wellness, Sleep, Nutrition & Longevity Coach",
+    category: "Life",
+    description:
+      "Helps you optimize daily energy, workout routines, recovery protocols, and sustainable health habits.",
+    avatarEmoji: "💚",
+    avatarBg: "#059669",
+    skills: ["living-wiki", "web-search"],
+    connectors: ["google-calendar"],
+    systemPrompt:
+      "You are the Health Assistant on Teamily AI. Provide evidence-based wellness, sleep, nutrition, and exercise guidance.",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Design a 7-day sleep and cognitive energy routine",
+      "Build a high-protein meal and hydration tracker",
+    ],
+  },
+  {
+    slug: "travel-planner",
+    name: "Travel Planner",
+    title: "Global Itinerary, Flights & Local Experience Curator",
+    category: "Life",
+    description:
+      "Plans end-to-end travel itineraries, visa checklists, neighborhood guides, and budget comparisons.",
+    avatarEmoji: "✈️",
+    avatarBg: "#0d9488",
+    skills: ["web-search", "artifact-builder"],
+    connectors: ["google-calendar", "gmail"],
+    systemPrompt:
+      "You are the Travel Planner on Teamily AI. Create detailed day-by-day travel itineraries and logistics checklists.",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Create a 5-day Tokyo & Kyoto workcation itinerary",
+      "Build a packing and flight logistics checklist",
+    ],
+  },
+  {
+    slug: "ai-stock-assistant",
+    name: "AI Stock Assistant",
+    title: "Equities, Earnings Filings & Portfolio Risk Analyst",
+    category: "Finance",
+    description:
+      "Analyzes earnings calls, valuation multiples, macro catalysts, and tokenized-stock portfolio scenarios.",
+    avatarEmoji: "📈",
+    avatarBg: "#2563eb",
+    skills: ["financial-modeling", "web-search", "decision-matrix"],
+    connectors: ["google-drive", "notion"],
+    systemPrompt:
+      "You are the AI Stock Assistant on Teamily AI. Provide structured fundamental and macro equity research (informational only).",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Compare valuation multiples across top AI infrastructure stocks",
+      "Summarize key takeaways from the latest semiconductor earnings",
+    ],
+  },
+  {
+    slug: "webpage-developer",
+    name: "Webpage Developer",
+    title: "Responsive Web UI, Landing Page & Interactive Artifact Builder",
+    category: "Engineering",
+    description:
+      "Builds and ships responsive, production-quality web pages, dashboards, and interactive HTML/CSS/JS artifacts.",
+    avatarEmoji: "🌐",
+    avatarBg: "#7c3aed",
+    skills: ["code-interpreter", "artifact-builder"],
+    connectors: ["github", "linear"],
+    systemPrompt:
+      "You are the Webpage Developer on Teamily AI. Build clean, responsive HTML/CSS/React web pages and interactive artifacts.",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Build a responsive SaaS pricing & launch landing page artifact",
+      "Create an interactive dark-mode analytics dashboard",
+    ],
+  },
+  {
+    slug: "accounting-assistant",
+    name: "Accounting Assistant",
+    title: "Bookkeeping, Tax Categorization & Expense Reconciliation",
+    category: "Finance",
+    description:
+      "Streamlines invoice categorization, monthly close checklists, burn rate tracking, and financial statements.",
+    avatarEmoji: "🧾",
+    avatarBg: "#4f46e5",
+    skills: ["financial-modeling", "code-interpreter"],
+    connectors: ["google-drive", "gmail"],
+    systemPrompt:
+      "You are the Accounting Assistant on Teamily AI. Help organize bookkeeping, expense reconciliation, and financial reporting.",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Generate a monthly SaaS bookkeeping close checklist",
+      "Categorize these software and cloud infrastructure expenses",
+    ],
+  },
+  {
+    slug: "finance-assistant",
+    name: "Finance Assistant",
+    title: "FP&A, Cash Flow Modeling & Unit Economics Strategist",
+    category: "Finance",
+    description:
+      "Builds 18-month runway models, ARR cohort tables, margin diagnostics, and board finance decks.",
+    avatarEmoji: "💰",
+    avatarBg: "#087c45",
+    skills: ["financial-modeling", "decision-matrix", "artifact-builder"],
+    connectors: ["google-drive", "notion"],
+    systemPrompt:
+      "You are the Finance Assistant on Teamily AI. Model cash flows, SaaS unit economics, and financial scenarios.",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Model our 18-month cash runway under 3 hiring scenarios",
+      "Calculate LTV:CAC and payback period for our Plus and Pro tiers",
+    ],
+  },
+  {
+    slug: "slides-assistant",
+    name: "Slides Assistant",
+    title: "16:9 Keynote, Pitch Deck & Executive Presentation Designer",
+    category: "Creation",
+    description:
+      "Creates polished 16:9 slide decks with structured narrative flow, visual layouts, and per-slide quality audits.",
+    avatarEmoji: "📽️",
+    avatarBg: "#db2777",
+    skills: ["artifact-builder", "copywriting-studio"],
+    connectors: ["google-drive", "notion"],
+    systemPrompt:
+      "You are the Slides Assistant on Teamily AI. Craft compelling 16:9 slide decks, pitch narratives, and visual presentations.",
+    greeting: "You are now friends and can start chatting!",
+    suggestions: [
+      "Create a 10-slide Series A investor pitch deck outline",
+      "Design an executive quarterly business review (QBR) slide deck",
+    ],
+  },
 ];
 
 export const AGENT_TEAMS: AgentTeamTemplate[] = [

@@ -80,7 +80,7 @@ export default function PublicExplorePage() {
                       ❤️ {post.likesCount} • 💬 {post.commentsCount}
                     </span>
                     <Link
-                      href={`/post/${post.id}`}
+                      href={`/explore/${post.id}`}
                       className="font-semibold text-[#087c45] hover:underline inline-flex items-center gap-1"
                     >
                       Read Workflow <ArrowRight className="h-3.5 w-3.5" />

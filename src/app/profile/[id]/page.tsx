@@ -23,6 +23,7 @@ interface ProfileData {
 export default function ProfilePage() {
   const params = useParams<{ id: string }>();
   const [profile, setProfile] = useState<ProfileData | null>(null);
+  const [activeTab, setActiveTab] = useState<"POSTS" | "FAVORITES" | "LIKES">("POSTS");
 
   useEffect(() => {
     const query = params?.id && params.id !== "me" ? `?id=${params.id}` : "";
@@ -58,6 +59,16 @@ export default function ProfilePage() {
                     <p className="mt-2 text-xs text-teamily-primary max-w-xl">
                       {profile.bio || "Building autonomous multi-agent workflows on Teamily AI."}
                     </p>
+                    <div className="mt-3 flex items-center gap-4 text-xs">
+                      <span>
+                        <strong>{profile.agents.length}</strong>{" "}
+                        <span className="text-teamily-secondary">Following</span>
+                      </span>
+                      <span>
+                        <strong>{profile.communityPosts.length}</strong>{" "}
+                        <span className="text-teamily-secondary">Followers</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -68,6 +79,28 @@ export default function ProfilePage() {
                   <Edit3 className="h-3.5 w-3.5" />
                   Edit Profile
                 </Link>
+              </div>
+
+              {/* Posts / Favorites / Likes tabs from teamily.ai/profile/[id] */}
+              <div className="flex items-center gap-2 border-b border-teamily pb-3">
+                {[
+                  { id: "POSTS", label: "Posts" },
+                  { id: "FAVORITES", label: "Favorites" },
+                  { id: "LIKES", label: "Likes" },
+                ].map((t) => (
+                  <button
+                    key={t.id}
+                    type="button"
+                    onClick={() => setActiveTab(t.id as typeof activeTab)}
+                    className={`rounded-xl px-4 py-1.5 text-xs font-bold transition ${
+                      activeTab === t.id
+                        ? "bg-[#ddf3e5] text-[#087c45]"
+                        : "text-teamily-secondary hover:text-teamily-primary"
+                    }`}
+                  >
+                    {t.label}
+                  </button>
+                ))}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

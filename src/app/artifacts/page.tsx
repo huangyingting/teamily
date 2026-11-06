@@ -13,6 +13,9 @@ import {
   Code,
   Trash2,
   ArrowUpRight,
+  Upload,
+  LayoutGrid,
+  List,
 } from "lucide-react";
 
 interface ArtifactItem {
@@ -27,7 +30,10 @@ interface ArtifactItem {
 export default function ArtifactsPage() {
   const router = useRouter();
   const [artifacts, setArtifacts] = useState<ArtifactItem[]>([]);
-  const [filter, setFilter] = useState<"ALL" | "FAVORITES" | "DOCUMENTS" | "ARTIFACTS">("ALL");
+  const [filter, setFilter] = useState<
+    "ALL" | "FAVORITES" | "DOCUMENTS" | "ARTIFACTS" | "MEDIA" | "MESSAGES" | "MEETINGS"
+  >("ALL");
+  const [viewMode, setViewMode] = useState<"GRID" | "LIST">("GRID");
   const [search, setSearch] = useState("");
   const [newMenuOpen, setNewMenuOpen] = useState(false);
 
@@ -104,7 +110,56 @@ export default function ArtifactsPage() {
               </h1>
             </div>
 
-            <div className="relative">
+            <div className="relative flex items-center gap-2">
+              <div className="inline-flex rounded-xl border border-teamily bg-teamily-surface p-1">
+                <button
+                  type="button"
+                  aria-label="Grid view"
+                  onClick={() => setViewMode("GRID")}
+                  className={`rounded-lg p-1.5 ${
+                    viewMode === "GRID"
+                      ? "bg-[#ddf3e5] text-[#087c45]"
+                      : "text-teamily-secondary"
+                  }`}
+                >
+                  <LayoutGrid className="h-3.5 w-3.5" />
+                </button>
+                <button
+                  type="button"
+                  aria-label="List view"
+                  onClick={() => setViewMode("LIST")}
+                  className={`rounded-lg p-1.5 ${
+                    viewMode === "LIST"
+                      ? "bg-[#ddf3e5] text-[#087c45]"
+                      : "text-teamily-secondary"
+                  }`}
+                >
+                  <List className="h-3.5 w-3.5" />
+                </button>
+              </div>
+
+              <button
+                type="button"
+                onClick={async () => {
+                  const res = await fetch("/api/artifacts", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      title: "Uploaded Workspace Specification.md",
+                      type: "DOCUMENT",
+                      content:
+                        "<h1>Uploaded Workspace Specification</h1><p>Uploaded asset indexed in Teamily Artifacts Library.</p>",
+                    }),
+                  });
+                  if (res.ok) await loadArtifacts();
+                }}
+                data-testid="artifacts-upload-button"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-teamily bg-teamily-surface px-3.5 py-2.5 text-xs font-bold hover:bg-teamily-subtle"
+              >
+                <Upload className="h-3.5 w-3.5 text-[#087c45]" />
+                Upload
+              </button>
+
               <button
                 type="button"
                 onClick={() => setNewMenuOpen(!newMenuOpen)}
@@ -153,10 +208,13 @@ export default function ArtifactsPage() {
           <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex flex-wrap gap-1.5">
               {[
-                { id: "ALL", label: "All" },
+                { id: "ALL", label: "All Work" },
+                { id: "ARTIFACTS", label: "Websites" },
+                { id: "DOCUMENTS", label: "Documents" },
+                { id: "MEDIA", label: "Media" },
+                { id: "MESSAGES", label: "Messages" },
+                { id: "MEETINGS", label: "Meetings" },
                 { id: "FAVORITES", label: "Favorites" },
-                { id: "DOCUMENTS", label: "Cloud Documents" },
-                { id: "ARTIFACTS", label: "Code & HTML Artifacts" },
               ].map((f) => (
                 <button
                   key={f.id}
@@ -185,8 +243,14 @@ export default function ArtifactsPage() {
             </div>
           </div>
 
-          {/* Artifacts Grid */}
-          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Artifacts Grid / List */}
+          <div
+            className={
+              viewMode === "GRID"
+                ? "mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+                : "mt-6 flex flex-col gap-3"
+            }
+          >
             {artifacts.map((art) => (
               <div
                 key={art.id}

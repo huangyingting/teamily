@@ -180,6 +180,81 @@ export async function provisionUserWorkspace(
     },
   });
 
+  // 4b. Create the 8 default Teamily Assistant Chats observed on https://teamily.ai/chat
+  const defaultAssistantSlugs = [
+    "market-research-assistant",
+    "health-assistant",
+    "travel-planner",
+    "ai-stock-assistant",
+    "webpage-developer",
+    "accounting-assistant",
+    "finance-assistant",
+    "slides-assistant",
+  ];
+  for (const slug of defaultAssistantSlugs) {
+    const tpl = OFFICIAL_AGENTS.find((a) => a.slug === slug);
+    if (!tpl) continue;
+    let assistantAgent = await tx.agent.findUnique({ where: { slug } });
+    if (!assistantAgent) {
+      assistantAgent = await tx.agent.create({
+        data: {
+          slug: tpl.slug,
+          name: tpl.name,
+          title: tpl.title,
+          category: tpl.category,
+          description: tpl.description,
+          avatarEmoji: tpl.avatarEmoji,
+          avatarBg: tpl.avatarBg,
+          skillsJson: JSON.stringify(tpl.skills),
+          connectorsJson: JSON.stringify(tpl.connectors),
+          systemPrompt: tpl.systemPrompt,
+          isSystem: true,
+          isPublic: true,
+        },
+      });
+    }
+    await tx.conversation.create({
+      data: {
+        title: assistantAgent.name,
+        type: "DIRECT_AGENT",
+        mode: "Auto",
+        isPinned: false,
+        ownerId: user.id,
+        members: {
+          create: [
+            {
+              memberType: "USER",
+              userId: user.id,
+              displayName: user.name,
+              avatarEmoji: "👤",
+            },
+            {
+              memberType: "AGENT",
+              agentId: assistantAgent.id,
+              displayName: assistantAgent.name,
+              avatarEmoji: assistantAgent.avatarEmoji,
+            },
+          ],
+        },
+        messages: {
+          create: [
+            {
+              senderType: "AGENT",
+              senderName: assistantAgent.name,
+              agentId: assistantAgent.id,
+              mode: "Auto",
+              content: "You are now friends and can start chatting!",
+              metadataJson: JSON.stringify({
+                steps: ["Friend Connection Established"],
+                creditsUsed: 0,
+              }),
+            },
+          ],
+        },
+      },
+    });
+  }
+
   // 5. Create 7 First-Week Onboarding Tasks
   for (const task of FIRST_WEEK_ONBOARDING_TASKS) {
     await tx.onboardingTask.create({
