@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Credentials & Secrets (NEVER COMMIT)
+.cred
+.env
+.env.*
+!.env.example
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+
+# Prisma / SQLite Databases
+prisma/*.db
+prisma/*.db-journal
+prisma/migrations/*.db
+dev.db
+dev.db-journal
+test.db
+test.db-journal
+
+# Testing
+/coverage
+/playwright-report/
+/test-results/
+
+# Misc
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tsbuildinfo

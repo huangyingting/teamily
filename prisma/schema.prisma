@@ -1,0 +1,291 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id              String    @id @default(cuid())
+  email           String    @unique
+  name            String
+  handle          String    @unique
+  passwordHash    String
+  role            String    @default("MEMBER") // ADMIN, MODERATOR, MEMBER, VIEWER
+  plan            String    @default("Free") // Free, Plus, Pro, Max
+  credits         Int       @default(500)
+  dailyCredits    Int       @default(200)
+  bio             String?
+  avatarUrl       String?
+  themePreference String    @default("light")
+  isActive        Boolean   @default(true)
+  revokedAt       DateTime?
+  sessionVersion  Int       @default(1)
+  invitedByCodeId String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  sessions        UserSession[]
+  createdInvites  InvitationCode[]       @relation("InviteCreator")
+  revokedInvites  InvitationCode[]       @relation("InviteRevoker")
+  redemptions     InvitationRedemption[]
+  auditLogs       AuditLog[]
+  agents          Agent[]
+  conversations   Conversation[]
+  messages        Message[]
+  automations     Automation[]
+  wikiPages       WikiPage[]
+  artifacts       Artifact[]
+  communityPosts  CommunityPost[]
+  onboardingTasks OnboardingTask[]
+  integrations    UserIntegration[]
+}
+
+model UserSession {
+  id           String    @id @default(cuid())
+  sessionToken String    @unique
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ipAddress    String?
+  userAgent    String?
+  revokedAt    DateTime?
+  revokedById  String?
+  expiresAt    DateTime
+  createdAt    DateTime  @default(now())
+
+  @@index([userId])
+}
+
+model InvitationCode {
+  id           String    @id @default(cuid())
+  code         String    @unique
+  createdById  String?
+  createdBy    User?     @relation("InviteCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  assignedRole String    @default("MEMBER") // ADMIN, MODERATOR, MEMBER, VIEWER
+  maxUses      Int       @default(1) // 1 = single-use, >1 = multi-use
+  usedCount    Int       @default(0)
+  boundEmail   String?
+  note         String?
+  status       String    @default("ACTIVE") // ACTIVE, USED, EXPIRED, REVOKED
+  expiresAt    DateTime?
+  revokedAt    DateTime?
+  revokedById  String?
+  revokedBy    User?     @relation("InviteRevoker", fields: [revokedById], references: [id], onDelete: SetNull)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  redemptions  InvitationRedemption[]
+
+  @@index([code])
+  @@index([status])
+}
+
+model InvitationRedemption {
+  id               String         @id @default(cuid())
+  invitationCodeId String
+  invitationCode   InvitationCode @relation(fields: [invitationCodeId], references: [id], onDelete: Cascade)
+  redeemedByUserId String
+  redeemedByUser   User           @relation(fields: [redeemedByUserId], references: [id], onDelete: Cascade)
+  redeemedAt       DateTime       @default(now())
+
+  @@index([invitationCodeId])
+  @@index([redeemedByUserId])
+}
+
+model AuditLog {
+  id           String   @id @default(cuid())
+  actorId      String?
+  actor        User?    @relation(fields: [actorId], references: [id], onDelete: SetNull)
+  actorEmail   String?
+  actorRole    String?
+  action       String
+  targetType   String
+  targetId     String?
+  status       String   @default("SUCCESS") // SUCCESS, FAILURE
+  metadataJson String   @default("{}")
+  ipAddress    String?
+  userAgent    String?
+  createdAt    DateTime @default(now())
+
+  @@index([action])
+  @@index([actorId])
+  @@index([createdAt])
+}
+
+model Agent {
+  id                  String               @id @default(cuid())
+  slug                String               @unique
+  name                String
+  title               String               @default("Specialist Agent")
+  category            String               @default("General")
+  description         String
+  systemPrompt        String
+  avatarEmoji         String               @default("🤖")
+  avatarBg            String               @default("#087c45")
+  skillsJson          String               @default("[]")
+  connectorsJson      String               @default("[]")
+  isSystem            Boolean              @default(false)
+  isPublic            Boolean              @default(true)
+  ownerId             String?
+  owner               User?                @relation(fields: [ownerId], references: [id], onDelete: SetNull)
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime             @updatedAt
+
+  conversationMembers ConversationMember[]
+  messages            Message[]
+}
+
+model Conversation {
+  id        String               @id @default(cuid())
+  title     String
+  type      String               @default("PERSONAL") // PERSONAL, DIRECT_AGENT, GROUP
+  mode      String               @default("Auto") // Auto, Instant, Agentic
+  isPinned  Boolean              @default(false)
+  ownerId   String
+  owner     User                 @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  createdAt DateTime             @default(now())
+  updatedAt DateTime             @updatedAt
+
+  members   ConversationMember[]
+  messages  Message[]
+  artifacts Artifact[]
+
+  @@index([ownerId])
+}
+
+model ConversationMember {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  memberType     String       @default("AGENT") // USER, AGENT
+  userId         String?
+  agentId        String?
+  agent          Agent?       @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  displayName    String
+  avatarEmoji    String?
+  createdAt      DateTime     @default(now())
+
+  @@index([conversationId])
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  senderType     String       @default("USER") // USER, AGENT, SYSTEM
+  senderName     String
+  senderUserId   String?
+  senderUser     User?        @relation(fields: [senderUserId], references: [id], onDelete: SetNull)
+  agentId        String?
+  agent          Agent?       @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  mode           String       @default("Auto") // Auto, Instant, Agentic
+  content        String
+  metadataJson   String       @default("{}")
+  createdAt      DateTime     @default(now())
+
+  @@index([conversationId])
+}
+
+model Automation {
+  id             String    @id @default(cuid())
+  ownerId        String
+  owner          User      @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  title          String
+  category       String    @default("Work") // Work, Life
+  scheduleType   String    @default("daily") // daily, weekly, monthly, once
+  scheduleTime   String    @default("09:00")
+  timezone       String    @default("America/Los_Angeles")
+  promptTemplate String
+  chipsJson      String    @default("{}")
+  compiledPrompt String
+  deliveryTarget String    @default("Personal Agent Chat")
+  isActive       Boolean   @default(true)
+  lastRunAt      DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([ownerId])
+}
+
+model WikiPage {
+  id        String   @id @default(cuid())
+  ownerId   String
+  owner     User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  title     String
+  slug      String   @unique
+  icon      String   @default("📄")
+  category  String   @default("General")
+  content   String
+  tagsJson  String   @default("[]")
+  version   Int      @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([ownerId])
+}
+
+model Artifact {
+  id             String        @id @default(cuid())
+  ownerId        String
+  owner          User          @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  conversationId String?
+  conversation   Conversation? @relation(fields: [conversationId], references: [id], onDelete: SetNull)
+  title          String
+  type           String        @default("DOCUMENT") // DOCUMENT, HTML, CODE, MARKDOWN
+  content        String
+  previewText    String?
+  isFavorited    Boolean       @default(false)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@index([ownerId])
+}
+
+model CommunityPost {
+  id            String   @id @default(cuid())
+  authorId      String
+  author        User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  title         String
+  summary       String?
+  content       String
+  category      String   @default("Agent Teams")
+  likesCount    Int      @default(0)
+  commentsCount Int      @default(0)
+  isPinned      Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([category])
+}
+
+model OnboardingTask {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  dayNumber   Int
+  title       String
+  description String
+  isCompleted Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model UserIntegration {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  category   String // SKILL, CONNECTOR, CHANNEL, RUNTIME
+  key        String
+  name       String
+  isEnabled  Boolean  @default(false)
+  configJson String   @default("{}")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, category, key])
+  @@index([userId])
+}

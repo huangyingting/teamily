@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: teamily
+      POSTGRES_PASSWORD: teamily_secure_password
+      POSTGRES_DB: teamily_prod
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U teamily -d teamily_prod"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  teamily-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: "postgresql://teamily:teamily_secure_password@postgres:5432/teamily_prod?schema=public"
+      NEXTAUTH_URL: "http://localhost:3000"
+      NEXTAUTH_SECRET: "production-replace-with-32-byte-secret-key"
+    ports:
+      - "3000:3000"
+
+volumes:
+  pgdata:

@@ -1,0 +1,41 @@
+{
+  "name": "teamily-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teamily AI — The AI-Native Social Workspace for Humans and Agents (Next.js + Auth.js/NextAuth + Prisma)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy:postgres": "prisma migrate deploy --schema=prisma/schema.postgres.prisma",
+    "invite:generate": "node --env-file-if-exists=.env scripts/generate-invite.mjs",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "bcryptjs": "^3.0.2",
+    "lucide-react": "^1.70.0",
+    "next": "16.4.5",
+    "next-auth": "4.24.15",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@tailwindcss/postcss": "^4.3.4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "postcss": "^8.5.3",
+    "prisma": "6.19.3",
+    "tailwindcss": "^4.3.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

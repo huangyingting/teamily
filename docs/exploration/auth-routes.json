@@ -1,0 +1,1926 @@
+{
+  "discover-feed": {
+    "url": "https://teamily.ai/discover",
+    "title": "Discover - Teamily AI",
+    "headings": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "Following",
+        "aria": null
+      },
+      {
+        "text": "Feeds",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Scroll left"
+      },
+      {
+        "text": "All",
+        "aria": "All, refresh category"
+      },
+      {
+        "text": "Trending",
+        "aria": "Trending"
+      },
+      {
+        "text": "Webpage",
+        "aria": "Webpage"
+      },
+      {
+        "text": "Mini Game",
+        "aria": "Mini Game"
+      },
+      {
+        "text": "Image",
+        "aria": "Image"
+      },
+      {
+        "text": "Music",
+        "aria": "Music"
+      },
+      {
+        "text": "Slides",
+        "aria": "Slides"
+      },
+      {
+        "text": "Video",
+        "aria": "Video"
+      },
+      {
+        "text": "3D Artifact",
+        "aria": "3D Artifact"
+      },
+      {
+        "text": "Short Drama",
+        "aria": "Short Drama"
+      },
+      {
+        "text": "Article",
+        "aria": "Article"
+      },
+      {
+        "text": "Tutorials",
+        "aria": "Tutorials"
+      },
+      {
+        "text": "Dashboard",
+        "aria": "Dashboard"
+      },
+      {
+        "text": "Markets",
+        "aria": "Markets"
+      },
+      {
+        "text": "Mini App",
+        "aria": "Mini App"
+      },
+      {
+        "text": "Productivity",
+        "aria": "Productivity"
+      },
+      {
+        "text": "Entertainment",
+        "aria": "Entertainment"
+      },
+      {
+        "text": "AI & Tech",
+        "aria": "AI & Tech"
+      },
+      {
+        "text": "Beauty & Skincare",
+        "aria": "Beauty & Skincare"
+      },
+      {
+        "text": "Fashion & Style",
+        "aria": "Fashion & Style"
+      },
+      {
+        "text": "Food & Drink",
+        "aria": "Food & Drink"
+      },
+      {
+        "text": "Travel",
+        "aria": "Travel"
+      },
+      {
+        "text": "Fitness & Wellness",
+        "aria": "Fitness & Wellness"
+      },
+      {
+        "text": "Education & Tutorials",
+        "aria": "Education & Tutorials"
+      },
+      {
+        "text": "Creativity & Art",
+        "aria": "Creativity & Art"
+      },
+      {
+        "text": "Games & ACG",
+        "aria": "Games & ACG"
+      },
+      {
+        "text": "Finance & Investment",
+        "aria": "Finance & Investment"
+      },
+      {
+        "text": "Business & Career",
+        "aria": "Business & Career"
+      },
+      {
+        "text": "Lifestyle",
+        "aria": "Lifestyle"
+      },
+      {
+        "text": "",
+        "aria": "Scroll right"
+      },
+      {
+        "text": "Earn Up to 7 CREDITS\n0 / 7 done · tap to continue",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Close"
+      },
+      {
+        "text": "zqchen+test202",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "4",
+        "aria": "Like post, 4"
+      },
+      {
+        "text": "adegokeadekunle96",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "3",
+        "aria": "Like post, 3"
+      },
+      {
+        "text": "neddykim22",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "5",
+        "aria": "Like post, 5"
+      },
+      {
+        "text": "darragnanhawthorne",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "1",
+        "aria": "Like post, 1"
+      },
+      {
+        "text": "ahayerechris1",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "1",
+        "aria": "Like post, 1"
+      },
+      {
+        "text": "favourracheal25",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "0",
+        "aria": "Like post, 0"
+      },
+      {
+        "text": "suregaspice",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "0",
+        "aria": "Like post, 0"
+      },
+      {
+        "text": "bear",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "0",
+        "aria": "Like post, 0"
+      },
+      {
+        "text": "Enoch",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "0",
+        "aria": "Like post, 0"
+      },
+      {
+        "text": "TheRealLionelBJ",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "2",
+        "aria": "Like post, 2"
+      },
+      {
+        "text": "Lasho04",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "0",
+        "aria": "Like post, 0"
+      },
+      {
+        "text": "masonhan2024",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "1",
+        "aria": "Like post, 1"
+      },
+      {
+        "text": "Water",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "9",
+        "aria": "Like post, 9"
+      },
+      {
+        "text": "Gia Cát Lạng",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "4",
+        "aria": "Like post, 4"
+      },
+      {
+        "text": "kenpachi",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "1",
+        "aria": "Like post, 1"
+      },
+      {
+        "text": "Water",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "3",
+        "aria": "Like post, 3"
+      },
+      {
+        "text": "chaurasiaaman635",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "5",
+        "aria": "Like post, 5"
+      },
+      {
+        "text": "steamxproject",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "11",
+        "aria": "Like post, 11"
+      },
+      {
+        "text": "2323henzcruzendozo",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "6",
+        "aria": "Like post, 6"
+      },
+      {
+        "text": "mensahnhyira15",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Follow author"
+      },
+      {
+        "text": "0",
+        "aria": "Like post, 0"
+      }
+    ],
+    "inputs": [
+      {
+        "tag": "INPUT",
+        "type": "search",
+        "placeholder": "Search posts, creators…",
+        "name": "",
+        "value": ""
+      },
+      {
+        "tag": "INPUT",
+        "type": "search",
+        "placeholder": "Search posts, creators…",
+        "name": "",
+        "value": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "9",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "Atlas AI Investment Research Report: Pre-Diligence Assessment for Enterprise AI Customer Support Agents",
+        "href": "/post/2613eb85-11fd-4d0c-8678-798fbed1f0d6"
+      },
+      {
+        "text": "WayaLinks Business Analysis and Go-To-Market Plan",
+        "href": "/post/52749d11-c29e-4e4a-9d2e-11267f124716"
+      },
+      {
+        "text": "Startup Idea Validator & Market Potentials Dashboard",
+        "href": "/post/5c9a0eb3-a39e-4537-be15-df3c08213ece"
+      },
+      {
+        "text": "AIEOUS Suno Catalog Audit v3.0",
+        "href": "/post/bee77063-4f12-4d1c-b396-33f5777db4c7"
+      },
+      {
+        "text": "Supply Chain Diagnostic Playbook for Operations Consultants",
+        "href": "/post/6824d455-d214-446c-ba63-7a2830132dec"
+      },
+      {
+        "text": "MCB 307 Immunology Assignment 1",
+        "href": "/post/96957fca-9c7e-484a-9092-9645ff1f5e78"
+      },
+      {
+        "text": "Production Status Report for Multiple BuyersProduction status",
+        "href": "/post/cbbae63d-2aa8-4093-88c7-c459552ec28e"
+      },
+      {
+        "text": "Long Head of Biceps Tendinitis Identification and Rehabilitation Guide",
+        "href": "/post/84a09e70-0d7b-4a1a-8add-9442111dc29e"
+      },
+      {
+        "text": "Project Profitability Playbook for Construction and Home Services",
+        "href": "/post/552ee587-cfd8-4cf9-bc3d-ed6eb8dc71ac"
+      },
+      {
+        "text": "Pixel Kart Rush: A Retro 16-bit Racing Game",
+        "href": "/post/4819e210-9d6f-4c36-be2f-b94b19ca477a"
+      },
+      {
+        "text": "Print-Ready Sports Car Coloring Book Sample and Production System",
+        "href": "/post/a38de366-359e-4927-be58-72462f26d175"
+      },
+      {
+        "text": "Cs336 Part 8: Post-training SFT & RL",
+        "href": "/post/2ea1ca91-c3d7-4984-830e-8a234b075dfd"
+      },
+      {
+        "text": "The Bridge: Cross-Platform Workflows for Apple and Windows",
+        "href": "/post/5c6da62a-fa68-42b5-928c-381883710148"
+      },
+      {
+        "text": "Wax & Wonder: A Vintage Vinyl Record Store Website",
+        "href": "/post/cd43dce6-0f51-4aeb-8e33-3e06b4c72958"
+      },
+      {
+        "text": "Smartwatch Commercial: Shazam Integration with Minimalist Dark Aesthetic",
+        "href": "/post/53746fa4-92b2-4041-b35d-b05b55b8ba5b"
+      },
+      {
+        "text": "FIFA World Cup 2026 Fan Guide and Economic Report",
+        "href": "/post/c6b761f2-13d6-4959-9a47-aa015a48388d"
+      },
+      {
+        "text": "Freelance Client-Acquisition System: 30-Day Plan, Prospect Sources, and Outreach Templates",
+        "href": "/post/5e2cc4a8-1ee1-41e2-938b-5bb285dbd5ca"
+      },
+      {
+        "text": "NV — SXP Premium Streaming Application",
+        "href": "/post/98d0dbed-80d8-4eb8-8771-8210f77d5b1b"
+      },
+      {
+        "text": "Digital Product Storefront Template",
+        "href": "/post/4d9736b4-6d6f-4082-8a25-14d55f716cdb"
+      },
+      {
+        "text": "DJ ICE Professional Website with Multi-File Structure",
+        "href": "/post/80a463fb-bb91-4931-8e49-c7434867df0c"
+      },
+      {
+        "text": "9Chat, 9",
+        "href": "/chat"
+      },
+      {
+        "text": "Agents",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "Discover",
+        "href": "/discover"
+      },
+      {
+        "text": "Memory",
+        "href": "/memory"
+      },
+      {
+        "text": "Artifacts",
+        "href": "/artifacts"
+      }
+    ],
+    "bodyText": "9\nFollowing\nFeeds\nAll\nTrending\nWebpage\nMini Game\nImage\nMusic\nSlides\nVideo\n3D Artifact\nShort Drama\nArticle\nTutorials\nDashboard\nMarkets\nMini App\nProductivity\nEntertainment\nAI & Tech\nBeauty & Skincare\nFashion & Style\nFood & Drink\nTravel\nFitness & Wellness\nEducation & Tutorials\nCreativity & Art\nGames & ACG\nFinance & Investment\nBusiness & Career\nLifestyle\nEarn Up to 7 CREDITS\n0 / 7 done · tap to continue\nWebpage\nAtlas AI Investment Research Report: Pre-Diligence Assessment for Enterprise AI Customer Support Agents\nzqchen+test202\n4\nWebpage\nWayaLinks Business Analysis and Go-To-Market Plan\nadegokeadekunle96\n3\nWebpage\nStartup Idea Validator & Market Potentials Dashboard\nneddykim22\n5\nWebpage\nAIEOUS Suno Catalog Audit v3.0\ndarragnanhawthorne\n1\nWebpage\nSupply Chain Diagnostic Playbook for Operations Consultants\nahayerechris1\n1\n\nMCB 307\n\nASSIGNMENT 1\n\nFundamentals of Immunology and Immunochemistry\n\n________________________________________\n\nCourse Code: MCB 307\nAssignment: Assignment 1\nStudent Name: ________________________\nMatriculation Number: ________________________\nDepartment: Microbiology\nDate: ________________________\n\nDue: Wednesday\n\nQuestion 1: Immunology, Immunochemistry and Their Relationship\n\n1.1 Definition of Immunology\n\nImmunology is the branch of biomedical science that studies the immune system — its structure, development, function and regulation — together with the host's defence mechanisms against infectious agents and the consequences of those mechanisms. It examines how the body distinguishes \"self\" from \"non-self\", how it responds to pathogens, and what happens when these responses are excessive, deficient or misdirected. Its scope therefore extends well beyond infection to include allergy, autoimmunity, immunodeficiency, transplantation, tumour immunity and vaccination.\n\n1.2 Definition of Immunochemistry\n\nImmunochemistry is the sub-discipline that studies the chemical and molecular basis of immune phenomena. It deals with the structure, properties and interactions of the molecules of immunity — principally antigens and antibodies — including the chemical nature of antigen–antibody binding, antibody specificity and affinity, the structure of immunoglobulins, and the complement system. It also covers the use of antibodies as analytical reagents in techniques such as ELISA, immunodiffusion, immunoelectrophoresis, Western blotting and flow cytometry.\n\n1.3 The Relationship Between Immunology and Immunochemistry\n\nThe two fields are closely related but operate at different levels of enquiry. Immunology is the broader biological discipline that asks how the body defends itself and how the immune system behaves as a whole; immunochemistry is the molecular and chemical arm of that discipline, asking which molecules are involved and how they interact chemically. Their relationship can be summarised as follows:\n\nFoundation: Immunochemistry supplies the molecular explanation for immunological observations. The specificity of an immune response, for example, is explained chemically by the complementary fit between an antibody's antigen-binding site and an epitope on the antigen.\n\nTool: Immunological questions (e.g. \"is this patient immune to a virus?\") are frequently answered using immunochemical methods (e.g. ELISA, agglutination, immunoblotting).\n\nMutual dependence: Advances in one drive the other — understanding antibody structure (immunochemistry) enabled the design of vaccines and diagnostic tests (immunology), while immunological discoveries generate new molecular targets for chemical study.\n\nIn short, immunology provides the biological framework and immunochemistry provides the molecular detail and analytical techniques; together they form a single, integrated field of study.\n\nQuestion 2: Contributions of Five Pioneers of Immunology\n\nThe table below summarises the key contribution of each scientist, the problem it helped address, and its relevance to modern immunology.\n\nScientist\n\n\t\n\nContribution\n\n\t\n\nProblem It Helped Address\n\n\t\n\nRelevance to Modern Immunology\n\n\n\n\nEdward Jenner\n(1749–1823)\n\n\t\n\nDeveloped the first vaccine (1796) by inoculating a boy with cowpox material to protect against smallpox; introduced the term \"vaccination\".\n\n\t\n\nSmallpox was a highly contagious, often fatal disease with no reliable protection; variolation was risky.\n\n\t\n\nEstablished the principle of vaccination and immunological memory — the foundation of all modern vaccine programmes; regarded as the \"father of immunology\".\n\n\n\n\nLouis Pasteur\n(1822–1895)\n\n\t\n\nDeveloped vaccines against chicken cholera, anthrax and rabies using attenuated (weakened) pathogens; advanced the germ theory of disease.\n\n\t\n\nInfectious diseases caused widespread death; there was no systematic way to induce protective immunity safely.\n\n\t\n\nIntroduced the principle of attenuation and the germ theory, providing the scientific basis for vaccine development and the microbial cause of disease.\n\n\n\n\nÉlie Metchnikoff\n(1845–1916)\n\n\t\n\nDiscovered phagocytosis (1882) — the engulfment of microbes by phagocytic cells (macrophages and neutrophils); founded cellular immunity.\n\n\t\n\nIt was unclear how the body actually eliminates invading microorganisms at the cellular level.\n\n\t\n\nLaid the foundation of cellular immunology and innate immunity; shared the 1908 Nobel Prize with Ehrlich.\n\n\n\n\nPaul Ehrlich\n(1854–1915)\n\n\t\n\nProposed the side-chain (receptor) theory of antibody formation; coined the term \"antibody\"; founded humoral immunity; also pioneered staining and chemotherapy (Salvarsan).\n\n\t\n\nThe specificity of the immune response and how antibodies neutralise toxins were unexplained.\n\n\t\n\nEstablished the concepts of antigen–antibody specificity and cell receptors, underpinning humoral immunity, serology and modern immunopharmacology; shared the 1908 Nobel Prize.\n\n\n\n\nKarl Landsteiner\n(1868–1943)\n\n\t\n\nDiscovered the ABO blood groups (1901) and, with Wiener, the Rh factor (1940); developed the basis of blood typing.\n\n\t\n\nBlood transfusions frequently caused fatal reactions because donor and recipient blood were incompatible.\n\n\t\n\nFounded immunohematology and made safe blood transfusion possible; central to transplantation immunology and the study of alloimmunity; Nobel Prize 1930.\n\nTogether these pioneers illustrate the two arms of immunity — the cellular (Metchnikoff) and the humoral (Ehrlich) — and the practical translation of immunology into vaccination (Jenner, Pasteur) and clinical immunohematology (Landsteiner).\n\nQuestion 3: Evaluating the Claim That Immunology Is Only the Study of How the Body Fights Microorganisms\n\n3.1 The Claim\n\nA student claims: \"Immunology is only the study of how the body fights microorganisms.\"\n\n3.2 Evaluation\n\nThe statement is an oversimplification and is therefore inaccurate. While defence against microorganisms is an important part of immunology, it is not the whole of it. Immunology also studies immune responses directed at harmless substances, at the body's own tissues, and at non-microbial foreign material such as transplanted organs and tumour cells. Two examples outside infectious disease demonstrate this clearly.\n\nExample 1: Autoimmunity\n\nIn autoimmune diseases the immune system mounts a response against the body's own molecules rather than against a microorganism. In Type 1 diabetes, autoreactive T cells and antibodies destroy the insulin-producing β-cells of the pancreas; in rheumatoid arthritis the immune system attacks the synovial lining of joints; in multiple sclerosis it attacks the myelin sheath of nerve cells. No microorganism is being fought — the target is \"self\". Immunology must therefore explain self–non-self discrimination and the breakdown of immune tolerance, which lie outside the study of host–microbe conflict.\n\nExample 2: Allergy (Hypersensitivity)\n\nIn allergy the immune system responds to harmless environmental antigens (allergens) such as pollen, house-dust mite proteins or peanut proteins. Conditions such as allergic rhinitis, asthma and anaphylaxis involve IgE antibodi"
+  },
+  "discover-agents": {
+    "url": "https://teamily.ai/discover?tab=agents",
+    "title": "Discover - Teamily AI",
+    "headings": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "Agents",
+        "aria": null
+      },
+      {
+        "text": "Agent Teams",
+        "aria": null
+      },
+      {
+        "text": "Create My Own Agent",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Filters"
+      },
+      {
+        "text": "",
+        "aria": "Scroll left"
+      },
+      {
+        "text": "All",
+        "aria": "All"
+      },
+      {
+        "text": "Content Creation",
+        "aria": "Content Creation"
+      },
+      {
+        "text": "Customer Support",
+        "aria": "Customer Support"
+      },
+      {
+        "text": "Data Analysis",
+        "aria": "Data Analysis"
+      },
+      {
+        "text": "Design",
+        "aria": "Design"
+      },
+      {
+        "text": "Education",
+        "aria": "Education"
+      },
+      {
+        "text": "Engineering",
+        "aria": "Engineering"
+      },
+      {
+        "text": "Finance",
+        "aria": "Finance"
+      },
+      {
+        "text": "IT & Security",
+        "aria": "IT & Security"
+      },
+      {
+        "text": "Investment",
+        "aria": "Investment"
+      },
+      {
+        "text": "Legal",
+        "aria": "Legal"
+      },
+      {
+        "text": "Life",
+        "aria": "Life"
+      },
+      {
+        "text": "Marketing",
+        "aria": "Marketing"
+      },
+      {
+        "text": "Operations",
+        "aria": "Operations"
+      },
+      {
+        "text": "Product",
+        "aria": "Product"
+      },
+      {
+        "text": "Recruiting",
+        "aria": "Recruiting"
+      },
+      {
+        "text": "Research",
+        "aria": "Research"
+      },
+      {
+        "text": "Sales",
+        "aria": "Sales"
+      },
+      {
+        "text": "",
+        "aria": "Scroll right"
+      },
+      {
+        "text": "Created by:\nTeamily AI",
+        "aria": "Created by: Teamily AI"
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      },
+      {
+        "text": "Chat",
+        "aria": null
+      }
+    ],
+    "inputs": [
+      {
+        "tag": "INPUT",
+        "type": "search",
+        "placeholder": "Search agents…",
+        "name": "",
+        "value": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "7",
+        "href": "/settings/credits-center?tab=onboarding"
+      },
+      {
+        "text": "Chat",
+        "href": "/chat"
+      },
+      {
+        "text": "Agents",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "Discover",
+        "href": "/discover"
+      },
+      {
+        "text": "Memory",
+        "href": "/memory"
+      },
+      {
+        "text": "Artifacts",
+        "href": "/artifacts"
+      }
+    ],
+    "bodyText": "7\nAgents\nAgent Teams\nCreate My Own Agent\nAll\nContent Creation\nCustomer Support\nData Analysis\nDesign\nEducation\nEngineering\nFinance\nIT & Security\nInvestment\nLegal\nLife\nMarketing\nOperations\nProduct\nRecruiting\nResearch\nSales\nCreated by:\nTeamily AI\n\n30 agents shown\n\nContent Creator\nExpert content strategist and creator for multi-platform campaigns. Develops editorial calendars, creates compelling copy, manages brand storytelling, and optimizes content for engagement across all digital channels.\nChat\nImage Prompt Engineer\nExpert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography through generative AI tools.\nChat\nVisual Storyteller\nExpert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design. Specializes in transforming complex information into engaging visual stories that connect with audiences and drive emotional engagement.\nChat\nShort-Video Editing Coach\nHands-on short-video editing coach covering the full post-production pipeline, with mastery of CapCut Pro, Premiere Pro, DaVinci Resolve, and Final Cut Pro across composition and camera language, color grading, audio engineering, motion graphics and VFX, subtitle design, multi-platform export optimization, editing workflow efficiency, and AI-assisted editing.\nChat\nFrontend Developer\nExpert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization\nChat\nData Engineer\nExpert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache Spark, dbt, streaming systems, and cloud data platforms to turn raw data into trusted, analytics-ready assets.\nChat\nAI Engineer\nExpert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions.\nChat\nPitch Deck Builder\nBuilds investor pitch decks and fundraising materials with narrative discipline — from problem framing to the ask, with a full quality gate before delivery.\nChat\nPrompt Engineer\nSpecialist in crafting, testing, and systematically optimizing prompts for LLMs — turning vague instructions into reliable, production-grade AI behaviors.\nChat\nCorporate Training Designer\nExpert in enterprise training system design and curriculum development — proficient in training needs analysis, instructional design methodology, blended learning program design, internal trainer development, leadership programs, and training effectiveness evaluation and continuous optimization.\nChat\nModel QA Specialist\nIndependent model QA expert who audits ML and statistical models end-to-end - from documentation review and data reconstruction to replication, calibration testing, interpretability analysis, performance monitoring, and audit-grade reporting.\nChat\nGrowth Ads Operator\nContent Growth & Advertising Operations Specialist: Responsible for multi-channel content distribution, end-to-end execution of paid advertising campaigns and data reconciliation\nChat\nCode Reviewer\nExpert code reviewer who provides constructive, actionable feedback focused on correctness, maintainability, security, and performance — not style preferences.\nChat\nBackend Architect\nSenior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure. Builds robust, secure, performant server-side applications and microservices\nChat\nStudy Abroad Advisor\nFull-spectrum study abroad planning expert covering the US, UK, Canada, Australia, Europe, Hong Kong, and Singapore — proficient in undergraduate, master's, and PhD application strategy, school selection, essay coaching, profile enhancement, standardized test planning, visa preparation, and overseas life adaptation, helping Chinese students craft personalized end-to-end study abroad plans.\nChat\nChannel Distribution Agent\nExecutive-level Agent of Teamily AI Growth Team: responsible for content distribution on social media, communities and Newsletter, creation and launch of paid ad campaigns, as well as channel data collection and postback, to implement the strategies of Growth Agent across all channels.\nChat\nBug Analysis Agent\nRoot-cause analyst and defect shepherd for Teamily. Bring error logs, anomalies, performance reports, or telemetry — get structured WHERE/WHY/WHO impact analysis and defect payloads ready for filing.\nChat\nEmail Marketing Strategist\nExpert email marketing strategist for CRM-driven campaigns, lifecycle automation, segmentation architecture, and deliverability. Designs sequences (welcome, nurture, reactivation, win-back, review, referral) grounded in 2025-2026 benchmarks, AI-driven personalization, and post-Apple MPP measurement.\nChat\nPersonal Growth Mentor\nCross-domain personal development mentor for goal clarity, habit design, strategic decisions, and accountability without motivational fluff.\nChat\nPsychologist\nExpert in human behavior, personality theory, motivation, and cognitive patterns — builds psychologically credible characters and interactions grounded in clinical and research frameworks\nChat\nGrant Writer\nExpert grant writing specialist for nonprofits, research institutions, and social enterprises — covering prospect research, letter of inquiry writing, full proposal development, budget narratives, federal and foundation grants, and post-award reporting to maximize funding success\nChat\nGlobal Podcast Strategist\nExpert podcast growth specialist focused on show positioning, audience development, content strategy, and monetisation. Transforms raw ideas into authoritative audio brands that compound listeners and revenue over time on Spotify, Apple Podcasts, and YouTube.\nChat\nPodcast Strategist\nContent strategy and operations expert for the Chinese podcast market, with deep expertise in Xiaoyuzhou, Ximalaya, and other major audio platforms, covering show positioning, audio production, audience growth, multi-platform distribution, and monetization to help podcast creators build sticky audio content brands.\nChat\nPrincipal Architect\nA Principal Architect with 15+ years of experience designing production systems — from classical web/enterprise/data-intensive architectures to modern AI/GenAI applications (RAG, agents, copilots). Turns vague requirements into actionable, cost-aware, trade-off-transparent technical solutions.\nChat\nMulti-Platform Publisher\nExpert orchestrator for one-click Chinese blog publishing. Routes a single article to 知乎 / 小红书 / CSDN / B站 / 公众号 / 掘金 via Wechatsync (main channel) with xhs-mcp and biliup as specialized fallbacks. Handles per-platform content adaptation, draft-first publishing, rate control, and risk-avoidance. Does NOT auto-publish — always stops at draft for human review.\nChat\nQA Tester\nQA engineer and release-readiness gatekeeper for Teamily. Delivers test coverage, regression runs, and clear go/no-go verdicts on whether a change is safe to ship.\nChat\nGrowth Hacker\nExpert growth strategist specializing in rapid user acquisition through data-driven experimentation. Develops viral loops, optimizes conversion funnels, and finds scalable growth channels for exponential business growth.\nChat\nDevOps Automator\nExpert DevOps engineer specializing in infrastructure automation, CI/CD pipeline development, and cloud operations\nChat\nReality Checker\nStops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelming proof for production readiness\nChat\nTracking & Measurement Specialist\nExpert in conversion tracking architecture, tag management, and attribution modeling across Google Tag Manager, GA4, Google Ads, Meta CAPI, Linked"
+  },
+  "discover-automations": {
+    "url": "https://teamily.ai/discover?tab=agents&section=automations",
+    "title": "Discover - Teamily AI",
+    "headings": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "Automations",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Filters"
+      },
+      {
+        "text": "My Automations",
+        "aria": "My Automations"
+      },
+      {
+        "text": "Work",
+        "aria": "Work"
+      },
+      {
+        "text": "Life",
+        "aria": "Life"
+      },
+      {
+        "text": "Meeting reminder + prep\nRemind me before a meeting and pull the latest materials",
+        "aria": null
+      },
+      {
+        "text": "Daily work brief\nEvery morning, summarize progress, to-dos and risks",
+        "aria": null
+      },
+      {
+        "text": "Competitor / industry monitor\nKeep watching and ping me when something changes",
+        "aria": null
+      },
+      {
+        "text": "Expert group research\nSpin up an expert agent squad to investigate a question",
+        "aria": null
+      },
+      {
+        "text": "Make a deck / report\nProduce a presentation or report I can publish",
+        "aria": null
+      },
+      {
+        "text": "Build a webpage / tool\nBuild a small web page or utility for a purpose",
+        "aria": null
+      },
+      {
+        "text": "Break down & assign tasks\nSplit a project into sub-tasks and track owners",
+        "aria": null
+      },
+      {
+        "text": "Reply in my voice\nLet my AI Twin draft replies; I confirm anything risky",
+        "aria": null
+      },
+      {
+        "text": "Investment / market research\nAI + finance experts study a strategy together",
+        "aria": null
+      },
+      {
+        "text": "Drive a goal (deck, launch…)\nBreak a big goal into milestones and keep pushing",
+        "aria": null
+      },
+      {
+        "text": "Inbox triage & follow-ups\nSummarize messages and surface what needs a reply",
+        "aria": null
+      },
+      {
+        "text": "Cross-timezone relay\nQueue messages and log decisions across timezones",
+        "aria": null
+      }
+    ],
+    "inputs": [
+      {
+        "tag": "INPUT",
+        "type": "search",
+        "placeholder": "Search automations...",
+        "name": "",
+        "value": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "7",
+        "href": "/settings/credits-center?tab=onboarding"
+      },
+      {
+        "text": "Chat",
+        "href": "/chat"
+      },
+      {
+        "text": "Agents",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "Discover",
+        "href": "/discover"
+      },
+      {
+        "text": "Memory",
+        "href": "/memory"
+      },
+      {
+        "text": "Artifacts",
+        "href": "/artifacts"
+      }
+    ],
+    "bodyText": "7\nAutomations\nMy Automations\nWork\nLife\n\n12 automations shown\n\nMeeting reminder + prep\nRemind me before a meeting and pull the latest materials\nDaily work brief\nEvery morning, summarize progress, to-dos and risks\nCompetitor / industry monitor\nKeep watching and ping me when something changes\nExpert group research\nSpin up an expert agent squad to investigate a question\nMake a deck / report\nProduce a presentation or report I can publish\nBuild a webpage / tool\nBuild a small web page or utility for a purpose\nBreak down & assign tasks\nSplit a project into sub-tasks and track owners\nReply in my voice\nLet my AI Twin draft replies; I confirm anything risky\nInvestment / market research\nAI + finance experts study a strategy together\nDrive a goal (deck, launch…)\nBreak a big goal into milestones and keep pushing\nInbox triage & follow-ups\nSummarize messages and surface what needs a reply\nCross-timezone relay\nQueue messages and log decisions across timezones"
+  },
+  "memory": {
+    "url": "https://teamily.ai/memory",
+    "title": "Teamily AI - The Human–Agent Platform Where You and Always-on Agents Get Work Done Together in One Unified and Context-Aware Space",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Memory"
+      },
+      {
+        "tag": "H1",
+        "text": "Overview"
+      },
+      {
+        "tag": "H2",
+        "text": "Your knowledge map starts here"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "",
+        "aria": "Collapse Memory directory"
+      },
+      {
+        "text": "New",
+        "aria": null
+      },
+      {
+        "text": "All\n2",
+        "aria": null
+      },
+      {
+        "text": "Updates",
+        "aria": null
+      },
+      {
+        "text": "Tags",
+        "aria": null
+      },
+      {
+        "text": "Overview",
+        "aria": null
+      },
+      {
+        "text": "My Profile",
+        "aria": null
+      },
+      {
+        "text": "Next Actions",
+        "aria": null
+      },
+      {
+        "text": "My Artifacts",
+        "aria": null
+      },
+      {
+        "text": "My Meetings",
+        "aria": null
+      },
+      {
+        "text": "Getting Started\n2",
+        "aria": null
+      },
+      {
+        "text": "Teamily Wiki: Your Personal Knowledge Base\nNEW\n\nHow your private wiki builds itself from chats, handles conflicts, and can be referenced anywhere.\n\njust now\n#wiki\n#onboarding",
+        "aria": null
+      },
+      {
+        "text": "Welcome to Teamily\nNEW\n\nWhat Teamily is — Personal AI, agents & teams, group chats, create & publish, and a wiki that builds itself.\n\njust now\n#getting-started\n#onboarding",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Expand Memory directory"
+      },
+      {
+        "text": "",
+        "aria": "Overview"
+      },
+      {
+        "text": "",
+        "aria": "My Profile"
+      },
+      {
+        "text": "",
+        "aria": "Next Actions"
+      },
+      {
+        "text": "",
+        "aria": "My Artifacts"
+      },
+      {
+        "text": "",
+        "aria": "My Meetings"
+      },
+      {
+        "text": "",
+        "aria": "New"
+      },
+      {
+        "text": "Write first page",
+        "aria": null
+      },
+      {
+        "text": "Topic highlights",
+        "aria": null
+      },
+      {
+        "text": "Recent updates",
+        "aria": null
+      }
+    ],
+    "inputs": [
+      {
+        "tag": "INPUT",
+        "type": "search",
+        "placeholder": "Search topics...",
+        "name": "",
+        "value": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "7",
+        "href": "/settings/credits-center?tab=onboarding"
+      },
+      {
+        "text": "Chat",
+        "href": "/chat"
+      },
+      {
+        "text": "Agents",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "Discover",
+        "href": "/discover"
+      },
+      {
+        "text": "Memory",
+        "href": "/memory"
+      },
+      {
+        "text": "Artifacts",
+        "href": "/artifacts"
+      }
+    ],
+    "bodyText": "7\nMemory\nNew\nAll\n2\nUpdates\nTags\nOverview\nMy Profile\nNext Actions\nMy Artifacts\nMy Meetings\nGetting Started\n2\nTeamily Wiki: Your Personal Knowledge Base\nNEW\n\nHow your private wiki builds itself from chats, handles conflicts, and can be referenced anywhere.\n\njust now\n#wiki\n#onboarding\nWelcome to Teamily\nNEW\n\nWhat Teamily is — Personal AI, agents & teams, group chats, create & publish, and a wiki that builds itself.\n\njust now\n#getting-started\n#onboarding\nOverview\nYour knowledge map starts here\n\nCreate two or more pages and Teamily will connect related topics by tags, references, and source chats.\n\nWrite first page\nTopic highlights\nRecent updates\n\nNo topic highlights\n\nTopics show up here once a category has a few connected pages.\n\nClick to inspect · Double-click to open · Hover to preview"
+  },
+  "artifacts": {
+    "url": "https://teamily.ai/artifacts",
+    "title": "Teamily AI - The Human–Agent Platform Where You and Always-on Agents Get Work Done Together in One Unified and Context-Aware Space",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "All Work"
+      },
+      {
+        "tag": "H2",
+        "text": "Your library starts here"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "",
+        "aria": "Collapse sidebar"
+      },
+      {
+        "text": "New",
+        "aria": null
+      },
+      {
+        "text": "Search",
+        "aria": "Search documents"
+      },
+      {
+        "text": "All Work",
+        "aria": null
+      },
+      {
+        "text": "Websites",
+        "aria": null
+      },
+      {
+        "text": "Documents",
+        "aria": null
+      },
+      {
+        "text": "Media",
+        "aria": null
+      },
+      {
+        "text": "Messages",
+        "aria": null
+      },
+      {
+        "text": "Meetings",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Open menu"
+      },
+      {
+        "text": "",
+        "aria": "Expand sidebar"
+      },
+      {
+        "text": "All",
+        "aria": null
+      },
+      {
+        "text": "Created by me",
+        "aria": null
+      },
+      {
+        "text": "Saved",
+        "aria": null
+      },
+      {
+        "text": "Memory",
+        "aria": null
+      },
+      {
+        "text": "Filter",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Grid view"
+      },
+      {
+        "text": "",
+        "aria": "List view"
+      },
+      {
+        "text": "",
+        "aria": "Notifications"
+      },
+      {
+        "text": "Create a cloud document\nStart from a blank page.",
+        "aria": null
+      },
+      {
+        "text": "Build a website with an agent\nDescribe it, and an agent builds it.",
+        "aria": null
+      },
+      {
+        "text": "Save a message from a chat\nRight-click it, then choose “Save to My Artifacts”.",
+        "aria": null
+      }
+    ],
+    "inputs": [
+      {
+        "tag": "INPUT",
+        "type": "file",
+        "placeholder": "",
+        "name": "",
+        "value": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "7",
+        "href": "/settings/credits-center?tab=onboarding"
+      },
+      {
+        "text": "Chat",
+        "href": "/chat"
+      },
+      {
+        "text": "Agents",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "Discover",
+        "href": "/discover"
+      },
+      {
+        "text": "Memory, New updates",
+        "href": "/memory"
+      },
+      {
+        "text": "Artifacts",
+        "href": "/artifacts"
+      }
+    ],
+    "bodyText": "7\n\nArtifacts\n\nNew\nSearch\nAll Work\nWebsites\nDocuments\nMedia\nMessages\nMeetings\nAll Work\nAll\nCreated by me\nSaved\nMemory\nFilter\nYour library starts here\n\nEverything you create or save lands here.\n\nCreate a cloud document\nStart from a blank page.\nBuild a website with an agent\nDescribe it, and an agent builds it.\nSave a message from a chat\nRight-click it, then choose “Save to My Artifacts”."
+  },
+  "profile-me": {
+    "url": "https://teamily.ai/profile/8294976623155895?source=me",
+    "title": "Teamily user · Teamily",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "powlowskijoshuah"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "",
+        "aria": "Edit profile"
+      },
+      {
+        "text": "",
+        "aria": "Contacts"
+      },
+      {
+        "text": "",
+        "aria": "Notifications"
+      },
+      {
+        "text": "",
+        "aria": "Share profile"
+      },
+      {
+        "text": "",
+        "aria": "Contacts"
+      },
+      {
+        "text": "",
+        "aria": "Notifications"
+      },
+      {
+        "text": "",
+        "aria": "Share profile"
+      },
+      {
+        "text": "",
+        "aria": "Open settings"
+      },
+      {
+        "text": "0\n\nFollowing",
+        "aria": null
+      },
+      {
+        "text": "0\n\nFollowers",
+        "aria": null
+      },
+      {
+        "text": "Edit profile",
+        "aria": null
+      },
+      {
+        "text": "Posts",
+        "aria": "Posts"
+      },
+      {
+        "text": "Favorites",
+        "aria": "Favorites"
+      },
+      {
+        "text": "Likes",
+        "aria": "Likes"
+      }
+    ],
+    "inputs": [],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "7",
+        "href": "/settings/credits-center?tab=onboarding"
+      }
+    ],
+    "bodyText": "7\npowlowskijoshuah\n\n0\n\nFollowing\n\n0\n\nFollowers\n\n0\n\nLikes & Saves\n\nPosts\nFavorites\nLikes\nNo posts yet. Create your first post."
+  },
+  "credits-onboarding": {
+    "url": "https://teamily.ai/settings/credits-center?tab=onboarding",
+    "title": "Teamily AI - The Human–Agent Platform Where You and Always-on Agents Get Work Done Together in One Unified and Context-Aware Space",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Credits Center"
+      },
+      {
+        "tag": "H2",
+        "text": "Finish Your First-Week Tasks"
+      },
+      {
+        "tag": "H2",
+        "text": "Earn Up to 12 CREDITS"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "",
+        "aria": "Back"
+      },
+      {
+        "text": "Onboarding",
+        "aria": null
+      },
+      {
+        "text": "Invite",
+        "aria": null
+      },
+      {
+        "text": "Leaderboard",
+        "aria": null
+      },
+      {
+        "text": "My Credits",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "How the Math Works"
+      },
+      {
+        "text": "Buy Plus",
+        "aria": null
+      },
+      {
+        "text": "Invite 3 Friends to Join Teamily AI\n+1CREDIT",
+        "aria": null
+      },
+      {
+        "text": "Create a Group with 3 Friends and Complete an Agentic Task\n+1CREDIT",
+        "aria": null
+      },
+      {
+        "text": "Complete Your Profile, Including Life Goals\n+1CREDIT",
+        "aria": null
+      },
+      {
+        "text": "Create an Agent, Set It Up on Any Channel, and Get a Reply\n+1CREDIT",
+        "aria": null
+      },
+      {
+        "text": "Hold a Group Meeting, Generate Notes, and View Them in Artifacts\n+1CREDIT",
+        "aria": null
+      },
+      {
+        "text": "Create a Website, Video, or Article with AI, Share to Community\n+1CREDIT",
+        "aria": null
+      },
+      {
+        "text": "Apply Credits",
+        "aria": null
+      }
+    ],
+    "inputs": [],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "7",
+        "href": "/settings/credits-center?tab=onboarding"
+      }
+    ],
+    "bodyText": "7\nCredits Center\nOnboarding\nInvite\nLeaderboard\nMy Credits\nFIRST-7-DAYS BONUS\nFinish Your First-Week Tasks\nEarn Up to 12 CREDITS\nBuy Plus\n0\nof 7 CREDITS\n0% complete\nTASKS\nInvite 3 Friends to Join Teamily AI\n+1CREDIT\nCreate a Group with 3 Friends and Complete an Agentic Task\n+1CREDIT\nComplete Your Profile, Including Life Goals\n+1CREDIT\nCreate an Agent, Set It Up on Any Channel, and Get a Reply\n+1CREDIT\nHold a Group Meeting, Generate Notes, and View Them in Artifacts\n+1CREDIT\nCreate a Website, Video, or Article with AI, Share to Community\n+1CREDIT\nLog In to Teamily 3 Days in a Row\n+1CREDIT\nAuto-credited\nApply Credits"
+  },
+  "settings": {
+    "url": "https://teamily.ai/settings",
+    "title": "Teamily AI - The Human–Agent Platform Where You and Always-on Agents Get Work Done Together in One Unified and Context-Aware Space",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Settings"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Menu"
+      },
+      {
+        "text": "Upgrade",
+        "aria": null
+      },
+      {
+        "text": "Account & Profile",
+        "aria": null
+      },
+      {
+        "text": "Create to Earn\n0.00 $CASH earned",
+        "aria": null
+      },
+      {
+        "text": "Credit Center\n0 CREDIT balance",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "What a CREDIT is worth here"
+      },
+      {
+        "text": "Affiliate Program\n0.00 $CASH earned",
+        "aria": null
+      },
+      {
+        "text": "Plan & Billing\nFree",
+        "aria": null
+      },
+      {
+        "text": "Usage\n100% remaining",
+        "aria": null
+      },
+      {
+        "text": "Language\nEnglish",
+        "aria": null
+      },
+      {
+        "text": "Channels for Teamily Agent",
+        "aria": null
+      },
+      {
+        "text": "Agent API\nWho can reach your agents from outside Teamily: websites, APIs, AI clients",
+        "aria": null
+      },
+      {
+        "text": "Skill Configuration",
+        "aria": null
+      },
+      {
+        "text": "App Connectors\nThird-party accounts your agents can use",
+        "aria": null
+      },
+      {
+        "text": "Runtimes",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Link Previews"
+      },
+      {
+        "text": "",
+        "aria": "Show Link Previews"
+      },
+      {
+        "text": "",
+        "aria": "Task completion alerts"
+      },
+      {
+        "text": "",
+        "aria": "Task completion alerts"
+      },
+      {
+        "text": "Message folding\nStandard",
+        "aria": null
+      },
+      {
+        "text": "Appearance\nAuto",
+        "aria": null
+      },
+      {
+        "text": "Privacy Settings",
+        "aria": null
+      },
+      {
+        "text": "Keyboard shortcuts",
+        "aria": null
+      },
+      {
+        "text": "Help Center",
+        "aria": null
+      },
+      {
+        "text": "Feature guide",
+        "aria": null
+      },
+      {
+        "text": "Terms of Service",
+        "aria": null
+      },
+      {
+        "text": "Privacy Policy",
+        "aria": null
+      },
+      {
+        "text": "Refund Policy",
+        "aria": null
+      },
+      {
+        "text": "About\nrelease-20261105-142310-331",
+        "aria": null
+      },
+      {
+        "text": "Sign Out",
+        "aria": null
+      }
+    ],
+    "inputs": [],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/chat"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents&section=automations"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/memory"
+      },
+      {
+        "text": "",
+        "href": "/artifacts"
+      },
+      {
+        "text": "",
+        "href": "/profile/8294976623155895?source=me"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "",
+        "href": "/pricing"
+      },
+      {
+        "text": "7",
+        "href": "/settings/credits-center?tab=onboarding"
+      },
+      {
+        "text": "",
+        "href": "https://x.com/intent/follow?screen_name=Teamily_AI"
+      },
+      {
+        "text": "",
+        "href": "https://www.linkedin.com/company/teamilyai"
+      },
+      {
+        "text": "",
+        "href": "https://discord.gg/P37XmCKUqj"
+      }
+    ],
+    "bodyText": "7\nSettings\n100%\n\nResets in 0m\n\nFree plan · 5h window\n\nUpgrade\nACCOUNT & PROFILE\nAccount & Profile\nCREATOR & REWARDS\nCreate to Earn\n0.00 $CASH earned\nCredit Center\n0 CREDIT balance\nAffiliate Program\n0.00 $CASH earned\nPLAN, BILLING & USAGE\nPlan & Billing\nFree\nUsage\n100% remaining\nAI & AGENT SETUP\nLanguage\nEnglish\nChannels for Teamily Agent\nAgent API\nWho can reach your agents from outside Teamily: websites, APIs, AI clients\nSkill Configuration\nApp Connectors\nThird-party accounts your agents can use\nRuntimes\nPREFERENCES & SECURITY\nShow Link Previews\nTask completion alerts\nMessage folding\nStandard\nAppearance\nAuto\nPrivacy Settings\nKeyboard shortcuts\nSUPPORT & LEGAL\nHelp Center\nFeature guide\nTerms of Service\nPrivacy Policy\nRefund Policy\nAbout\nrelease-20261105-142310-331\nSESSION\nSign Out"
+  }
+}

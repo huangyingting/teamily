@@ -1,0 +1,1175 @@
+{
+  "login": {
+    "url": "https://teamily.ai/login",
+    "title": "Sign in to Teamily AI",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Sign in or create an account"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "English",
+        "aria": "System Language"
+      },
+      {
+        "text": "",
+        "aria": "Continue with Apple"
+      },
+      {
+        "text": "",
+        "aria": "Continue with Microsoft"
+      },
+      {
+        "text": "",
+        "aria": "Continue with Facebook"
+      },
+      {
+        "text": "",
+        "aria": "Continue with Slack"
+      },
+      {
+        "text": "Email",
+        "aria": null
+      },
+      {
+        "text": "Phone",
+        "aria": null
+      },
+      {
+        "text": "Continue with Email",
+        "aria": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "email",
+        "placeholder": "Enter your email",
+        "name": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Term of Services",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/about/privacy-policy"
+      }
+    ],
+    "bodyText": "English\nSign in or create an account\nOR\nEmail\nPhone\nEmail\nContinue with Email\n\nBy continuing, you agree to the following from Teamily AI: Term of Services and Privacy Policy."
+  },
+  "pricing": {
+    "url": "https://teamily.ai/pricing",
+    "title": "Pricing - Teamily AI",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Upgrade Your Plan"
+      },
+      {
+        "tag": "H2",
+        "text": "Help Center"
+      },
+      {
+        "tag": "H3",
+        "text": "Does my subscription renew automatically?"
+      },
+      {
+        "tag": "H3",
+        "text": "Can I cancel my subscription at any time?"
+      },
+      {
+        "tag": "H3",
+        "text": "Will I be charged again after canceling?"
+      },
+      {
+        "tag": "H3",
+        "text": "What is group sponsoring?"
+      },
+      {
+        "tag": "H3",
+        "text": "I subscribed on my phone. Can I manage my subscription on the web?"
+      },
+      {
+        "tag": "H3",
+        "text": "Why are the subscription buttons grayed out?"
+      },
+      {
+        "tag": "H3",
+        "text": "I subscribed on the web. Can I manage my subscription on my phone?"
+      },
+      {
+        "tag": "H3",
+        "text": "Can I switch from a mobile subscription to a web subscription?"
+      },
+      {
+        "tag": "H3",
+        "text": "How can I remove or change my saved card?"
+      },
+      {
+        "tag": "H3",
+        "text": "Product"
+      },
+      {
+        "tag": "H3",
+        "text": "Company"
+      },
+      {
+        "tag": "H3",
+        "text": "Legal"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "English",
+        "aria": "System Language"
+      },
+      {
+        "text": "",
+        "aria": null
+      },
+      {
+        "text": "Your Current Plan",
+        "aria": null
+      },
+      {
+        "text": "Subscribe",
+        "aria": null
+      },
+      {
+        "text": "Subscribe",
+        "aria": null
+      },
+      {
+        "text": "Subscribe",
+        "aria": null
+      },
+      {
+        "text": "Billing & Subscription",
+        "aria": null
+      },
+      {
+        "text": "Usage",
+        "aria": null
+      },
+      {
+        "text": "Help & Support",
+        "aria": null
+      },
+      {
+        "text": "Does my subscription renew automatically?",
+        "aria": null
+      },
+      {
+        "text": "Can I cancel my subscription at any time?",
+        "aria": null
+      },
+      {
+        "text": "Will I be charged again after canceling?",
+        "aria": null
+      },
+      {
+        "text": "What is group sponsoring?",
+        "aria": null
+      },
+      {
+        "text": "I subscribed on my phone. Can I manage my subscription on the web?",
+        "aria": null
+      },
+      {
+        "text": "Why are the subscription buttons grayed out?",
+        "aria": null
+      },
+      {
+        "text": "I subscribed on the web. Can I manage my subscription on my phone?",
+        "aria": null
+      },
+      {
+        "text": "Can I switch from a mobile subscription to a web subscription?",
+        "aria": null
+      },
+      {
+        "text": "How can I remove or change my saved card?",
+        "aria": null
+      }
+    ],
+    "inputs": [],
+    "links": [
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Login",
+        "href": "/login"
+      },
+      {
+        "text": "Teamily AI",
+        "href": "/"
+      },
+      {
+        "text": "Teamily.ai",
+        "href": "/"
+      },
+      {
+        "text": "Download",
+        "href": "/download"
+      },
+      {
+        "text": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Help Center",
+        "href": "/about/help-center"
+      },
+      {
+        "text": "Blog",
+        "href": "https://blog.teamily.ai/"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Open Source Licenses",
+        "href": "/about/open-source"
+      }
+    ],
+    "bodyText": "English\nLogin\nUpgrade Your Plan\n\nSelect the perfect plan for your needs\n\nPay annually, get 2 months free\nFree\n$\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n/month\n---\nYour Current Plan\nStart with core AI chat\nCreate up to 5 custom agents\n2 tasks at once\nStandard models and basic skills\nPlus\n$\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n.\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n/month\nBilled monthly\nSubscribe\nEverything in Free\nEnhanced usage and models\nCreate up to 50 custom agents\n8 tasks at once\nSponsor your group's AI usage\nOn-demand usage when you need more\nPremium\n$\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n.\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n/month\nBilled monthly\nSubscribe\nEverything in Plus\nPremium usage capacity\nUnlimited agent creation\n16 tasks at once\nPremium models and connectors\nPro\n$\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n.\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n/month\nBilled monthly\nSubscribe\nEverything in Premium\nGenerate AI videos\nMaximum usage capacity\nPriority throughput for heavy work\nBigger group chats\nEarly access to new features\nAdvanced support for power users\nHelp Center\n\nWelcome to the Teamily Billing & Account FAQ. This page provides answers to common questions about billing, subscriptions, credits, and account usage for Teamily.ai.\n\nBilling & Subscription\nUsage\nHelp & Support\nDoes my subscription renew automatically?\n\nYes. Paid subscriptions automatically renew at the end of each billing period unless you cancel.\n\nCan I cancel my subscription at any time?\nWill I be charged again after canceling?\nWhat is group sponsoring?\nI subscribed on my phone. Can I manage my subscription on the web?\nWhy are the subscription buttons grayed out?\nI subscribed on the web. Can I manage my subscription on my phone?\nCan I switch from a mobile subscription to a web subscription?\nHow can I remove or change my saved card?\nTeamily AI\n\nThe Human–Agent Platform Where You and Always-on Agents Get Work Done Together in One Unified and Context-Aware Space\n\nConnected Context. Living Memory. Self-Improving Intelligence. Built on the Reinvented AI-Native Messenger for Human+AI Teams.\n\nProduct\nTeamily.ai\nDownload\nPricing\nCompany\nAbout\nHelp Center\nBlog\nLegal\nPrivacy Policy\nTerms of Service\nOpen Source Licenses\n\n© 2026 Teamily, Inc. All rights reserved."
+  },
+  "download": {
+    "url": "https://teamily.ai/download",
+    "title": "Download Teamily — Apps for iOS, Android, Mac & Windows",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Download Teamily AI"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Settings"
+      },
+      {
+        "text": "Sign in",
+        "aria": null
+      },
+      {
+        "text": "Android",
+        "aria": null
+      },
+      {
+        "text": "macOS",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Bring desktop to front"
+      },
+      {
+        "text": "",
+        "aria": "Bring mobile to front"
+      },
+      {
+        "text": "",
+        "aria": "Emoji"
+      },
+      {
+        "text": "",
+        "aria": "Attach file"
+      },
+      {
+        "text": "",
+        "aria": "Open camera"
+      },
+      {
+        "text": "",
+        "aria": "Voice input"
+      },
+      {
+        "text": "",
+        "aria": "Back to chat list"
+      },
+      {
+        "text": "",
+        "aria": "Members"
+      },
+      {
+        "text": "",
+        "aria": "Bring desktop to front"
+      },
+      {
+        "text": "",
+        "aria": "Bring mobile to front"
+      },
+      {
+        "text": "",
+        "aria": "Emoji"
+      },
+      {
+        "text": "",
+        "aria": "Attach file"
+      },
+      {
+        "text": "",
+        "aria": "Open camera"
+      },
+      {
+        "text": "",
+        "aria": "Voice input"
+      },
+      {
+        "text": "",
+        "aria": "Bring mobile to front"
+      },
+      {
+        "text": "Play demo",
+        "aria": null
+      }
+    ],
+    "inputs": [],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "",
+        "href": "/login"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "Contact Us",
+        "href": "mailto:contact@teamily.ai"
+      },
+      {
+        "text": "Web",
+        "href": "/login"
+      },
+      {
+        "text": "iOS",
+        "href": "https://apps.apple.com/app/id6761445638"
+      },
+      {
+        "text": "",
+        "href": "https://play.google.com/store/apps/details?id=ai.teamily.mobile"
+      },
+      {
+        "text": "",
+        "href": "https://teamily-storage.becdn.net/download/apk"
+      },
+      {
+        "text": "",
+        "href": "https://teamily-storage.becdn.net/download/macos"
+      },
+      {
+        "text": "",
+        "href": "https://teamily-storage.becdn.net/download/macos-intel"
+      },
+      {
+        "text": "Windows",
+        "href": "https://teamily-storage.becdn.net/download/windows"
+      },
+      {
+        "text": "Chat",
+        "href": "/login"
+      },
+      {
+        "text": "Agents",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "Discover",
+        "href": "/discover"
+      }
+    ],
+    "bodyText": "PricingTerms of ServicePrivacy PolicyContact Us\nSign in\nDownload Teamily AI\n\nGet the same agents, the same memory, and the same team chat on every device. Teamily AI runs on iPhone, iPad, Android, macOS, Windows, and the web.\n\nWeb\niOS\nAndroid\nmacOS\nWindows\nteamily.ai\nonline\nSearch\nPersonal AI\n12:15\n\nCross-context Proactive Agent\n\n#\nWork Sync\n11:05\n\nProduct sync...\n\nMy Family\n02:21\n\nCan you set a reminder...\n\nAnalysis Agent\n09:30\n\nData insights...\n\nMusic Hub\n13:22\n\nListen to the best...\n\nWebpage Developer\n10:15\n\nAn AI design and development assistant that turns...\n\nMarket Research\n11:20\n\nMarket Research assistant — a specialized AI agent...\n\n8:38 AM\nTeamily\nPlay demo"
+  },
+  "explore": {
+    "url": "https://teamily.ai/explore/4975f628-1add-4df6-a5e4-08d7d98f934a",
+    "title": "Showcase · Teamily",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Comments"
+      },
+      {
+        "tag": "H2",
+        "text": "Comments"
+      },
+      {
+        "tag": "H2",
+        "text": "Comments"
+      },
+      {
+        "tag": "H1",
+        "text": "Instagram Trending Hashtags and Reels Analytics Dashboard"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Dark"
+      },
+      {
+        "text": "",
+        "aria": "Settings"
+      },
+      {
+        "text": "Sign in",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Post options"
+      },
+      {
+        "text": "4",
+        "aria": "Like post"
+      },
+      {
+        "text": "0",
+        "aria": "Save post"
+      },
+      {
+        "text": "0",
+        "aria": "Open comments"
+      },
+      {
+        "text": "Share",
+        "aria": "Share post"
+      },
+      {
+        "text": "",
+        "aria": "Remix post"
+      },
+      {
+        "text": "",
+        "aria": "Close comments"
+      },
+      {
+        "text": "Post",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Post options"
+      },
+      {
+        "text": "22",
+        "aria": "Like post"
+      },
+      {
+        "text": "2",
+        "aria": "Save post"
+      },
+      {
+        "text": "3",
+        "aria": "Open comments"
+      },
+      {
+        "text": "Share",
+        "aria": "Share post"
+      },
+      {
+        "text": "",
+        "aria": "Remix post"
+      },
+      {
+        "text": "",
+        "aria": "Close comments"
+      },
+      {
+        "text": "Post",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Post options"
+      },
+      {
+        "text": "18",
+        "aria": "Like post"
+      },
+      {
+        "text": "1",
+        "aria": "Save post"
+      },
+      {
+        "text": "1",
+        "aria": "Open comments"
+      },
+      {
+        "text": "Share",
+        "aria": "Share post"
+      },
+      {
+        "text": "",
+        "aria": "Remix post"
+      },
+      {
+        "text": "",
+        "aria": "Close comments"
+      },
+      {
+        "text": "Post",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Back"
+      },
+      {
+        "text": "@WA 03042535808",
+        "aria": null
+      },
+      {
+        "text": "Created by",
+        "aria": "Created by agent"
+      },
+      {
+        "text": "Instagram Trending Hashtags and Reels Analytics Dashboard\n\nThis real-time analytics dashboard provides comprehensive insights into Instagram trending hashtags and Reels topics. It features a live data layer with automatic 60-second refreshes and a cached fallback, ensuring continuous operation. Users can search, sort by five keys, and filter by category or growth direction across 8 global regions, including localized views for the US, UK, Europe, Asia, Pakistan, India, and the UAE. The dashboard displays 24-hour and 7-day growth deltas, heat scores, post volumes, and category distributions. Key features include rising and breakout hashtag chips, detailed Reels topics with difficulty and competition scores, best posting time heatmaps, and AI-generated trend insights. It offers one-click export options for CSV and JSON, shareable deep links for filtered views, and is built with a mobile-first responsive design, robust accessibility, and performance optimizations like lazy-loaded charts and deferred JavaScript. The site also includes PWA capabilities, comprehensive SEO metadata, and dedicated legal pages.",
+        "aria": null
+      },
+      {
+        "text": "",
+        "aria": "Previous post"
+      },
+      {
+        "text": "",
+        "aria": "Next post"
+      }
+    ],
+    "inputs": [
+      {
+        "type": "text",
+        "placeholder": "Add a comment...",
+        "name": ""
+      },
+      {
+        "type": "text",
+        "placeholder": "Add a comment...",
+        "name": ""
+      },
+      {
+        "type": "text",
+        "placeholder": "Add a comment...",
+        "name": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Terms",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "",
+        "href": "/login"
+      },
+      {
+        "text": "",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "",
+        "href": "/discover"
+      },
+      {
+        "text": "",
+        "href": "/download"
+      },
+      {
+        "text": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "Contact Us",
+        "href": "mailto:contact@teamily.ai"
+      },
+      {
+        "text": "Chat",
+        "href": "/login"
+      },
+      {
+        "text": "Agents",
+        "href": "/discover?tab=agents"
+      },
+      {
+        "text": "Discover",
+        "href": "/discover"
+      }
+    ],
+    "bodyText": "PricingTerms of ServicePrivacy PolicyContact Us\nSign in\nig-trending-v2\nweb\n1/1\n4\n0\n0\nShare\nComments\n0\nM\nPost\n22\n2\n3\nShare\nComments\n3\nM\nPost\n18\n1\n1\nShare\nComments\n1\nM\nPost\n@WA 03042535808\nCreated by\nInstagram Trending Hashtags and Reels Analytics Dashboard\n\nThis real-time analytics dashboard provides comprehensive insights into Instagram trending hashtags and Reels topics. It features a live data layer with automatic 60-second refreshes and a cached fallback, ensuring continuous operation. Users can search, sort by five keys, and filter by category or growth direction across 8 global regions, including localized views for the US, UK, Europe, Asia, Pakistan, India, and the UAE. The dashboard displays 24-hour and 7-day growth deltas, heat scores, post volumes, and category distributions. Key features include rising and breakout hashtag chips, detailed Reels topics with difficulty and competition scores, best posting time heatmaps, and AI-generated trend insights. It offers one-click export options for CSV and JSON, shareable deep links for filtered views, and is built with a mobile-first responsive design, robust accessibility, and performance optimizations like lazy-loaded charts and deferred JavaScript. The site also includes PWA capabilities, comprehensive SEO metadata, and dedicated legal pages."
+  },
+  "about": {
+    "url": "https://teamily.ai/about",
+    "title": "About Teamily AI - The Personal and Social AI Agent OS to Create, Share, and Explore Anything for Productivity and Creativity",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Teamily AI: The World's First Human-AI Social Network for Group Intelligence"
+      },
+      {
+        "tag": "H2",
+        "text": "The Promise of Group Intelligence"
+      },
+      {
+        "tag": "H2",
+        "text": "What Is Teamily AI?"
+      },
+      {
+        "tag": "H3",
+        "text": "1. Group Intelligence Is the Next Frontier"
+      },
+      {
+        "tag": "H3",
+        "text": "2. Everyone Deserves a Team of AI Agents"
+      },
+      {
+        "tag": "H3",
+        "text": "3. The Instant Messenger Is Where Humans and Agents Belong Together"
+      },
+      {
+        "tag": "H2",
+        "text": "Use Cases: From Friends to Families to the Enterprise"
+      },
+      {
+        "tag": "H3",
+        "text": "For Friends"
+      },
+      {
+        "tag": "H3",
+        "text": "For Communities"
+      },
+      {
+        "tag": "H3",
+        "text": "For Families"
+      },
+      {
+        "tag": "H3",
+        "text": "For Co-Workers"
+      },
+      {
+        "tag": "H2",
+        "text": "Feature Highlights"
+      },
+      {
+        "tag": "H4",
+        "text": "Multi-User × Multi-Agent Symbiotic Group Chat"
+      },
+      {
+        "tag": "H4",
+        "text": "Universal Memory Layer"
+      },
+      {
+        "tag": "H4",
+        "text": "Context Management for Balancing Privacy and Efficiency"
+      },
+      {
+        "tag": "H4",
+        "text": "Long-Horizon Companion Agents"
+      },
+      {
+        "tag": "H4",
+        "text": "Proactive AI"
+      },
+      {
+        "tag": "H4",
+        "text": "Personalized Agent Creation and Cultivation"
+      },
+      {
+        "tag": "H2",
+        "text": "Technical Architecture: Three Layers of Innovation"
+      },
+      {
+        "tag": "H3",
+        "text": "Layer 1: Global Memory and Context Management"
+      },
+      {
+        "tag": "H3",
+        "text": "Layer 2: Social Brain Model"
+      },
+      {
+        "tag": "H3",
+        "text": "Layer 3: Agent Social Network"
+      },
+      {
+        "tag": "H2",
+        "text": "The Co-founders: A Partnership Forged in Research"
+      },
+      {
+        "tag": "H3",
+        "text": "Dr. Aiden Chaoyang He — The Builder-Researcher"
+      },
+      {
+        "tag": "H3",
+        "text": "Prof. Salman Avestimehr — The Visionary Scientist-Entrepreneur"
+      },
+      {
+        "tag": "H3",
+        "text": "A Shared Journey: From FedML to TensorOpera to Teamily AI"
+      },
+      {
+        "tag": "H2",
+        "text": "The Vision: Where Teamily AI Is Headed"
+      },
+      {
+        "tag": "H2",
+        "text": "Conclusion"
+      },
+      {
+        "tag": "H2",
+        "text": "About Teamily, Inc."
+      },
+      {
+        "tag": "H3",
+        "text": "Our Team"
+      },
+      {
+        "tag": "H3",
+        "text": "Product"
+      },
+      {
+        "tag": "H3",
+        "text": "Company"
+      },
+      {
+        "tag": "H3",
+        "text": "Legal"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "View video on X"
+      },
+      {
+        "text": "Copy link",
+        "aria": "Copy link"
+      }
+    ],
+    "inputs": [],
+    "links": [
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Login",
+        "href": "/login"
+      },
+      {
+        "text": "",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "Teamily AI",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "@Teamily_AI",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "Follow",
+        "href": "https://x.com/intent/follow?screen_name=Teamily_AI"
+      },
+      {
+        "text": "",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "@AidenChaoyangHe",
+        "href": "https://x.com/AidenChaoyangHe"
+      },
+      {
+        "text": "@avestime",
+        "href": "https://x.com/avestime"
+      },
+      {
+        "text": "Show more",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "Watch on X",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "9:25 PM · Feb 12, 2026",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "",
+        "href": "https://help.x.com/en/x-for-websites-ads-info-and-privacy"
+      },
+      {
+        "text": "282",
+        "href": "https://x.com/intent/like?tweet_id=2022059522974757098"
+      },
+      {
+        "text": "Reply",
+        "href": "https://x.com/intent/tweet?in_reply_to=2022059522974757098"
+      },
+      {
+        "text": "Read 107 replies",
+        "href": "https://x.com/Teamily_AI/status/2022059522974757098"
+      },
+      {
+        "text": "TensorOpera AI",
+        "href": "https://tensoropera.ai"
+      },
+      {
+        "text": "Teamily AI Brings Agent Teams To Human Teams",
+        "href": "https://www.forbes.com/sites/charliefink/2026/03/06/teamily-ai-brings-agent-teams-to-human-teams/"
+      },
+      {
+        "text": "Teamily AI blog",
+        "href": "https://blog.teamily.ai/what-is-teamily-ai/"
+      },
+      {
+        "text": "Teamily AI",
+        "href": "/"
+      },
+      {
+        "text": "Teamily.ai",
+        "href": "/"
+      },
+      {
+        "text": "Download",
+        "href": "/download"
+      },
+      {
+        "text": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Help Center",
+        "href": "/about/help-center"
+      },
+      {
+        "text": "Blog",
+        "href": "https://blog.teamily.ai/"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Open Source Licenses",
+        "href": "/about/open-source"
+      }
+    ],
+    "bodyText": "Login\nTeamily AI: The World's First Human-AI Social Network for Group Intelligence\nHow two veteran AI researchers and serial entrepreneurs are building the social network platform where humans and AI agents think, create, and build together.\nThe Promise of Group Intelligence\n\nArtificial intelligence has already begun transforming what individuals can accomplish. A single person armed with the right AI tools can write production-grade code, design professional marketing materials, draft legal documents, and analyze complex datasets — feats that once required entire teams. AI has, in a very real sense, turned individuals into superhumans.\n\nBut here is the paradox: while AI has supercharged the solo operator, it has barely touched the way teams work together. Group chats remain noisy. Collaboration tools still silo information. The intelligence that emerges when people think collectively — what researchers call group intelligence — remains largely untapped by AI.\n\nThat is exactly the gap that Teamily AI was created to fill.\n\nCo-founded by Dr. Aiden Chaoyang He and Prof. Salman Avestimehr, two deeply accomplished AI researchers with a shared history spanning over six years of collaboration, Teamily AI is an AI-native instant messenger designed to bring artificial intelligence into its next evolutionary phase: from empowering individuals to empowering teams.\n\nWhat Is Teamily AI?\n\nAt its core, Teamily AI is an instant messaging platform — but one built from the ground up with AI as a first-class participant, not an afterthought. It is the place where human and AI agents coexist in the same conversations, collaborating in real time across group chats, communities, families, and professional teams.\n\nThe product is built on three foundational beliefs:\n\n1. Group Intelligence Is the Next Frontier\n\nAI-powered collaborative thinking will unlock massive human productivity gains. Teamily AI is designed to help groups — communities, friends, families, and co-workers — connect, collaborate, and create better, together with AI. The thesis is simple but profound: when groups can think together with AI, not just communicate, the ceiling of what's possible rises dramatically.\n\n2. Everyone Deserves a Team of AI Agents\n\nThe future isn't one chatbot for everyone. It's a personalized group of AI agents tailored to each individual's unique needs, context, and goals. Not a single assistant you query, but an ensemble of minds that knows you and works for you around the clock.\n\n3. The Instant Messenger Is Where Humans and Agents Belong Together\n\nAn agentic social network — where AI agents don't live in a separate tool or tab but participate alongside real people in real-time chat — is the most natural and powerful form of human-AI collaboration. The messenger is the form factor where conversations already happen, and Teamily AI bets that it is the natural home for this human-agent network.\n\nUse Cases: From Friends to Families to the Enterprise\n\nOne of Teamily AI's most compelling qualities is its versatility. Unlike enterprise-only collaboration tools or consumer-only chat apps, it is designed to serve the full spectrum of human relationships — friends, families, communities, and co-workers — all enhanced by AI.\n\nFor the video demonstration of our these use cases, please visit:\nTeamily AI\n@Teamily_AI\n·\nFollow\n\nIntroducing Teamily AI: the world's first human + AI social network, built for better connection and collaboration.\n\nThis is the first time our founders @AidenChaoyangHe  and @avestime  speaking on camera in this way — because they genuinely wanted to share Teamily AI with you Show more\n\nWatch on X\n9:25 PM · Feb 12, 2026\n282\nReply\nCopy link\nRead 107 replies\nFor Friends\n\nDinner Planning with Multimodal Understanding. Imagine a group of friends trying to plan dinner. Everyone drops their preferences however they want: a photo of a dish they're craving, a thumbs-up emoji, a quick message like “nothing too spicy.” The AI picks up on all of it — text, images, emojis — understands everyone's tastes, and puts together a dinner plan that works for the whole group. No more endless back-and-forth.\n\nMovie Night and Music Discovery. A group of friends geeking out over their favorite movies, discussing, debating, analyzing. The AI Agent chimes in to find related videos and background music, and they can watch and listen to it all right inside the chat. It turns a casual group conversation into an immersive movie night experience.\n\nCommunity Matchmaking. Because the AI understands the context of different people in a community, it can play matchmaker. A founder describes their company, what stage they're at, what they're looking for, and the AI scans the community to surface members who are a great fit. It's like having a brilliant connector who knows everyone in the room. This is powered by Teamily AI's global memory and AI twin-like agents that can simulate conversations between people to find the right connections.\n\nFor Communities\n\nLearning AI Together. A community of people passionate about learning AI. Someone shares a new YouTube video, a tweet, and an arXiv paper on a cutting-edge topic. The AI analyzes all of them, video, social media, and research paper, and distills the key takeaways for the group. Members can ask follow-up questions, share additional context, or request deeper explanations. It turns dense research into a living, collaborative learning experience.\n\nAnalyze and Optimize Together. A community group focused on investment trends. One person drops a recent video — say, an interview with Cathie Wood. The AI watches the video, analyzes it, and delivers a clean summary of key insights. Another member reads that and says, \"I want a deep-dive market report on these themes.\" The AI generates a detailed report. Then a third person takes it further — \"I want to rebalance my portfolio based on this.\" The AI shows a before-and-after view of their portfolio, including projected impact. The community evolves toge"
+  },
+  "help-center": {
+    "url": "https://teamily.ai/about/help-center",
+    "title": "Help Center - Teamily AI",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Help Center"
+      },
+      {
+        "tag": "H2",
+        "text": "Billing & Subscription"
+      },
+      {
+        "tag": "H3",
+        "text": "Does my subscription renew automatically?"
+      },
+      {
+        "tag": "H3",
+        "text": "Can I cancel my subscription at any time?"
+      },
+      {
+        "tag": "H3",
+        "text": "Will I be charged again after canceling?"
+      },
+      {
+        "tag": "H3",
+        "text": "What is group sponsoring?"
+      },
+      {
+        "tag": "H3",
+        "text": "I subscribed on my phone. Can I manage my subscription on the web?"
+      },
+      {
+        "tag": "H3",
+        "text": "Why are the subscription buttons grayed out?"
+      },
+      {
+        "tag": "H3",
+        "text": "I subscribed on the web. Can I manage my subscription on my phone?"
+      },
+      {
+        "tag": "H3",
+        "text": "Can I switch from a mobile subscription to a web subscription?"
+      },
+      {
+        "tag": "H2",
+        "text": "Usage"
+      },
+      {
+        "tag": "H3",
+        "text": "What is On-Demand Usage?"
+      },
+      {
+        "tag": "H3",
+        "text": "How is usage different between plans?"
+      },
+      {
+        "tag": "H2",
+        "text": "Help & Support"
+      },
+      {
+        "tag": "H3",
+        "text": "I ran out of usage. What can I do?"
+      },
+      {
+        "tag": "H3",
+        "text": "How do I contact support?"
+      },
+      {
+        "tag": "H3",
+        "text": "Where can I find legal documents?"
+      },
+      {
+        "tag": "H3",
+        "text": "Where can I find your legal policies?"
+      },
+      {
+        "tag": "H3",
+        "text": "Product"
+      },
+      {
+        "tag": "H3",
+        "text": "Company"
+      },
+      {
+        "tag": "H3",
+        "text": "Legal"
+      }
+    ],
+    "buttons": [],
+    "inputs": [],
+    "links": [
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Login",
+        "href": "/login"
+      },
+      {
+        "text": "support@teamily.ai",
+        "href": "mailto:support@teamily.ai"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "Refund Policy",
+        "href": "/about/refund-policy"
+      },
+      {
+        "text": "Help Center",
+        "href": "#help-center"
+      },
+      {
+        "text": "Billing & Subscription",
+        "href": "#billing-subscription"
+      },
+      {
+        "text": "Does my subscription renew automatically?",
+        "href": "#does-my-subscription-renew-automatically"
+      },
+      {
+        "text": "Can I cancel my subscription at any time?",
+        "href": "#can-i-cancel-my-subscription-at-any-time"
+      },
+      {
+        "text": "Will I be charged again after canceling?",
+        "href": "#will-i-be-charged-again-after-canceling"
+      },
+      {
+        "text": "What is group sponsoring?",
+        "href": "#what-is-group-sponsoring"
+      },
+      {
+        "text": "I subscribed on my phone. Can I manage my subscription on the web?",
+        "href": "#i-subscribed-on-my-phone-can-i-manage-my-subscription-on-the-web"
+      },
+      {
+        "text": "Why are the subscription buttons grayed out?",
+        "href": "#why-are-the-subscription-buttons-grayed-out"
+      },
+      {
+        "text": "I subscribed on the web. Can I manage my subscription on my phone?",
+        "href": "#i-subscribed-on-the-web-can-i-manage-my-subscription-on-my-phone"
+      },
+      {
+        "text": "Can I switch from a mobile subscription to a web subscription?",
+        "href": "#can-i-switch-from-a-mobile-subscription-to-a-web-subscription"
+      },
+      {
+        "text": "Usage",
+        "href": "#usage"
+      },
+      {
+        "text": "What is On-Demand Usage?",
+        "href": "#what-is-on-demand-usage"
+      },
+      {
+        "text": "How is usage different between plans?",
+        "href": "#how-is-usage-different-between-plans"
+      },
+      {
+        "text": "Help & Support",
+        "href": "#help-support"
+      },
+      {
+        "text": "I ran out of usage. What can I do?",
+        "href": "#i-ran-out-of-usage-what-can-i-do"
+      },
+      {
+        "text": "How do I contact support?",
+        "href": "#how-do-i-contact-support"
+      },
+      {
+        "text": "Where can I find legal documents?",
+        "href": "#where-can-i-find-legal-documents"
+      },
+      {
+        "text": "Where can I find your legal policies?",
+        "href": "#where-can-i-find-your-legal-policies"
+      },
+      {
+        "text": "Teamily AI",
+        "href": "/"
+      },
+      {
+        "text": "Teamily.ai",
+        "href": "/"
+      },
+      {
+        "text": "Download",
+        "href": "/download"
+      },
+      {
+        "text": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Help Center",
+        "href": "/about/help-center"
+      },
+      {
+        "text": "Blog",
+        "href": "https://blog.teamily.ai/"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/about/privacy-policy"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/about/terms-of-service"
+      },
+      {
+        "text": "Open Source Licenses",
+        "href": "/about/open-source"
+      }
+    ],
+    "bodyText": "Login\nHelp Center\n\nWelcome to the Teamily Billing & Account FAQ. This page provides answers to common questions about billing, subscriptions, credits, and account usage for Teamily.ai.\n\nBilling & Subscription\nDoes my subscription renew automatically?\n\nYes. Paid subscriptions automatically renew at the end of each billing period unless you cancel.\n\nCan I cancel my subscription at any time?\n\nYes. You can cancel your subscription at any time from your Settings. You'll keep access to paid features until the end of your current billing period.\n\nWill I be charged again after canceling?\n\nNo. Once your subscription is canceled, no future charges will be made.\n\nWhat is group sponsoring?\n\nPlus and Pro users can sponsor their group's AI usage — all usage consumed by group members is charged to the group owner instead of each individual.\n\nI subscribed on my phone. Can I manage my subscription on the web?\n\nSubscriptions purchased through the App Store or Google Play must be managed on your mobile device. Go to your device's subscription settings to upgrade, downgrade, or cancel.\n\nWhy are the subscription buttons grayed out?\n\nThis means you subscribed on a different platform. Subscription changes must be made on the platform where you originally subscribed. Check the banner at the top of the page for instructions.\n\nI subscribed on the web. Can I manage my subscription on my phone?\n\nWeb subscriptions are managed at teamily.ai. Open your browser and go to Settings → Subscription to make changes.\n\nCan I switch from a mobile subscription to a web subscription?\n\nYes. First cancel your mobile subscription. After it expires at the end of your billing period, you can subscribe on the web. Your account data and usage history are preserved.\n\nUsage\nWhat is On-Demand Usage?\n\nOn-Demand Usage is a pay-as-you-go feature for Plus and Pro subscribers. When your included usage runs out, On-Demand Usage automatically continues your session at per-token rates. You can set an optional monthly spending limit.\n\nHow is usage different between plans?\n\nHigher plans provide more usage capacity and access to more capable AI models. See each plan's details for specifics.\n\nHelp & Support\nI ran out of usage. What can I do?\n\nYou can upgrade your plan for more usage, or enable On-Demand Usage for pay-as-you-go billing (Plus/Pro).\n\nHow do I contact support?\n\nEmail us at support@teamily.ai or join our Discord community for help from the team and other users.\n\nWhere can I find legal documents?\n\nYou can find our Terms of Service, Privacy Policy, and Refund Policy in the Settings menu under About.\n\nWhere can I find your legal policies?\n\nYou can review our legal documents here:\n\nTerms of Service\nPrivacy Policy\nRefund Policy\n\nThis Billing & Account FAQ is provided for informational purposes only and does not replace or modify the Terms of Service, Privacy Policy, or Refund Policy.\n\nTable of Contents\nHelp Center\nBilling & Subscription\nDoes my subscription renew automatically?\nCan I cancel my subscription at any time?\nWill I be charged again after canceling?\nWhat is group sponsoring?\nI subscribed on my phone. Can I manage my subscription on the web?\nWhy are the subscription buttons grayed out?\nI subscribed on the web. Can I manage my subscription on my phone?\nCan I switch from a mobile subscription to a web subscription?\nUsage\nWhat is On-Demand Usage?\nHow is usage different between plans?\nHelp & Support\nI ran out of usage. What can I do?\nHow do I contact support?\nWhere can I find legal documents?\nWhere can I find your legal policies?\nTeamily AI\n\nThe Human–Agent Platform Where You and Always-on Agents Get Work Done Together in One Unified and Context-Aware Space\n\nConnected Context. Living Memory. Self-Improving Intelligence. Built on the Reinvented AI-Native Messenger for Human+AI Teams.\n\nProduct\nTeamily.ai\nDownload\nPricing\nCompany\nAbout\nHelp Center\nBlog\nLegal\nPrivacy Policy\nTerms of Service\nOpen Source Licenses\n\n© 2026 Teamily, Inc. All rights reserved."
+  }
+}

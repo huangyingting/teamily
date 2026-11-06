@@ -1,0 +1,1112 @@
+{
+  "url": "https://teamily.ai/chat",
+  "title": "Teamily AI - The Human–Agent Platform Where You and Always-on Agents Get Work Done Together in One Unified and Context-Aware Space",
+  "links": [
+    {
+      "text": "Terms",
+      "href": "/about/terms-of-service"
+    },
+    {
+      "text": "Privacy",
+      "href": "/about/privacy-policy"
+    },
+    {
+      "text": "",
+      "href": "/profile/8294976623155895?source=me"
+    },
+    {
+      "text": "",
+      "href": "/chat"
+    },
+    {
+      "text": "",
+      "href": "/discover?tab=agents"
+    },
+    {
+      "text": "",
+      "href": "/discover?tab=agents&section=automations"
+    },
+    {
+      "text": "",
+      "href": "/discover"
+    },
+    {
+      "text": "",
+      "href": "/memory"
+    },
+    {
+      "text": "",
+      "href": "/artifacts"
+    },
+    {
+      "text": "",
+      "href": "/profile/8294976623155895?source=me"
+    },
+    {
+      "text": "",
+      "href": "/download"
+    },
+    {
+      "text": "",
+      "href": "/pricing"
+    },
+    {
+      "text": "7",
+      "href": "/settings/credits-center?tab=onboarding"
+    },
+    {
+      "text": "powlowskijoshuah's Personal Agent\n08:30",
+      "href": "/chat?conversationID=si_8294976623155895_9000272886796423"
+    },
+    {
+      "text": "Teamily Agent\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000437053952131"
+    },
+    {
+      "text": "Market Research\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000410583699517"
+    },
+    {
+      "text": "Health Assistant\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000310112293007"
+    },
+    {
+      "text": "Travel Planner\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000212984795199"
+    },
+    {
+      "text": "AI Stock Assistant\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000540704641032"
+    },
+    {
+      "text": "Webpage Developer\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000185253105723"
+    },
+    {
+      "text": "Accounting Assistant\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000387657633943"
+    },
+    {
+      "text": "Finance Assistant\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000018274717761"
+    },
+    {
+      "text": "Slides Assistant\n08:30\nYou are now friends",
+      "href": "/chat?conversationID=si_8294976623155895_9000050776379449"
+    },
+    {
+      "text": "Chat",
+      "href": "/chat"
+    },
+    {
+      "text": "Agents",
+      "href": "/discover?tab=agents"
+    },
+    {
+      "text": "Discover",
+      "href": "/discover"
+    },
+    {
+      "text": "Memory",
+      "href": "/memory"
+    },
+    {
+      "text": "Artifacts",
+      "href": "/artifacts"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "aria": "Dark",
+      "id": "theme",
+      "className": "relative inline-flex size-11 shrink-0 cursor-pointer select-none items-center justify-center rounded-full bg-transparent text-(--nv-neutral-600) transition-[background-color,color,scale] duration-sm ease-change hover:bg-(--nv-fill-hover) hover:text-(--text-primary) active:scale-[0.97] active:bg-(--nv-fill-pressed) forced-colors:aria-[current=page]:border-2 forced-colors:aria-[current=page]:border-solid focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-5 electron-app-region-no-drag"
+    },
+    {
+      "text": "",
+      "aria": "Menu",
+      "id": "radix-_R_7tq51gmaq_",
+      "className": "electron-app-region-no-drag flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors duration-sm ease-enter hover:bg-(--nv-fill-hover) hover:text-(--text-primary) active:bg-(--nv-fill-pressed) focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)]"
+    },
+    {
+      "text": "",
+      "aria": "Create",
+      "id": "radix-_r_16_",
+      "className": "group/button relative inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-full font-bold leading-5 tracking-[-0.01em] transition-[background,box-shadow,color,border-color,scale] duration-sm ease-enter focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] disabled:cursor-not-allowed aria-disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--action-tonal) text-(--action-tonal-text) enabled:hover:bg-(--action-tonal-hover) enabled:hover:text-(--action-tonal-text-hover) data-[state=open]:bg-(--action-tonal-hover) data-[state=open]:text-(--action-tonal-text-hover) enabled:active:bg-(--action-tonal-hover) disabled:bg-(--bg-subtle) disabled:text-(--text-disabled) size-11 pointer-fine:size-9 pointer-fine:after:absolute pointer-fine:after:-inset-1 enabled:active:scale-[0.97] [&_svg:not([class*='size-'])]:size-5"
+    },
+    {
+      "text": "All",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-foreground"
+    },
+    {
+      "text": "Artifacts",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Contacts",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Groups",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Agents",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Messages",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Files",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Cloud Docs",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Media",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "Links",
+      "aria": null,
+      "id": "",
+      "className": "relative flex shrink-0 items-center gap-1.5 whitespace-nowrap px-3 py-2.5 font-medium text-sm transition-colors duration-200 outline-none text-muted-foreground hover:text-foreground/80"
+    },
+    {
+      "text": "View all matches",
+      "aria": null,
+      "id": "",
+      "className": "-mr-1 flex items-center gap-0.5 rounded px-1 py-0.5 transition-colors text-[12px]/4 text-(--text-secondary) hover:text-(--text-primary)"
+    },
+    {
+      "text": "powlowskijoshuah's Personal Agent",
+      "aria": null,
+      "id": "",
+      "className": "relative flex w-full min-w-0 cursor-pointer select-none gap-3 rounded-field px-3 py-2.5 text-left hover:bg-(--search-result-hover) active:bg-(--nv-fill-pressed) aria-[current=true]:bg-(--highlight-subtle) aria-[current=true]:shadow-search-selection aria-[current=true]:hover:bg-(--highlight-subtle) focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] h-[66px] items-center"
+    },
+    {
+      "text": "Teamily Agent",
+      "aria": null,
+      "id": "",
+      "className": "relative flex w-full min-w-0 cursor-pointer select-none gap-3 rounded-field px-3 py-2.5 text-left hover:bg-(--search-result-hover) active:bg-(--nv-fill-pressed) aria-[current=true]:bg-(--highlight-subtle) aria-[current=true]:shadow-search-selection aria-[current=true]:hover:bg-(--highlight-subtle) focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] h-[66px] items-center"
+    },
+    {
+      "text": "Market Research",
+      "aria": null,
+      "id": "",
+      "className": "relative flex w-full min-w-0 cursor-pointer select-none gap-3 rounded-field px-3 py-2.5 text-left hover:bg-(--search-result-hover) active:bg-(--nv-fill-pressed) aria-[current=true]:bg-(--highlight-subtle) aria-[current=true]:shadow-search-selection aria-[current=true]:hover:bg-(--highlight-subtle) focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] h-[66px] items-center"
+    },
+    {
+      "text": "Health Assistant",
+      "aria": null,
+      "id": "",
+      "className": "relative flex w-full min-w-0 cursor-pointer select-none gap-3 rounded-field px-3 py-2.5 text-left hover:bg-(--search-result-hover) active:bg-(--nv-fill-pressed) aria-[current=true]:bg-(--highlight-subtle) aria-[current=true]:shadow-search-selection aria-[current=true]:hover:bg-(--highlight-subtle) focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] h-[66px] items-center"
+    },
+    {
+      "text": "Pinned · 1",
+      "aria": null,
+      "id": "",
+      "className": "flex w-full items-center gap-1.5 px-4 pt-2 pb-1 text-left select-none hover:text-text-subtle"
+    },
+    {
+      "text": "Chats · 8",
+      "aria": null,
+      "id": "",
+      "className": "flex w-full items-center gap-1.5 px-4 pt-2 pb-1 text-left select-none hover:text-text-subtle"
+    },
+    {
+      "text": "",
+      "aria": "Close",
+      "id": "",
+      "className": "absolute top-2.5 right-2.5 flex size-6 items-center justify-center rounded-full text-primary-700/60 transition-colors hover:bg-white/70 hover:text-primary-700 focus-visible:outline-2 focus-visible:outline-primary-500 focus-visible:outline-offset-1"
+    },
+    {
+      "text": "View my tasks",
+      "aria": null,
+      "id": "",
+      "className": "group/button relative inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-full font-bold tracking-[-0.01em] transition-[background,box-shadow,color,border-color,scale] duration-sm ease-enter focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] disabled:cursor-not-allowed aria-disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 border border-(--border-main) bg-(--bg-main) text-(--text-primary) shadow-control-highlight enabled:hover:bg-(--bg-surface) enabled:active:bg-(--bg-subtle) disabled:border-(--border-subtle) disabled:text-(--text-disabled) disabled:shadow-none h-11 gap-1.5 px-5 text-[13px]/5 has-[[data-slot=button-content]>svg]:px-4 pointer-fine:h-9 pointer-fine:after:absolute pointer-fine:after:inset-x-0 pointer-fine:after:-inset-y-1 enabled:active:scale-[0.97] icon-strong [&_svg:not([class*='size-'])]:size-4 mt-3.5 w-full"
+    },
+    {
+      "text": "Invite",
+      "aria": null,
+      "id": "",
+      "className": "inline-flex items-center justify-center gap-1 whitespace-nowrap transition-colors disabled:pointer-events-none disabled:opacity-50 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none active:bg-transparent py-2 h-9 rounded-full bg-(--bg-subtle) px-3.5 font-medium text-sm text-muted-foreground hover:bg-slate-200 hover:text-muted-foreground"
+    },
+    {
+      "text": "",
+      "aria": "Search",
+      "id": "",
+      "className": "group/button relative inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-full font-bold leading-5 tracking-[-0.01em] transition-[background,box-shadow,color,border-color,scale] duration-sm ease-enter focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] disabled:cursor-not-allowed aria-disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent text-(--text-secondary) enabled:hover:bg-(--nv-fill-hover) enabled:hover:text-(--text-primary) enabled:active:bg-(--nv-fill-pressed) disabled:text-(--text-disabled) size-11 pointer-fine:size-9 pointer-fine:after:absolute pointer-fine:after:-inset-1 enabled:active:scale-[0.97] [&_svg:not([class*='size-'])]:size-5"
+    },
+    {
+      "text": "",
+      "aria": "View full profile",
+      "id": "",
+      "className": "group/button relative inline-flex shrink-0 cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-full font-bold leading-5 tracking-[-0.01em] transition-[background,box-shadow,color,border-color,scale] duration-sm ease-enter focus-visible:[outline:var(--nv-focus-outline)] focus-visible:[outline-offset:var(--nv-focus-offset)] disabled:cursor-not-allowed aria-disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent text-(--text-secondary) enabled:hover:bg-(--nv-fill-hover) enabled:hover:text-(--text-primary) enabled:active:bg-(--nv-fill-pressed) disabled:text-(--text-disabled) size-11 pointer-fine:size-9 pointer-fine:after:absolute pointer-fine:after:-inset-1 enabled:active:scale-[0.97] [&_svg:not([class*='size-'])]:size-5"
+    },
+    {
+      "text": "",
+      "aria": "Expand",
+      "id": "",
+      "className": "absolute top-2 right-3 z-30 flex size-7 items-center justify-center rounded-full text-neutral-400 transition-colors hover:bg-neutral-100 hover:text-neutral-700 md:top-3 md:right-4"
+    },
+    {
+      "text": "",
+      "aria": "Create",
+      "id": "",
+      "className": "inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10"
+    },
+    {
+      "text": "",
+      "aria": "Skills",
+      "id": "",
+      "className": "inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10 data-[state=open]:bg-(--bg-subtle) data-[state=open]:text-(--text-primary)"
+    },
+    {
+      "text": "",
+      "aria": "Connectors",
+      "id": "",
+      "className": "inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10 data-[state=open]:bg-(--bg-subtle) data-[state=open]:text-(--text-primary)"
+    },
+    {
+      "text": "Instant",
+      "aria": "Agent mode",
+      "id": "",
+      "className": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none hover:bg-accent hover:text-accent-foreground active:bg-transparent py-2 h-7 md:h-8 shrink-0 gap-1 rounded-full px-3 font-body-medium text-(--text-tertiary)"
+    },
+    {
+      "text": "",
+      "aria": "Enhance Prompt with Memory",
+      "id": "",
+      "className": "gap-1 whitespace-nowrap text-sm font-medium disabled:pointer-events-none [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none active:bg-transparent inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10"
+    },
+    {
+      "text": "",
+      "aria": "Meeting Minutes",
+      "id": "",
+      "className": "gap-1 whitespace-nowrap text-sm font-medium disabled:pointer-events-none [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none active:bg-transparent inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10"
+    },
+    {
+      "text": "",
+      "aria": "Dictate",
+      "id": "",
+      "className": "gap-1 whitespace-nowrap text-sm font-medium disabled:pointer-events-none [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none active:bg-transparent inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10"
+    },
+    {
+      "text": "",
+      "aria": "Capture",
+      "id": "",
+      "className": "inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10"
+    },
+    {
+      "text": "",
+      "aria": "Format",
+      "id": "",
+      "className": "gap-1 whitespace-nowrap text-sm font-medium disabled:pointer-events-none [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none active:bg-transparent inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10"
+    },
+    {
+      "text": "",
+      "aria": "Emoji",
+      "id": "",
+      "className": "gap-1 whitespace-nowrap text-sm font-medium disabled:pointer-events-none [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none active:bg-transparent inline-flex size-11 shrink-0 items-center justify-center rounded-full text-(--text-secondary) transition-colors hover:bg-(--bg-subtle) hover:text-(--text-primary) disabled:opacity-50 md:size-10"
+    },
+    {
+      "text": "",
+      "aria": "Voice message",
+      "id": "",
+      "className": "inline-flex items-center justify-center gap-1 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:shrink-0 outline-none focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-0 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-none size-11 shrink-0 rounded-full bg-(--action-tonal) text-(--action-tonal-text-hover) hover:bg-(--action-tonal) hover:text-(--action-tonal-text-hover) active:bg-(--action-tonal) md:size-10"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "type": "search",
+      "placeholder": "Search",
+      "name": "",
+      "value": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "file",
+      "placeholder": "",
+      "name": "",
+      "value": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "file",
+      "placeholder": "",
+      "name": "",
+      "value": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "file",
+      "placeholder": "",
+      "name": "",
+      "value": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "file",
+      "placeholder": "",
+      "name": "",
+      "value": ""
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "Earn up to 12 CREDITS"
+    }
+  ],
+  "localStorageKeys": [
+    "_uetvid_exp",
+    "_gcl_ls",
+    "chat-to:login-streak:last-celebrated:8294976623155895",
+    "_uetsid",
+    "server",
+    "_agentopera_auth_token",
+    "auth",
+    "lastExternalReferrerTime",
+    "geo:country-code",
+    "teamily:workspace-buildout:8294976623155895",
+    "_uetsid_exp",
+    "general_locales:en",
+    "_agentopera_auth_user_info",
+    "ph_phc_RkuFKpEux6r2I1ZxUY7UcqOeTFUVl1XGhU6tp2flsfd_posthog",
+    "im_target_uid",
+    "teamily_notification_prompt",
+    "_uetvid",
+    "lastExternalReferrer",
+    "im_browser_id",
+    "geo:region-verdict",
+    "swarm:agents-list:v4:345687",
+    "im-leader-deploy-tag"
+  ],
+  "bodyText": "7\npowlowskijoshuah's Personal Agent\n08:30\nPinned · 1\nTeamily Agent\n08:30\nYou are now friends\nChats · 8\nMarket Research\n08:30\nYou are now friends\nHealth Assistant\n08:30\nYou are now friends\nTravel Planner\n08:30\nYou are now friends\nAI Stock Assistant\n08:30\nYou are now friends\nWebpage Developer\n08:30\nYou are now friends\nAccounting Assistant\n08:30\nYou are now friends\nFinance Assistant\n08:30\nYou are now friends\nSlides Assistant\n08:30\nYou are now friends\nEarn up to 12 CREDITS\n\nComplete your onboarding tasks to earn up to 12 CREDITS toward Teamily Plus.\n\nView my tasks\npowlowskijoshuah's Personal Agent\nInvite\nToday at 8:30 AM\nYou are now friends and can start chatting!\n\n\n\n\nInstant",
+  "apiLog": [
+    {
+      "method": "GET",
+      "url": "https://bzrcdn.openai.com/pixel-config/v1/AYQPHhYJtjxJRqh4gscQSk.json",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"automatic_advanced_matching_enabled\":true}"
+    },
+    {
+      "method": "POST",
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-1RDX1PCR2L&gtm=45je6b41v9252877960za208zb9264289444zd9264289444xf1&_p=1793954119451&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2047879603&_eu=AAAAAGQC&cid=1141038279.1793953814&ec_mode=a&frm=0&pscdl=noapi&rcb=3&sr=1440x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814183&sid=1793953813&sct=1&seg=1&dl=https%3A%2F%2Fteamily.ai%2Fchat&dt=Teamily%20AI%20-%20The%20Human%E2%80%93Agent%20Platform%20Where%20You%20and%20Always-on%20Agents%20Get%20Work%20Done%20Together%20in%20One%20Unified%20and%20Context-Aware%20Space&en=page_view&_ee=1&tfd=1265",
+      "status": 204,
+      "postData": null,
+      "responseBody": null
+    },
+    {
+      "method": "POST",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1535828784.1793953814&gtm=45be6b41v9252877377za208zb9264289444zd9264289444xecxf1&fmt=8",
+      "status": 204,
+      "postData": null,
+      "responseBody": null
+    },
+    {
+      "method": "POST",
+      "url": "https://www.google.com/rmkt/collect/18110929597/?random=1793954119935&cv=11&fst=1793954119935&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b41v9252877377za208zb9264289444zd9264289444xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121191155~121246026~121246034~123814185~124013662&u_w=1440&u_h=900&url=https%3A%2F%2Fteamily.ai%2Fchat&rcb=2&frm=0&tiba=Teamily%20AI%20-%20The%20Human%E2%80%93Agent%20Platform%20Where%20You%20and%20Always-on%20Agents%20Get%20Work%20Done%20Together%20in%20One%20Unified%20and%20Context-Aware%20Space&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1535828784.1793953814&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "status": 200,
+      "postData": null,
+      "responseBody": null
+    },
+    {
+      "method": "POST",
+      "url": "https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=1&auid=1535828784.1793953814&dt=Teamily%20AI%20-%20The%20Human%E2%80%93Agent%20Platform%20Where%20You%20and%20Always-on%20Agents%20Get%20Work%20Done%20Together%20in%20One%20Unified%20and%20Context-Aware%20Space&tid=AW-18110929597&en=page_view&dl=https%3A%2F%2Fteamily.ai%2Fchat&scrsrc=www.googletagmanager.com&rnd=1945869850.1793954120&navt=n&npa=0&gtm=45be6b41v9252877377za208zb9264289444zd9264289444xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121191155~121246026~121246034~123814185~124013662&tft=1793954119961&tfd=1398&tids=AW-18110929597&fmt=8",
+      "status": 200,
+      "postData": null,
+      "responseBody": null
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily-ai.becdn.net/assets/release-20261105-142310-331/openim_ffi_wasm_bg-TqV03FV_.wasm",
+      "status": 200,
+      "postData": null,
+      "responseBody": null
+    },
+    {
+      "method": "GET",
+      "url": "https://bunny-upload-vizlp.becdn.net/landing-config",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"config\":{\"baseUrl\":\"\",\"getStartedUrl\":\"/login\",\"downloadLinks\":{\"ios\":\"https://apps.apple.com/app/id6761445638\",\"android\":\"https://play.google.com/store/apps/details?id=ai.teamily.mobile\",\"macSilicon\":\"https://teamily-storage.becdn.net/download/macos\",\"macIntel\":\"https://teamily-storage.becdn.net/download/macos-intel\",\"windows\":\"https://teamily-storage.becdn.net/download/windows\"},\"socialLinks\":{\"twitter\":\"https://x.com/intent/follow?screen_name=Teamily_AI\",\"linkedin\":\"https://www.linkedin.com/company/teamilyai\",\"discord\":\"https://discord.gg/P37XmCKUqj\"},\"showProductHuntBadge\":true}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.ipinfo.io/lite/me?token=c3b5e41104f232",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\n  \"ip\": \"20.205.158.10\",\n  \"asn\": \"AS8075\",\n  \"as_name\": \"Microsoft Corporation\",\n  \"as_domain\": \"microsoft.com\",\n  \"country_code\": \"SG\",\n  \"country\": \"Singapore\",\n  \"continent_code\": \"AS\",\n  \"continent\": \"Asia\"\n}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/api/version",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"deployTag\":\"release-20261105-142310-331\",\"appVersion\":\"release-20261105-142310-331\",\"gitCommit\":\"4eb2a994ecf75c1b6444de3264f362c7e4c3809b\"}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/user/getProfile",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"publishAccess\":false,\"accountId\":8294976623155895,\"handle\":null,\"avatar\":\"https://lh3.googleusercontent.com/a/ACg8ocJv3aiQ6pGH20Te9Xb1iR8mEIBQmcImsyOjIFUCxFNcPHrexw=s96-c\",\"email\":\"powlowskijoshuah@gmail.com\",\"displayName\":\"powlowskijoshuah\",\"telegramUserName\":null,\"githubUrl\":null,\"company\":null,\"bio\":null,\"tags\":null,\"gender\":null,\"location\":null,\"website\":null,\"phoneNumber\":null,\"lifeGoals\":{\"health\":\"\",\"finance\":\"\",\"career\":\"\",\"hobbies\":\"\",\"family\":\"\",\"productivity\":\"\",\"other\":\"\"},\"xUserName\":null}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/invite/summary",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"accepted\":0,\"pending\":0,\"creditsCents\":0}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/user/getCurrentAccount",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"lastName\":\"Powlowski\",\"supplementaryInformation\":true,\"role\":1,\"apiKey\":\"d83c6ed4c27b4c22ba1b2139a512abb2\",\"loginChannel\":2,\"emailVerification\":true,\"roleId\":1,\"contextBindingId\":350642,\"avatar\":\"https://lh3.googleusercontent.com/a/ACg8ocJv3aiQ6pGH20Te9Xb1iR8mEIBQmcImsyOjIFUCxFNcPHrexw=s96-c\",\"contextAccountId\":345687,\"uuid\":\"181e76a8-d206-4483-b142-291c93823705\",\"expiredTime\":\"1796545836361\",\"token\":\"eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MzQ1Njg3LCJhY2NvdW50IjoidWNfOTJlNDk0NDhlYjVhNDEzZjg5ZjU3NzY0ZDBlNzE3Y2UiLCJsb2dpblRpbWUiOiIxNzkzOTUzODM2MzYxIiwic291cmNlIjoiNSIsImV4cCI6MTc5NjU0NTgzNn0.RYvYcJqQ-5wXdFBjfO5Cc_q7wiTfzg2DkJ3Ol2cxUqY\",\"firstName\":\"Joshuah\",\"inviteCodeFilled\":false,\"loginTime\":\"1793953836361\",\"accountScope\":\"PERSONAL\",\"id\":345687,\"asnId\":8294976623155895,\"loginAccountId\":345687,\"account\":\"uc_92e49448eb5a413f89f57764d0e717ce\",\"email\":\"powlowskijoshuah@gmail.com\"}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/user/getIMToken",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"imToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI4Mjk0OTc2NjIzMTU1ODk1IiwiUGxhdGZvcm1JRCI6NSwiZXhwIjoxODAxNzMwMTIxLCJpYXQiOjE3OTM5NTQxMTZ9.Cw8DhpJ-HIs2pWD_hhV-fJJSI-6FnO49uBTi_F4Pt8s\",\"chatToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI4Mjk0OTc2NjIzMTU1ODk1IiwiVXNlclR5cGUiOjEsIlBsYXRmb3JtSUQiOjAsImV4cCI6MTgwMTczMDEyMSwibmJmIjoxNzkzOTU0MDYxLCJpYXQiOjE3OTM5NTQxMjF9.BfsH25sPKURt-_TN3uLflwOhokdInBLA1HagLDd-DDM\",\"platformID\":5,\"expireTime\":7776000,\"userID\":\"8294976623155895\",\"email\":\"powlowskijoshuah@gmail.com\"}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://bzr.openai.com/v1/sdk/events?pid=AYQPHhYJtjxJRqh4gscQSk&st=oaiq-web&sv=0.1.100&t=1793954120910&ec=2",
+      "status": 202,
+      "postData": "{\"obref\":\"d9f9177a-1e81-4c25-8cef-7f14ac46f78a\",\"events\":[{\"test_session_id\":null,\"type\":\"openai::sdk_init\",\"timestamp_ms\":1793954119735,\"id\":\"28084e9d-1d31-41af-8a0d-a99f1c48913b\",\"source_url\":\"https://teamily.ai/chat\",\"data\":{\"type\":\"sdk_lifecycle\"}},{\"test_session_id\":null,\"type\":\"oai::diagnostic\",\"timestamp_ms\":1793954119736,\"id\":\"48b6af6d-a724-4b4d-8522-f689b9bf9241\",\"data\":{\"type\":\"diagnostic\",\"schema_version\":1,\"dropped_event_count\":0,\"dropped_event_reason_counts\":{},\"dropped_event_name_counts\":{},\"dropped_event_phase_counts\":{},\"consent\":true,\"is_first_visit_in_session\":true,\"is_first_consent_grant_in_session\":true,\"config\":{\"automatic_advanced_matching\":\"enabled\"}}}]}",
+      "responseBody": null
+    },
+    {
+      "method": "POST",
+      "url": "https://p.teamily.ai/flags/?v=2&_=1793954121088&ver=1.400.0&compression=base64",
+      "status": 200,
+      "postData": "data=eyJ0b2tlbiI6InBoY19Sa3VGS3BFdXg2cjJJMVp4VVk3VWNxT2VURlVWbDFYR2hVNnRwMmZsc2ZkIiwiZGlzdGluY3RfaWQiOiIzNDU2ODciLCJncm91cHMiOnt9LCJwZXJzb25fcHJvcGVydGllcyI6eyIkaW5pdGlhbF9yZWZlcnJlciI6Imh0dHBzOi8vdGVhbWlseS5haS8iLCIkaW5pdGlhbF9yZWZlcnJpbmdfZG9tYWluIjoidGVhbWlseS5haSIsIiRpbml0aWFsX2N1cnJlbnRfdXJsIjoiaHR0cHM6Ly90ZWFtaWx5LmFpL2xvZ2luIiwiJGluaXRpYWxfaG9zdCI6InRlYW1pbHkuYWkiLCIkaW5pdGlhbF9wYXRobmFtZSI6Ii9sb2dpbiIsIiRpbml0aWFsX3V0bV9zb3VyY2UiOm51bGwsIiRpbml0aWFsX3V0bV9tZWRpdW0iOm51bGwsIiRpbml0aWFsX3V0bV9jYW1wYWlnbiI6bnVsbCwiJGluaXRpYWxfdXRtX2NvbnRlbnQiOm51bGwsIiRpbml0aWFsX3V0bV90ZXJtIjpudWxsLCIkaW5pdGlhbF9nYWRfc291cmNlIjpudWxsLCIkaW5pdGlhbF9tY19jaWQiOm51bGwsIiRpbml0aWFsX2djbGlkIjpudWxsLCIkaW5pdGlhbF9nY2xzcmMiOm51bGwsIiRpbml0aWFsX2RjbGlkIjpudWxsLCIkaW5pdGlhbF9nYnJhaWQiOm51bGwsIiRpbml0aWFsX3dicmFpZCI6bnVsbCwiJGluaXRpYWxfZmJjbGlkIjpudWxsLCIkaW5pdGlhbF9tc2Nsa2lkIjpudWxsLCIkaW5pdGlhbF90d2NsaWQiOm51bGwsIiRpbml0aWFsX2xpX2ZhdF9pZCI6bnVsbCwiJGluaXRpYWxfaWdzaGlkIjpudWxsLCIkaW5pdGlhbF90dGNsaWQiOm51bGwsIiRpbml0aWFsX3JkdF9jaWQiOm51bGwsIiRpbml0aWFsX2VwaWsiOm51bGwsIiRpbml0aWFsX3FjbGlkIjpudWxsLCIkaW5pdGlhbF9zY2NpZCI6bnVsbCwiJGluaXRpYWxfaXJjbGlkIjpudWxsLCIkaW5pdGlhbF9fa3giOm51bGx9LCJ0aW1lem9uZSI6IlVUQyIsIiRkZXZpY2VfaWQiOiIwMWExYWZmYS1lYjAxLTdjMjUtYTU2OC04NzljNDFmMTlkMDIifQ%3D%3D",
+      "responseBody": "{\"errorsWhileComputingFlags\":false,\"flags\":{},\"requestId\":\"989ec428-217f-402b-8536-613b54c6cda0\",\"evaluatedAt\":1793954121222,\"toolbarParams\":{},\"sessionRecording\":false,\"config\":{\"enable_collect_everything\":true},\"isAuthenticated\":false,\"supportedCompression\":[\"gzip\",\"gzip-js\"]}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/_serverFn/448d631c60999df58a613dce134588fea7d8d4bf038351c3d768b0a033d5f850?payload=%7B%22t%22%3A%7B%22t%22%3A10%2C%22i%22%3A0%2C%22p%22%3A%7B%22k%22%3A%5B%22data%22%5D%2C%22v%22%3A%5B%7B%22t%22%3A1%2C%22s%22%3A%22SG%22%7D%5D%7D%2C%22o%22%3A0%7D%2C%22f%22%3A127%2C%22m%22%3A%5B%5D%7D",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"t\":10,\"i\":0,\"p\":{\"k\":[\"result\",\"error\",\"context\"],\"v\":[{\"t\":2,\"s\":3},{\"t\":2,\"s\":1},{\"t\":11,\"i\":1,\"p\":{\"k\":[],\"v\":[]},\"o\":0}]},\"o\":0}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/wiki/onboarding",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"status\":\"none\",\"identity\":[],\"interests\":[],\"usage\":[],\"locale\":null,\"page_id\":null,\"job_id\":null,\"created_at\":null,\"updated_at\":null,\"industry\":null,\"industry_other\":null,\"role\":null,\"role_other\":null,\"source\":null,\"persona_name\":null,\"persona_look\":null}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/drive/items?sort=recent&with_ancestors=true&kind=note&limit=30",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"items\":[],\"next_cursor\":null,\"has_more\":false}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/country/list",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"id\":1,\"isoCode\":\"US\",\"nameEn\":\"United States\",\"dialCode\":\"+1\",\"nationalDigits\":\"10\",\"flagEmoji\":\"\\uD83C\\uDDFA\\uD83C\\uDDF8\",\"sortOrder\":10,\"enabled\":1},{\"id\":3,\"isoCode\":\"HK\",\"nameEn\":\"Hong Kong\",\"dialCode\":\"+852\",\"nationalDigits\":\"8\",\"flagEmoji\":\"\\uD83C\\uDDED\\uD83C\\uDDF0\",\"sortOrder\":30,\"enabled\":1},{\"id\":6,\"isoCode\":\"JP\",\"nameEn\":\"Japan\",\"dialCode\":\"+81\",\"nationalDigits\":\"10,11\",\"flagEmoji\":\"\\uD83C\\uDDEF\\uD83C\\uDDF5\",\"sortOrder\":60,\"enabled\":1},{\"id\":7,\"isoCode\":\"KR\",\"nameEn\":\"South Korea\",\"dialCode\":\"+82\",\"nationalDigits\":\"9,10,11\",\"flagEmoji\":\"\\uD83C\\uDDF0\\uD83C\\uDDF7\",\"sortOrder\":70,\"enabled\":1},{\"id\":11,\"isoCode\":\"FR\",\"nameEn\":\"France\",\"dialCode\":\"+33\",\"nationalDigits\":\"9\",\"flagEmoji\":\"\\uD83C\\uDDEB\\uD83C\\uDDF7\",\"sortOrder\":110,\"enabled\":1},{\"id\":13,\"isoCode\":\"ES\",\"nameEn\":\"Spain\",\"dialCode\":\"+34\",\"nationalDigits\":\"9\",\"flagEmoji\":\"\\uD83C\\uDDEA\\uD83C\\uDDF8\",\"sortOrder\":130,\"enabled\":1},{\"id\":15,\"isoCode\":\"CA\",\"nameEn\":\"Canada\",\"dialCode\":\"+1\",\"nationalDigits\":\"10\",\"flagEmoji\":\"\\uD83C\\uDDE8\\uD83C\\uDDE6\",\"sortOrder\":150,\"enabled\":1},{\"id\":18,\"isoCode\":\"BR\",\"nameEn\":\"Brazil\",\"dialCode\":\"+55\",\"nationalDigits\":\"10,11\",\"flagEmoji\":\"\\uD83C\\uDDE7\\uD83C\\uDDF7\",\"sortOrder\":180,\"enabled\":1}]}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/plan/list?billingCycle=monthly&locale=en&country=SG",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"code\":\"FREE\",\"name\":\"Free\",\"price\":\"0\",\"priceId\":\"0\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":null,\"studentTotalPrice\":null,\"studentPercentOff\":null,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Start with core AI chat\",\"highlight\":1},{\"sequence\":2,\"content\":\"Create up to 5 custom agents\",\"highlight\":1},{\"sequence\":3,\"content\":\"2 tasks at once\",\"highlight\":1},{\"sequence\":5,\"content\":\"Standard models and basic skills\",\"highlight\":0}]},{\"code\":\"PLUS\",\"name\":\"Plus\",\"price\":\"19.99\",\"priceId\":\"price_1SyvvhDKtV2hrupvjVzioGw4\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":\"9.99\",\"studentTotalPrice\":null,\"studentPercentOff\":50.00,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Everything in Free\",\"highlight\":1},{\"sequence\":2,\"content\":\"Enhanced usage and models\",\"highlight\":1},{\"sequence\":3,\"content\":\"Create up to 50 custom agents\",\"highlight\":1},{\"sequence\":4,\"content\":\"8 tasks at once\",\"highlight\":1},{\"sequence\":5,\"content\":\"Sponsor your group's AI usage\",\"highlight\":1},{\"sequence\":6,\"content\":\"On-demand usage when you need more\",\"highlight\":1}]},{\"code\":\"PREMIUM\",\"name\":\"Premium\",\"price\":\"99.99\",\"priceId\":\"price_1Tm2gXDKtV2hrupvI2Xoj5dt\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":null,\"studentTotalPrice\":null,\"studentPercentOff\":null,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Everything in Plus\",\"highlight\":1},{\"sequence\":2,\"content\":\"Premium usage capacity\",\"highlight\":1},{\"sequence\":3,\"content\":\"Unlimited agent creation\",\"highlight\":1},{\"sequence\":4,\"content\":\"16 tasks at once\",\"highlight\":1},{\"sequence\":6,\"content\":\"Premium models and connectors\",\"highlight\":0}]},{\"code\":\"PRO\",\"name\":\"Pro\",\"price\":\"199.99\",\"priceId\":\"price_1SyvvNDKtV2hrupvCwTmA9Vm\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":null,\"studentTotalPrice\":null,\"studentPercentOff\":null,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Everything in Premium\",\"highlight\":1},{\"sequence\":2,\"content\":\"Generate AI videos\",\"highlight\":1},{\"sequence\":3,\"content\":\"Maximum usage capacity\",\"highlight\":1},{\"sequence\":4,\"content\":\"Priority throughput for heavy work\",\"highlight\":1},{\"sequence\":5,\"content\":\"Bigger group chats\",\"highlight\":1},{\"sequence\":6,\"content\":\"Early access to new features\",\"highlight\":1},{\"sequence\":7,\"content\":\"Advanced support for power users\",\"highlight\":0}]}]}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/invite/codes",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"invitesLeft\":-1,\"inviteCodes\":[{\"code\":\"K7U9Z6\",\"status\":\"AVAILABLE\"}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://bat.bing.com/p/conversions/c/l",
+      "status": 204,
+      "postData": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�Smk�@\u0010�+�|j`�}S��k\nIH�\u0016�BZDª�ėC��������_RV/��R�,�3�<���70�����\r}@�\u0014y�\u0010�\n#6�q�\u000b\u0001a��}�\u0002 \u001eu�\u0003J��\u0007�a��\u000b�\u001b�����ե�m�\u0000\t��E\u001c���II1�4�8@�^�\\!K0��B\"��]�\u0000c�\u0000�'A�ۛ�̭_��WaF�(�\u0018+�ʅ\f\"��\u000e�T(6�\fG\u0016F\"򅒜��(F6�zpӲٸY[{;/k�\u0007��e��^�U\u0013LVe�\u0016d~��Ǎ>�t�>e/4Ꙇ����)�L�ܑ\u00113�\u0012F:4+|M3���\u0000��0[��E��4�Y'S!\u000f\u0005\u000f��+�W�1��(�m]\f��ײ��绔����[rU6�\u00039��.�'d��U�֤����\"tE@�\\�����T�!g&�oOȹ�ye��t۵��\u001f��U4T�$+]�<fC�\f�́�\u0018ֳ�,/�C�[C���n~���ܘf �*=\u0014mW�ۭ�\f���nr��\u001e�S�\r��zrf\u0006r�v��}�\u0018�n7fؚ��\r��\u0018rӔEi�)��m\u0006s\u0018���\fY�tf �\bc0�s���}+c\u001d5u@�\u0019L� A�1�I3kH��C;,�λN7��\u0002�I�r_?3?\u0000��RM�\u0004��g��+��8A�\u0012�V\u0013[�f}j���e ^2��(t՛?���6O�d�1\u0015M͖\u0018��v��b��*�\u0014.���[\u0016\fy�\u0014��\u000f��M��\u0004X`��\u0011A� �,I��\u0006�5\u0017\b\u0012\u0004\u0000\u0000",
+      "responseBody": null
+    },
+    {
+      "method": "POST",
+      "url": "https://p.teamily.ai/flags/?v=2&_=1793954121505&ver=1.400.0&compression=base64",
+      "status": 200,
+      "postData": "data=eyJ0b2tlbiI6InBoY19Sa3VGS3BFdXg2cjJJMVp4VVk3VWNxT2VURlVWbDFYR2hVNnRwMmZsc2ZkIiwiZGlzdGluY3RfaWQiOiIzNDU2ODciLCJncm91cHMiOnt9LCJwZXJzb25fcHJvcGVydGllcyI6eyIkaW5pdGlhbF9yZWZlcnJlciI6Imh0dHBzOi8vdGVhbWlseS5haS8iLCIkaW5pdGlhbF9yZWZlcnJpbmdfZG9tYWluIjoidGVhbWlseS5haSIsIiRpbml0aWFsX2N1cnJlbnRfdXJsIjoiaHR0cHM6Ly90ZWFtaWx5LmFpL2xvZ2luIiwiJGluaXRpYWxfaG9zdCI6InRlYW1pbHkuYWkiLCIkaW5pdGlhbF9wYXRobmFtZSI6Ii9sb2dpbiIsIiRpbml0aWFsX3V0bV9zb3VyY2UiOm51bGwsIiRpbml0aWFsX3V0bV9tZWRpdW0iOm51bGwsIiRpbml0aWFsX3V0bV9jYW1wYWlnbiI6bnVsbCwiJGluaXRpYWxfdXRtX2NvbnRlbnQiOm51bGwsIiRpbml0aWFsX3V0bV90ZXJtIjpudWxsLCIkaW5pdGlhbF9nYWRfc291cmNlIjpudWxsLCIkaW5pdGlhbF9tY19jaWQiOm51bGwsIiRpbml0aWFsX2djbGlkIjpudWxsLCIkaW5pdGlhbF9nY2xzcmMiOm51bGwsIiRpbml0aWFsX2RjbGlkIjpudWxsLCIkaW5pdGlhbF9nYnJhaWQiOm51bGwsIiRpbml0aWFsX3dicmFpZCI6bnVsbCwiJGluaXRpYWxfZmJjbGlkIjpudWxsLCIkaW5pdGlhbF9tc2Nsa2lkIjpudWxsLCIkaW5pdGlhbF90d2NsaWQiOm51bGwsIiRpbml0aWFsX2xpX2ZhdF9pZCI6bnVsbCwiJGluaXRpYWxfaWdzaGlkIjpudWxsLCIkaW5pdGlhbF90dGNsaWQiOm51bGwsIiRpbml0aWFsX3JkdF9jaWQiOm51bGwsIiRpbml0aWFsX2VwaWsiOm51bGwsIiRpbml0aWFsX3FjbGlkIjpudWxsLCIkaW5pdGlhbF9zY2NpZCI6bnVsbCwiJGluaXRpYWxfaXJjbGlkIjpudWxsLCIkaW5pdGlhbF9fa3giOm51bGwsImVtYWlsIjoicG93bG93c2tpam9zaHVhaEBnbWFpbC5jb20iLCJhdmF0YXIiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKdjNhaVE2cEdIMjBUZTlYYjFpUjhtRUlCUW1jSW1zeU9qSUZVQ3hGTmNQSHJleHc9czk2LWMiLCJ3YWxsZXRfYWRkcmVzcyI6InVjXzkyZTQ5NDQ4ZWI1YTQxM2Y4OWY1Nzc2NGQwZTcxN2NlIiwiYXNuX2lkIjo4Mjk0OTc2NjIzMTU1ODk1LCJpbnZpdGVfY29kZV9maWxsZWQiOmZhbHNlfSwidGltZXpvbmUiOiJVVEMiLCIkZGV2aWNlX2lkIjoiMDFhMWFmZmEtZWIwMS03YzI1LWE1NjgtODc5YzQxZjE5ZDAyIn0%3D",
+      "responseBody": "{\"errorsWhileComputingFlags\":false,\"flags\":{},\"requestId\":\"f6a10cdf-c61b-4138-ad3b-573317e467de\",\"evaluatedAt\":1793954121635,\"supportedCompression\":[\"gzip\",\"gzip-js\"],\"isAuthenticated\":false,\"toolbarParams\":{},\"config\":{\"enable_collect_everything\":true},\"sessionRecording\":false}"
+    },
+    {
+      "method": "POST",
+      "url": "https://open.teamily.ai/agentapi/agent/im/list",
+      "status": 200,
+      "postData": "{\"imUid\":[\"9000272886796423\"]}",
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"id\":\"1969296785637773447\",\"name\":\"Super Agent\",\"description\":\"A powerful all-in-one AI agent designed to assist with complex projects, offering expertise in information management, creative work, software development, data analysis, and strategic problem-solving.\",\"details\":\"A powerful all-in-one AI agent designed to assist with complex projects, offering expertise in information management, creative work, software development, data analysis, and strategic problem-solving.\",\"pictureUrl\":\"https://teamily-ai.becdn.net/_next/static/media/teamily-1280x1280.680f79a6.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000272886796423\",\"createTime\":\"2025-09-20T07:05:16\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6}]}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/wiki/updates",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"new\":[],\"conflict\":[],\"count\":0}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/permissions/access-requests/inbox",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"requests\":[],\"count\":0}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/drive/items?sort=recent&with_ancestors=true&kind=note&limit=30",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"items\":[],\"next_cursor\":null,\"has_more\":false}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/_supabase/auth/v1/user",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"id\":\"2e9d0c35-d2e6-45e9-bde1-ac0cb00bb878\",\"aud\":\"authenticated\",\"role\":\"authenticated\",\"email\":\"astoprod345687@google.com\",\"email_confirmed_at\":\"2026-11-06T08:30:36.322102Z\",\"phone\":\"\",\"confirmed_at\":\"2026-11-06T08:30:36.322102Z\",\"last_sign_in_at\":\"2026-11-06T08:30:40.191318Z\",\"app_metadata\":{\"provider\":\"email\",\"providers\":[\"email\"]},\"user_metadata\":{\"email_verified\":true,\"locale\":\"en\"},\"identities\":[{\"identity_id\":\"01759d39-823d-4e24-9a63-0cd1d00d941e\",\"id\":\"2e9d0c35-d2e6-45e9-bde1-ac0cb00bb878\",\"user_id\":\"2e9d0c35-d2e6-45e9-bde1-ac0cb00bb878\",\"identity_data\":{\"email\":\"astoprod345687@google.com\",\"email_verified\":false,\"phone_verified\":false,\"sub\":\"2e9d0c35-d2e6-45e9-bde1-ac0cb00bb878\"},\"provider\":\"email\",\"last_sign_in_at\":\"2026-11-06T08:30:36.318103Z\",\"created_at\":\"2026-11-06T08:30:36.31816Z\",\"updated_at\":\"2026-11-06T08:30:36.31816Z\",\"email\":\"astoprod345687@google.com\"}],\"created_at\":\"2026-11-06T08:30:36.314952Z\",\"updated_at\":\"2026-11-06T08:30:40.81759Z\",\"is_anonymous\":false}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/deduction/list?status=AVAILABLE&locale=en",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"totalAvailableCents\":0,\"deductions\":[]}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/deduction/login-streak?locale=en",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"visible\":true,\"streakDays\":1,\"broken\":false,\"status\":\"ACTIVE\",\"daysRemaining\":7,\"milestones\":[]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/rtc-meeting/get_signal_invitation_info_start_app",
+      "status": 200,
+      "postData": "{}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"invitation\":null,\"offlinePushInfo\":null}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/deduction/task-visibility?locale=en",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"visible\":true,\"reason\":\"TASKS_INCOMPLETE\",\"completedCount\":0,\"totalCount\":7,\"daysRemaining\":7,\"unit\":\"CENTS\",\"tasks\":[{\"taskCode\":\"TASK_INVITE_FRIENDS\",\"name\":\"Invite 3 Friends to Join Teamily AI\",\"rewardCents\":100,\"completed\":false},{\"taskCode\":\"TASK_GROUP_AGENTIC\",\"name\":\"Create a Group with 3 Friends and Complete an Agentic Task\",\"rewardCents\":100,\"completed\":false},{\"taskCode\":\"TASK_PROFILE_LIFE_GOALS\",\"name\":\"Complete Your Profile, Including Life Goals\",\"rewardCents\":100,\"completed\":false},{\"taskCode\":\"TASK_CHANNEL_AGENT\",\"name\":\"Create an Agent, Set It Up on Any Channel, and Get a Reply\",\"rewardCents\":100,\"completed\":false},{\"taskCode\":\"TASK_MEETING_NOTES\",\"name\":\"Hold a Group Meeting, Generate Notes, and View Them in Artifacts\",\"rewardCents\":100,\"completed\":false},{\"taskCode\":\"TASK_CREATE_SHARE\",\"name\":\"Create a Website, Video, or Article with AI, Share to Community\",\"rewardCents\":100,\"completed\":false},{\"taskCode\":\"TASK_LOGIN_STREAK\",\"name\":\"Log In to Teamily 3 Days in a Row\",\"rewardCents\":100,\"completed\":false}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/user/get_users_info",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"9000272886796423\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"usersInfo\":[{\"userID\":\"9000272886796423\",\"nickname\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758351928261,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_sorted_conversation_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":100}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"conversationTotal\":10,\"unreadTotal\":11,\"conversationElems\":[{\"conversationID\":\"si_8294976623155895_9000272886796423\",\"recvMsgOpt\":0,\"unreadCount\":2,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"d65b9cfd587191da3730716827ed7bb0\",\"clientMsgID\":\"d43a253cd8501499ffaf7a5786f01044\",\"sessionType\":1,\"sendID\":\"9000272886796423\",\"recvID\":\"8294976623155895\",\"senderName\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836392,\"msgFrom\":200,\"contentType\":110,\"content\":\"{\\\"data\\\":\\\"{\\\\\\\"customType\\\\\\\": 913, \\\\\\\"content\\\\\\\": \\\\\\\"Hi, welcome to Teamily! 👋 Teamily AI connects billions of AI agents to billions of people and services, powered by the social network-based agentic AI OS.\\\\\\\", \\\\\\\"prompts\\\\\\\": [{\\\\\\\"message\\\\\\\": \\\\\\\"I'm new here. Demonstrate your capabilities to me by showcasing one use case at a time.\\\\\\\\nBefore showing any use case, start with a brief preview of all three cases you plan to demonstrate: a one-sentence description of what you'll build and the type of artifact (e.g. a working website, a slide deck, a dashboard). Then say: \\\\\\\\\\\\\\\"That's the preview. Want to see the first case now? 👉\\\\\\\\\\\\\\\"\\\\\\\\nWait for the user's confirmation, then show one use case at a time. For each use case, start with a one-sentence description of the scenario, then autonomously complete the task and deliver a high-quality artifact (e.g. a working website, a slide deck, a data dashboard). Focus on showcasing autonomous, multi-step, or tool-using behavior. Each artifact must be single-purpose and focused (e.g. a one-page website, a 5-slide deck, a single-view dashboard) . Do not over-engineer — prioritize clarity and immediate usability over comprehensiveness. After delivering the artifact, say: \\\\\\\\\\\\\\\"That's use case [X] of 3. Want to see the next one? 👉\\\\\\\\\\\\\\\" Wait for the user's confirmation before proceeding to the next case.\\\\\\\"}]}\\\",\\\"description\\\":null,\\\"extension\\\":null}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000437053952131\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"7fb4000790e4691e31505474e3f7594d\",\"clientMsgID\":\"993aea9e1b5efe0c5958ad1981ccd1d4\",\"sessionType\":1,\"sendID\":\"9000437053952131\",\"recvID\":\"8294976623155895\",\"senderName\":\"Teamily Agent\",\"faceURL\":\"https://tensoropera-public-v2.s3.us-west-1.amazonaws.com/1789817250119agent-avatar.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836359,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000437053952131\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000185253105723\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"c614c77c43bd2793cd1d3cd532370b12\",\"clientMsgID\":\"13d2c4b171dc8e4237e0f392950303e3\",\"sessionType\":1,\"sendID\":\"9000185253105723\",\"recvID\":\"8294976623155895\",\"senderName\":\"Webpage Developer\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Webpage_Developer.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836360,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000185253105723\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000310112293007\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"f8d5539c0513f75af5ca0cd84e25d24d\",\"clientMsgID\":\"7eae003e2560162e1ae5dd57d1766314\",\"sessionType\":1,\"sendID\":\"9000310112293007\",\"recvI"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/user/get_users_info",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"9000272886796423\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"usersInfo\":[{\"userID\":\"9000272886796423\",\"nickname\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758351928261,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1}]}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/payment/api/v1/subscription/unifiedDetail",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"has_open_subscription\":false,\"active\":false,\"has_used_free_trial\":false,\"renewal_pending\":false,\"past_due\":false,\"userId\":345687,\"status\":\"none\"}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/on-demand/status",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"eligible\":false,\"enabled\":false,\"switchOn\":false,\"monthlyLimitDollars\":null,\"monthSpentDollars\":0.0,\"unpaidBalanceDollars\":0.0,\"paymentSuspended\":false,\"prepaidBalanceDollars\":null,\"mode\":\"POSTPAID\"}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/detail",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"id\":2118623261087635119,\"planCode\":\"FREE\",\"realPlanCode\":null,\"planName\":\"Free\",\"price\":\"0\",\"credit\":0,\"nonExpiringCredit\":0,\"dailyCredit\":0,\"subscriptionCredit\":0,\"windowActive\":false,\"windowPercentRemaining\":100,\"windowResetInMinutes\":0,\"weeklyPercentRemaining\":100,\"weeklyResetTime\":\"2026-11-13T08:00:00\",\"onDemandEnabled\":false,\"onDemandMonthlyLimitDollars\":null,\"onDemandMonthSpentDollars\":0.0,\"onDemandUnpaidBalanceDollars\":0.0,\"onDemandPaymentSuspended\":false,\"onDemandPrepaidBalanceDollars\":null,\"onDemandMode\":\"POSTPAID\",\"onDemandSwitchOn\":false,\"bypassWindowEnabled\":false,\"monthlyQuotaTotalDollars\":3000.0,\"monthlyQuotaTotalCredits\":1500000,\"monthlyQuotaUsedCredits\":0,\"monthlyQuotaRemainingCredits\":1500000,\"agentEnabled\":true,\"store\":null,\"startTime\":null,\"endTime\":null,\"futureId\":null,\"futurePlanCode\":null,\"futurePlanName\":null,\"futurePrice\":null,\"futureStore\":null,\"futureStartTime\":null,\"futureEndTime\":null,\"deductionSummary\":{\"totalAvailableCents\":0,\"deductionCount\":0,\"maxDeductible\":0,\"totalEarnedCents\":0,\"inviteEarnedCents\":0,\"totalAvailablePoints\":0,\"totalEarnedPoints\":0},\"registerTime\":\"1793953836191\"}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/plan/list?billingCycle=monthly&locale=en&country=SG",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"code\":\"FREE\",\"name\":\"Free\",\"price\":\"0\",\"priceId\":\"0\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":null,\"studentTotalPrice\":null,\"studentPercentOff\":null,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Start with core AI chat\",\"highlight\":1},{\"sequence\":2,\"content\":\"Create up to 5 custom agents\",\"highlight\":1},{\"sequence\":3,\"content\":\"2 tasks at once\",\"highlight\":1},{\"sequence\":5,\"content\":\"Standard models and basic skills\",\"highlight\":0}]},{\"code\":\"PLUS\",\"name\":\"Plus\",\"price\":\"19.99\",\"priceId\":\"price_1SyvvhDKtV2hrupvjVzioGw4\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":\"9.99\",\"studentTotalPrice\":null,\"studentPercentOff\":50.00,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Everything in Free\",\"highlight\":1},{\"sequence\":2,\"content\":\"Enhanced usage and models\",\"highlight\":1},{\"sequence\":3,\"content\":\"Create up to 50 custom agents\",\"highlight\":1},{\"sequence\":4,\"content\":\"8 tasks at once\",\"highlight\":1},{\"sequence\":5,\"content\":\"Sponsor your group's AI usage\",\"highlight\":1},{\"sequence\":6,\"content\":\"On-demand usage when you need more\",\"highlight\":1}]},{\"code\":\"PREMIUM\",\"name\":\"Premium\",\"price\":\"99.99\",\"priceId\":\"price_1Tm2gXDKtV2hrupvI2Xoj5dt\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":null,\"studentTotalPrice\":null,\"studentPercentOff\":null,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Everything in Plus\",\"highlight\":1},{\"sequence\":2,\"content\":\"Premium usage capacity\",\"highlight\":1},{\"sequence\":3,\"content\":\"Unlimited agent creation\",\"highlight\":1},{\"sequence\":4,\"content\":\"16 tasks at once\",\"highlight\":1},{\"sequence\":6,\"content\":\"Premium models and connectors\",\"highlight\":0}]},{\"code\":\"PRO\",\"name\":\"Pro\",\"price\":\"199.99\",\"priceId\":\"price_1SyvvNDKtV2hrupvCwTmA9Vm\",\"discount\":null,\"originalPrice\":null,\"totalPrice\":null,\"currency\":\"USD\",\"studentPrice\":null,\"studentTotalPrice\":null,\"studentPercentOff\":null,\"studentEligible\":false,\"features\":[{\"sequence\":1,\"content\":\"Everything in Premium\",\"highlight\":1},{\"sequence\":2,\"content\":\"Generate AI videos\",\"highlight\":1},{\"sequence\":3,\"content\":\"Maximum usage capacity\",\"highlight\":1},{\"sequence\":4,\"content\":\"Priority throughput for heavy work\",\"highlight\":1},{\"sequence\":5,\"content\":\"Bigger group chats\",\"highlight\":1},{\"sequence\":6,\"content\":\"Early access to new features\",\"highlight\":1},{\"sequence\":7,\"content\":\"Advanced support for power users\",\"highlight\":0}]}]}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/_serverFn/bea09b9c39d6dfb2f54ed2cd49e4ca3b13ec41863579e9fd09735c5a1c51c27d?payload=%7B%22t%22%3A%7B%22t%22%3A10%2C%22i%22%3A0%2C%22p%22%3A%7B%22k%22%3A%5B%22data%22%5D%2C%22v%22%3A%5B%7B%22t%22%3A1%2C%22s%22%3A%22powlowskijoshuah%40gmail.com%22%7D%5D%7D%2C%22o%22%3A0%7D%2C%22f%22%3A127%2C%22m%22%3A%5B%5D%7D",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"t\":10,\"i\":0,\"p\":{\"k\":[\"result\",\"error\",\"context\"],\"v\":[{\"t\":2,\"s\":3},{\"t\":2,\"s\":1},{\"t\":11,\"i\":1,\"p\":{\"k\":[],\"v\":[]},\"o\":0}]},\"o\":0}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_sorted_conversation_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":100}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"conversationTotal\":10,\"unreadTotal\":11,\"conversationElems\":[{\"conversationID\":\"si_8294976623155895_9000272886796423\",\"recvMsgOpt\":0,\"unreadCount\":2,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"d65b9cfd587191da3730716827ed7bb0\",\"clientMsgID\":\"d43a253cd8501499ffaf7a5786f01044\",\"sessionType\":1,\"sendID\":\"9000272886796423\",\"recvID\":\"8294976623155895\",\"senderName\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836392,\"msgFrom\":200,\"contentType\":110,\"content\":\"{\\\"data\\\":\\\"{\\\\\\\"customType\\\\\\\": 913, \\\\\\\"content\\\\\\\": \\\\\\\"Hi, welcome to Teamily! 👋 Teamily AI connects billions of AI agents to billions of people and services, powered by the social network-based agentic AI OS.\\\\\\\", \\\\\\\"prompts\\\\\\\": [{\\\\\\\"message\\\\\\\": \\\\\\\"I'm new here. Demonstrate your capabilities to me by showcasing one use case at a time.\\\\\\\\nBefore showing any use case, start with a brief preview of all three cases you plan to demonstrate: a one-sentence description of what you'll build and the type of artifact (e.g. a working website, a slide deck, a dashboard). Then say: \\\\\\\\\\\\\\\"That's the preview. Want to see the first case now? 👉\\\\\\\\\\\\\\\"\\\\\\\\nWait for the user's confirmation, then show one use case at a time. For each use case, start with a one-sentence description of the scenario, then autonomously complete the task and deliver a high-quality artifact (e.g. a working website, a slide deck, a data dashboard). Focus on showcasing autonomous, multi-step, or tool-using behavior. Each artifact must be single-purpose and focused (e.g. a one-page website, a 5-slide deck, a single-view dashboard) . Do not over-engineer — prioritize clarity and immediate usability over comprehensiveness. After delivering the artifact, say: \\\\\\\\\\\\\\\"That's use case [X] of 3. Want to see the next one? 👉\\\\\\\\\\\\\\\" Wait for the user's confirmation before proceeding to the next case.\\\\\\\"}]}\\\",\\\"description\\\":null,\\\"extension\\\":null}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000437053952131\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"7fb4000790e4691e31505474e3f7594d\",\"clientMsgID\":\"993aea9e1b5efe0c5958ad1981ccd1d4\",\"sessionType\":1,\"sendID\":\"9000437053952131\",\"recvID\":\"8294976623155895\",\"senderName\":\"Teamily Agent\",\"faceURL\":\"https://tensoropera-public-v2.s3.us-west-1.amazonaws.com/1789817250119agent-avatar.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836359,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000437053952131\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000185253105723\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"c614c77c43bd2793cd1d3cd532370b12\",\"clientMsgID\":\"13d2c4b171dc8e4237e0f392950303e3\",\"sessionType\":1,\"sendID\":\"9000185253105723\",\"recvID\":\"8294976623155895\",\"senderName\":\"Webpage Developer\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Webpage_Developer.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836360,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000185253105723\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000310112293007\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"f8d5539c0513f75af5ca0cd84e25d24d\",\"clientMsgID\":\"7eae003e2560162e1ae5dd57d1766314\",\"sessionType\":1,\"sendID\":\"9000310112293007\",\"recvI"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/_serverFn/31edf16d966266d52420aeb3d9e3d4371cb5ae134afc7abea0957f615a4f2e9a?payload=%7B%22t%22%3A%7B%22t%22%3A10%2C%22i%22%3A0%2C%22p%22%3A%7B%22k%22%3A%5B%22data%22%5D%2C%22v%22%3A%5B%7B%22t%22%3A1%2C%22s%22%3A%22powlowskijoshuah%40gmail.com%22%7D%5D%7D%2C%22o%22%3A0%7D%2C%22f%22%3A127%2C%22m%22%3A%5B%5D%7D",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"t\":10,\"i\":0,\"p\":{\"k\":[\"result\",\"error\",\"context\"],\"v\":[{\"t\":2,\"s\":3},{\"t\":2,\"s\":1},{\"t\":11,\"i\":1,\"p\":{\"k\":[],\"v\":[]},\"o\":0}]},\"o\":0}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/workflow/permission",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"code\":0,\"message\":null,\"data\":{\"allowed\":true}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/general_locales?lang=en&version=0",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"is_latest\":false,\"version\":3,\"lang\":\"en\",\"data\":{\"intents.research.label\":\"Research\",\"intents.research.emoji\":\"🔬\",\"intents.research.delivery\":\"Deliver the result as a sourced, co-editable document.\",\"intents.research.delivery_label\":\"Sourced, co-editable document\",\"intents.research.description\":\"Investigate a question, return sourced findings\",\"intents.research.verb\":\"Research\",\"intents.monitor.label\":\"Monitor\",\"intents.monitor.emoji\":\"👁️\",\"intents.monitor.delivery\":\"Deliver a compact brief card in this chat each run.\",\"intents.monitor.delivery_label\":\"Recurring brief card each run\",\"intents.monitor.description\":\"Keep watching a source and brief me on changes\",\"intents.monitor.verb\":\"Watch and brief me on\",\"intents.create.label\":\"Create\",\"intents.create.emoji\":\"🎨\",\"intents.create.delivery\":\"Deliver a finished artifact I can review, then publish to my Feed.\",\"intents.create.delivery_label\":\"Finished artifact, publish to Feed\",\"intents.create.description\":\"Produce a deliverable (text / image / page / deck)\",\"intents.create.verb\":\"Create\",\"intents.analyze.label\":\"Analyze\",\"intents.analyze.emoji\":\"📊\",\"intents.analyze.delivery\":\"Deliver a structured analysis with a recommendation.\",\"intents.analyze.delivery_label\":\"Structured analysis + recommendation\",\"intents.analyze.description\":\"Reason over data — compare, evaluate, conclude\",\"intents.analyze.verb\":\"Analyze\",\"intents.plan.label\":\"Plan\",\"intents.plan.emoji\":\"🗓️\",\"intents.plan.delivery\":\"Post the agreed time/place to the group and add it to everyone's calendar.\",\"intents.plan.delivery_label\":\"Agreed time/place → group + calendar\",\"intents.plan.description\":\"Match free time across people, propose, collect a vote\",\"intents.plan.verb\":\"Plan and align\",\"intents.coordinate.label\":\"Coordinate\",\"intents.coordinate.emoji\":\"🤝\",\"intents.coordinate.delivery\":\"Run it as one shared task thread, keeping every owner in sync.\",\"intents.coordinate.delivery_label\":\"Owners kept in sync, joint progress\",\"intents.coordinate.description\":\"Orchestrate people × agents in one shared task thread\",\"intents.coordinate.verb\":\"Coordinate\",\"schedules.now.label\":\"Run now\",\"schedules.now.emoji\":\"▶️\",\"schedules.now.description\":\"Start immediately\",\"schedules.now.fragment\":\"Run this right now.\",\"schedules.later.label\":\"Later\",\"schedules.later.emoji\":\"📅\",\"schedules.later.description\":\"Pick a date and time\",\"schedules.later.fragment\":\"Run this on {date} at {time}.\",\"schedules.daily.label\":\"Daily\",\"schedules.daily.emoji\":\"🔁\",\"schedules.daily.description\":\"Recurring · every day\",\"schedules.daily.fragment\":\"Run this every day at {time}.\",\"schedules.weekly.label\":\"Weekly\",\"schedules.weekly.emoji\":\"🔁\",\"schedules.weekly.description\":\"Recurring · once a week\",\"schedules.weekly.fragment\":\"Run this every week on {weekday} at {time}.\",\"scopes.oneshot.label\":\"One-shot\",\"scopes.oneshot.emoji\":\"📦\",\"scopes.oneshot.description\":\"Deliver once, then done\",\"scopes.oneshot.fragment\":\"Run once, then stop.\",\"categories.work.label\":\"Work\",\"categories.work.emoji\":\"💼\",\"categories.work.order\":\"1\",\"categories.life.label\":\"Life\",\"categories.life.emoji\":\"🏡\",\"categories.life.order\":\"2\",\"templates.meetingReminderPrep.category\":\"work\",\"templates.meetingReminderPrep.recommended\":\"yes\",\"templates.meetingReminderPrep.title\":\"Meeting reminder + prep\",\"templates.meetingReminderPrep.description\":\"Remind me before a meeting and pull the latest materials\",\"templates.meetingReminderPrep.emoji\":\"🔔\",\"templates.meetingReminderPrep.preset_intent\":\"remind\",\"templates.meetingReminderPrep.preset_schedule\":\"now\",\"templates.meetingReminderPrep.preset_scope\":\"oneshot\",\"templates.meetingReminderPrep.preset_agents\":\"self\",\"templates.meetingReminderPrep.preset_people\":\"\",\"templates.meetingReminderPrep.preset_topic\":\"Remind me to the board meeting, and pull the latest deck from the Deck Working Group 30 minutes before\",\"templates.dailyWorkBrief.category\":\"work\",\"templates.dailyWorkBrief.recommended\":\"yes\",\"templates.dailyWorkBrief.title\":\"Daily work brie"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/agents?limit=100&sort_by=name&sort_order=asc",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"agents\":[],\"pagination\":{\"current_page\":1,\"page_size\":100,\"total_items\":0,\"total_pages\":0,\"has_next\":false,\"has_previous\":false}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/_supabase/rest/v1/threads?select=thread_id%2Cproject_id%2Cprojects%28name%2Cupdated_at%29&projects.order=updated_at.desc.nullsfirst&metadata-%3E%3Eis_from_super_agent=eq.true&metadata-%3Egroup_id=is.null&account_id=eq.2e9d0c35-d2e6-45e9-bde1-ac0cb00bb878",
+      "status": 200,
+      "postData": null,
+      "responseBody": "[]"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/feature-components/adoption-events",
+      "status": 404,
+      "postData": null,
+      "responseBody": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/feature-components/eligible?type=feature_announcement&platform=web&locale=en&plan=free",
+      "status": 404,
+      "postData": null,
+      "responseBody": "{\"detail\":\"Not Found\"}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/agent/im/detail?imUid=9000272886796423&account=345687",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"id\":\"1969296785637773447\",\"displayName\":\"Super Agent\",\"subscriptionId\":null,\"name\":\"Super Agent\",\"visibility\":1,\"usedByOthers\":null,\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"description\":\"A powerful all-in-one AI agent designed to assist with complex projects, offering expertise in information management, creative work, software development, data analysis, and strategic problem-solving.\",\"details\":\"A powerful all-in-one AI agent designed to assist with complex projects, offering expertise in information management, creative work, software development, data analysis, and strategic problem-solving.\",\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"pictureUrl\":\"https://teamily-ai.becdn.net/_next/static/media/teamily-1280x1280.680f79a6.webp\",\"category\":null,\"score\":\"5.0\",\"users\":\"19K+\",\"conversationStarters\":[],\"imUid\":\"9000272886796423\",\"createBy\":\"Teamily\",\"subscribed\":false,\"createTime\":\"2025-09-20T07:05:16\",\"updateTime\":\"2026-11-06T02:00:00\",\"publishStatus\":3,\"source\":6}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/user/get_users_info",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"8294976623155895\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"usersInfo\":[{\"userID\":\"8294976623155895\",\"nickname\":\"powlowskijoshuah\",\"faceURL\":\"https://lh3.googleusercontent.com/a/ACg8ocJv3aiQ6pGH20Te9Xb1iR8mEIBQmcImsyOjIFUCxFNcPHrexw=s96-c\",\"ex\":\"{\\\"playerType\\\":1}\",\"createTime\":1793953836247,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_sorted_conversation_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":300}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"conversationTotal\":10,\"unreadTotal\":11,\"conversationElems\":[{\"conversationID\":\"si_8294976623155895_9000272886796423\",\"recvMsgOpt\":0,\"unreadCount\":2,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"d65b9cfd587191da3730716827ed7bb0\",\"clientMsgID\":\"d43a253cd8501499ffaf7a5786f01044\",\"sessionType\":1,\"sendID\":\"9000272886796423\",\"recvID\":\"8294976623155895\",\"senderName\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836392,\"msgFrom\":200,\"contentType\":110,\"content\":\"{\\\"data\\\":\\\"{\\\\\\\"customType\\\\\\\": 913, \\\\\\\"content\\\\\\\": \\\\\\\"Hi, welcome to Teamily! 👋 Teamily AI connects billions of AI agents to billions of people and services, powered by the social network-based agentic AI OS.\\\\\\\", \\\\\\\"prompts\\\\\\\": [{\\\\\\\"message\\\\\\\": \\\\\\\"I'm new here. Demonstrate your capabilities to me by showcasing one use case at a time.\\\\\\\\nBefore showing any use case, start with a brief preview of all three cases you plan to demonstrate: a one-sentence description of what you'll build and the type of artifact (e.g. a working website, a slide deck, a dashboard). Then say: \\\\\\\\\\\\\\\"That's the preview. Want to see the first case now? 👉\\\\\\\\\\\\\\\"\\\\\\\\nWait for the user's confirmation, then show one use case at a time. For each use case, start with a one-sentence description of the scenario, then autonomously complete the task and deliver a high-quality artifact (e.g. a working website, a slide deck, a data dashboard). Focus on showcasing autonomous, multi-step, or tool-using behavior. Each artifact must be single-purpose and focused (e.g. a one-page website, a 5-slide deck, a single-view dashboard) . Do not over-engineer — prioritize clarity and immediate usability over comprehensiveness. After delivering the artifact, say: \\\\\\\\\\\\\\\"That's use case [X] of 3. Want to see the next one? 👉\\\\\\\\\\\\\\\" Wait for the user's confirmation before proceeding to the next case.\\\\\\\"}]}\\\",\\\"description\\\":null,\\\"extension\\\":null}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000437053952131\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"7fb4000790e4691e31505474e3f7594d\",\"clientMsgID\":\"993aea9e1b5efe0c5958ad1981ccd1d4\",\"sessionType\":1,\"sendID\":\"9000437053952131\",\"recvID\":\"8294976623155895\",\"senderName\":\"Teamily Agent\",\"faceURL\":\"https://tensoropera-public-v2.s3.us-west-1.amazonaws.com/1789817250119agent-avatar.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836359,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000437053952131\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000185253105723\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"c614c77c43bd2793cd1d3cd532370b12\",\"clientMsgID\":\"13d2c4b171dc8e4237e0f392950303e3\",\"sessionType\":1,\"sendID\":\"9000185253105723\",\"recvID\":\"8294976623155895\",\"senderName\":\"Webpage Developer\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Webpage_Developer.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836360,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000185253105723\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000310112293007\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"f8d5539c0513f75af5ca0cd84e25d24d\",\"clientMsgID\":\"7eae003e2560162e1ae5dd57d1766314\",\"sessionType\":1,\"sendID\":\"9000310112293007\",\"recvI"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/user/get_users_info",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"8294976623155895\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"usersInfo\":[{\"userID\":\"8294976623155895\",\"nickname\":\"powlowskijoshuah\",\"faceURL\":\"https://lh3.googleusercontent.com/a/ACg8ocJv3aiQ6pGH20Te9Xb1iR8mEIBQmcImsyOjIFUCxFNcPHrexw=s96-c\",\"ex\":\"{\\\"playerType\\\":1}\",\"createTime\":1793953836247,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_sorted_conversation_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":300}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"conversationTotal\":10,\"unreadTotal\":11,\"conversationElems\":[{\"conversationID\":\"si_8294976623155895_9000272886796423\",\"recvMsgOpt\":0,\"unreadCount\":2,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"d65b9cfd587191da3730716827ed7bb0\",\"clientMsgID\":\"d43a253cd8501499ffaf7a5786f01044\",\"sessionType\":1,\"sendID\":\"9000272886796423\",\"recvID\":\"8294976623155895\",\"senderName\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836392,\"msgFrom\":200,\"contentType\":110,\"content\":\"{\\\"data\\\":\\\"{\\\\\\\"customType\\\\\\\": 913, \\\\\\\"content\\\\\\\": \\\\\\\"Hi, welcome to Teamily! 👋 Teamily AI connects billions of AI agents to billions of people and services, powered by the social network-based agentic AI OS.\\\\\\\", \\\\\\\"prompts\\\\\\\": [{\\\\\\\"message\\\\\\\": \\\\\\\"I'm new here. Demonstrate your capabilities to me by showcasing one use case at a time.\\\\\\\\nBefore showing any use case, start with a brief preview of all three cases you plan to demonstrate: a one-sentence description of what you'll build and the type of artifact (e.g. a working website, a slide deck, a dashboard). Then say: \\\\\\\\\\\\\\\"That's the preview. Want to see the first case now? 👉\\\\\\\\\\\\\\\"\\\\\\\\nWait for the user's confirmation, then show one use case at a time. For each use case, start with a one-sentence description of the scenario, then autonomously complete the task and deliver a high-quality artifact (e.g. a working website, a slide deck, a data dashboard). Focus on showcasing autonomous, multi-step, or tool-using behavior. Each artifact must be single-purpose and focused (e.g. a one-page website, a 5-slide deck, a single-view dashboard) . Do not over-engineer — prioritize clarity and immediate usability over comprehensiveness. After delivering the artifact, say: \\\\\\\\\\\\\\\"That's use case [X] of 3. Want to see the next one? 👉\\\\\\\\\\\\\\\" Wait for the user's confirmation before proceeding to the next case.\\\\\\\"}]}\\\",\\\"description\\\":null,\\\"extension\\\":null}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000437053952131\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"7fb4000790e4691e31505474e3f7594d\",\"clientMsgID\":\"993aea9e1b5efe0c5958ad1981ccd1d4\",\"sessionType\":1,\"sendID\":\"9000437053952131\",\"recvID\":\"8294976623155895\",\"senderName\":\"Teamily Agent\",\"faceURL\":\"https://tensoropera-public-v2.s3.us-west-1.amazonaws.com/1789817250119agent-avatar.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836359,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000437053952131\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000185253105723\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"c614c77c43bd2793cd1d3cd532370b12\",\"clientMsgID\":\"13d2c4b171dc8e4237e0f392950303e3\",\"sessionType\":1,\"sendID\":\"9000185253105723\",\"recvID\":\"8294976623155895\",\"senderName\":\"Webpage Developer\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Webpage_Developer.webp\",\"groupID\":\"\",\"groupName\":\"\",\"groupFaceURL\":\"\",\"groupType\":0,\"groupMemberCount\":0,\"LatestMsgRecvTime\":1793953836360,\"msgFrom\":200,\"contentType\":1201,\"content\":\"{\\\"detail\\\":\\\"{\\\\\\\"fromToUserID\\\\\\\":{\\\\\\\"fromUserID\\\\\\\":\\\\\\\"8294976623155895\\\\\\\",\\\\\\\"toUserID\\\\\\\":\\\\\\\"9000185253105723\\\\\\\"},\\\\\\\"handleMsg\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"friendVersion\\\\\\\":0,\\\\\\\"friendVersionID\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"request\\\\\\\":null}\\\"}\",\"ex\":\"\"}},{\"conversationID\":\"si_8294976623155895_9000310112293007\",\"recvMsgOpt\":0,\"unreadCount\":1,\"IsPinned\":false,\"msgInfo\":{\"serverMsgID\":\"f8d5539c0513f75af5ca0cd84e25d24d\",\"clientMsgID\":\"7eae003e2560162e1ae5dd57d1766314\",\"sessionType\":1,\"sendID\":\"9000310112293007\",\"recvI"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_conversations_has_read_and_max_seq",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"conversationIDs\":[\"si_8294976623155895_9000272886796423\",\"si_8294976623155895_9000437053952131\",\"si_8294976623155895_9000185253105723\",\"si_8294976623155895_9000310112293007\",\"si_8294976623155895_9000212984795199\",\"si_8294976623155895_9000540704641032\",\"si_8294976623155895_9000387657633943\",\"si_8294976623155895_9000018274717761\",\"si_8294976623155895_9000410583699517\",\"si_8294976623155895_9000050776379449\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"seqs\":{\"si_8294976623155895_9000018274717761\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836437,\"subtractUnread\":1},\"si_8294976623155895_9000050776379449\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836393,\"subtractUnread\":1},\"si_8294976623155895_9000185253105723\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836463,\"subtractUnread\":1},\"si_8294976623155895_9000212984795199\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836459,\"subtractUnread\":1},\"si_8294976623155895_9000272886796423\":{\"maxSeq\":2,\"hasReadSeq\":0,\"maxSeqTime\":1793953837367,\"subtractUnread\":1},\"si_8294976623155895_9000310112293007\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836462,\"subtractUnread\":1},\"si_8294976623155895_9000387657633943\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836447,\"subtractUnread\":1},\"si_8294976623155895_9000410583699517\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836420,\"subtractUnread\":1},\"si_8294976623155895_9000437053952131\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836468,\"subtractUnread\":1},\"si_8294976623155895_9000540704641032\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836452,\"subtractUnread\":1}},\"pinnedConversationIDs\":null}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_conversations_has_read_and_max_seq",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"conversationIDs\":[\"si_8294976623155895_9000272886796423\",\"si_8294976623155895_9000437053952131\",\"si_8294976623155895_9000185253105723\",\"si_8294976623155895_9000310112293007\",\"si_8294976623155895_9000212984795199\",\"si_8294976623155895_9000540704641032\",\"si_8294976623155895_9000387657633943\",\"si_8294976623155895_9000018274717761\",\"si_8294976623155895_9000410583699517\",\"si_8294976623155895_9000050776379449\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"seqs\":{\"si_8294976623155895_9000018274717761\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836437,\"subtractUnread\":1},\"si_8294976623155895_9000050776379449\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836393,\"subtractUnread\":1},\"si_8294976623155895_9000185253105723\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836463,\"subtractUnread\":1},\"si_8294976623155895_9000212984795199\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836459,\"subtractUnread\":1},\"si_8294976623155895_9000272886796423\":{\"maxSeq\":2,\"hasReadSeq\":0,\"maxSeqTime\":1793953837367,\"subtractUnread\":1},\"si_8294976623155895_9000310112293007\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836462,\"subtractUnread\":1},\"si_8294976623155895_9000387657633943\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836447,\"subtractUnread\":1},\"si_8294976623155895_9000410583699517\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836420,\"subtractUnread\":1},\"si_8294976623155895_9000437053952131\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836468,\"subtractUnread\":1},\"si_8294976623155895_9000540704641032\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836452,\"subtractUnread\":1}},\"pinnedConversationIDs\":null}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_black_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":200}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"blacks\":null,\"total\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_black_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":200}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"blacks\":null,\"total\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_incremental_friends",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"version\":0,\"versionID\":\"\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"version\":1,\"versionID\":\"6aed902cb6b2d6f8de5f735e\",\"full\":true,\"delete\":null,\"insert\":null,\"update\":null,\"sortVersion\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_friend_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":200}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"friendsInfo\":[{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000437053952131\",\"nickname\":\"Teamily Agent\",\"faceURL\":\"https://tensoropera-public-v2.s3.us-west-1.amazonaws.com/1789817250119agent-avatar.webp\",\"ex\":\"{\\\"playerType\\\":2,\\\"isOfficial\\\":true}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000018274717761\",\"nickname\":\"Finance Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Finance_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000387657633943\",\"nickname\":\"Accounting Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Accounting_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000212984795199\",\"nickname\":\"Travel Planner\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Travel_Planner.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000410583699517\",\"nickname\":\"Market Research\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Market_Research.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000310112293007\",\"nickname\":\"Health Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Health_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000185253105723\",\"nickname\":\"Webpage Developer\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Webpage_Developer.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000050776379449\",\"nickname\":\"Slides Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Slides_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000272886796423\",\"nickname\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0R"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_conversations_has_read_and_max_seq",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"conversationIDs\":[\"si_8294976623155895_9000272886796423\",\"si_8294976623155895_9000437053952131\",\"si_8294976623155895_9000185253105723\",\"si_8294976623155895_9000310112293007\",\"si_8294976623155895_9000212984795199\",\"si_8294976623155895_9000540704641032\",\"si_8294976623155895_9000387657633943\",\"si_8294976623155895_9000018274717761\",\"si_8294976623155895_9000410583699517\",\"si_8294976623155895_9000050776379449\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"seqs\":{\"si_8294976623155895_9000018274717761\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836437,\"subtractUnread\":1},\"si_8294976623155895_9000050776379449\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836393,\"subtractUnread\":1},\"si_8294976623155895_9000185253105723\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836463,\"subtractUnread\":1},\"si_8294976623155895_9000212984795199\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836459,\"subtractUnread\":1},\"si_8294976623155895_9000272886796423\":{\"maxSeq\":2,\"hasReadSeq\":0,\"maxSeqTime\":1793953837367,\"subtractUnread\":1},\"si_8294976623155895_9000310112293007\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836462,\"subtractUnread\":1},\"si_8294976623155895_9000387657633943\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836447,\"subtractUnread\":1},\"si_8294976623155895_9000410583699517\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836420,\"subtractUnread\":1},\"si_8294976623155895_9000437053952131\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836468,\"subtractUnread\":1},\"si_8294976623155895_9000540704641032\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836452,\"subtractUnread\":1}},\"pinnedConversationIDs\":null}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_conversations_has_read_and_max_seq",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"conversationIDs\":[\"si_8294976623155895_9000272886796423\",\"si_8294976623155895_9000437053952131\",\"si_8294976623155895_9000185253105723\",\"si_8294976623155895_9000310112293007\",\"si_8294976623155895_9000212984795199\",\"si_8294976623155895_9000540704641032\",\"si_8294976623155895_9000387657633943\",\"si_8294976623155895_9000018274717761\",\"si_8294976623155895_9000410583699517\",\"si_8294976623155895_9000050776379449\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"seqs\":{\"si_8294976623155895_9000018274717761\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836437,\"subtractUnread\":1},\"si_8294976623155895_9000050776379449\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836393,\"subtractUnread\":1},\"si_8294976623155895_9000185253105723\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836463,\"subtractUnread\":1},\"si_8294976623155895_9000212984795199\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836459,\"subtractUnread\":1},\"si_8294976623155895_9000272886796423\":{\"maxSeq\":2,\"hasReadSeq\":0,\"maxSeqTime\":1793953837367,\"subtractUnread\":1},\"si_8294976623155895_9000310112293007\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836462,\"subtractUnread\":1},\"si_8294976623155895_9000387657633943\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836447,\"subtractUnread\":1},\"si_8294976623155895_9000410583699517\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836420,\"subtractUnread\":1},\"si_8294976623155895_9000437053952131\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836468,\"subtractUnread\":1},\"si_8294976623155895_9000540704641032\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836452,\"subtractUnread\":1}},\"pinnedConversationIDs\":null}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/mark_conversation_as_read",
+      "status": 200,
+      "postData": "{\"conversationID\":\"si_8294976623155895_9000272886796423\",\"userID\":\"8294976623155895\",\"hasReadSeq\":2,\"seqs\":[1,2]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\"}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/user/get_users_info",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"8294976623155895\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"usersInfo\":[{\"userID\":\"8294976623155895\",\"nickname\":\"powlowskijoshuah\",\"faceURL\":\"https://lh3.googleusercontent.com/a/ACg8ocJv3aiQ6pGH20Te9Xb1iR8mEIBQmcImsyOjIFUCxFNcPHrexw=s96-c\",\"ex\":\"{\\\"playerType\\\":1}\",\"createTime\":1793953836247,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_incremental_friends",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"version\":1,\"versionID\":\"6aed902cb6b2d6f8de5f735e\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"version\":1,\"versionID\":\"6aed902cb6b2d6f8de5f735e\",\"full\":false,\"delete\":null,\"insert\":null,\"update\":null,\"sortVersion\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_black_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":200}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"blacks\":null,\"total\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/user/get_users_info",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"9000272886796423\",\"9000410583699517\",\"9000310112293007\",\"9000212984795199\",\"9000540704641032\",\"9000185253105723\",\"9000387657633943\",\"9000018274717761\",\"9000050776379449\",\"9000437053952131\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"usersInfo\":[{\"userID\":\"9000410583699517\",\"nickname\":\"Market Research\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Market_Research.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758352578822,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000310112293007\",\"nickname\":\"Health Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Health_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758352482607,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000540704641032\",\"nickname\":\"AI Stock Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/AI_Stock_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1764315741389,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000185253105723\",\"nickname\":\"Webpage Developer\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Webpage_Developer.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758352364210,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000387657633943\",\"nickname\":\"Accounting Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Accounting_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758353079663,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000050776379449\",\"nickname\":\"Slides Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Slides_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758352238929,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000272886796423\",\"nickname\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758351928261,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000018274717761\",\"nickname\":\"Finance Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Finance_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758353251386,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000437053952131\",\"nickname\":\"Teamily Agent\",\"faceURL\":\"https://tensoropera-public-v2.s3.us-west-1.amazonaws.com/1789817250119agent-avatar.webp\",\"ex\":\"{\\\"playerType\\\":2,\\\"isOfficial\\\":true}\",\"createTime\":1779268542800,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1},{\"userID\":\"9000212984795199\",\"nickname\":\"Travel Planner\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Travel_Planner.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":1758352928184,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":1}]}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/agents/Super%20Agent",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"agent_id\":\"6dbf2248-035b-4568-9bb7-6f5259fd21db\",\"name\":\"Super Agent\",\"description\":\"Super Agent is your AI assistant with access to various tools and integrations to help you with tasks across domains.\",\"system_prompt\":null,\"model\":\"claude-haiku-4.5\",\"configured_mcps\":[],\"custom_mcps\":[],\"enabled_skills\":[{\"id\":\"system-web-development\",\"skill_id\":\"system-web-development\",\"name\":\"web-development\",\"description\":\"Builds and ships responsive, production-quality web pages and multi-page sites — landing pages, portfolios, dashboards, docs sites, and reference-based clones — with a disciplined create → audit → deliver flow that catches broken markup, missing assets, and dead links before handoff. Use when the user wants to create, redesign, clone, version, or fix a website, web page, landing page, or HTML page, or mentions building a site, web UI, or front-end.\",\"zip_url\":null,\"version\":\"2.4.0\",\"compatibility\":\"HTML, CSS, JavaScript, Bash\",\"license\":\"Proprietary\",\"metadata\":{\"author\":\"AgentSwarm\",\"version\":\"2.4.0\",\"category\":\"development\",\"tags\":[\"Development\"],\"source\":\"system\",\"skill_md_content\":\"---\\nname: web-development\\ndescription: Builds and ships responsive, production-quality web pages and multi-page sites — landing pages, portfolios, dashboards, docs sites, and reference-based clones — with a disciplined create → audit → deliver flow that catches broken markup, missing assets, and dead links before handoff. Use when the user wants to create, redesign, clone, version, or fix a website, web page, landing page, or HTML page, or mentions building a site, web UI, or front-end.\\nlicense: Proprietary\\ncompatibility: HTML, CSS, JavaScript, Bash\\nmetadata:\\n  author: AgentSwarm\\n  version: \\\"2.4.0\\\"\\n  category: development\\n  tags: [\\\"Development\\\"]\\n---\\n\\n# Web Development\\n\\nDesign, build, and reliably deliver web pages that render correctly and return a shareable link. The hard part of web delivery is not writing HTML — it is guaranteeing the *published* page renders with every asset intact. This skill encodes that discipline.\\n\\n## When to use this skill\\n\\n- Create a new website, landing page, portfolio, dashboard, or documentation site\\n- Redesign or restyle an existing page\\n- Recreate (\\\"clone\\\") a page from a reference URL, then customize it\\n- Produce a new version of a page you previously built\\n- Audit and fix a page that renders blank, has broken images, or dead links\\n\\n## Tools this skill uses\\n\\n| Tool | Used for |\\n|------|----------|\\n| `create_file` | Write the initial `index.html` / CSS / JS into the project folder |\\n| `edit_file` | **The mandatory editor.** AI-applied edits using `// ... existing code ...` markers around the changed lines |\\n| `str_replace` | Surgical single-occurrence replacement when `edit_file` is overkill |\\n| `full_file_rewrite` | Replace an entire file (last resort, or template-slide rewrites) |\\n| `execute_command` | Download assets, run the quality-gate checks, `node --check` JS |\\n| `image_search` | Find topic-specific imagery (batch: `query=[\\\"…\\\",\\\"…\\\"]`, `num_results`) |\\n| `image_edit_or_generate` | Generate custom imagery/logos (`mode=\\\"generate\\\"`) |\\n| `ab_navigate` / `ab_screenshot` / `ab_exec` | Drive a real browser for the Visual Check |\\n| `understand_image` | Read a screenshot back to confirm the page rendered correctly |\\n\\n## File organization (non-negotiable)\\n\\nA correct directory layout is what makes assets resolve after publishing.\\n\\n- Every page project lives in its own folder: `create_file(\\\"webpages/<project>/index.html\\\", …)`. Never write a bare `index.html` at the workspace root — it collides with other tasks and is not persisted.\\n- All images/media go in `webpages/<project>/images/` and are referenced **relatively** in HTML (`images/hero.jpg`). Files outside the project folder are dropped at publish time.\\n- Names must match `^[a-z0-9_-]+$` — lowercase, hyphen/underscore only, no spaces or non-ASCII.\\n\\n## Editing discipline\\n\\n- **One file per request.*"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_message_reactions",
+      "status": 200,
+      "postData": "{\"conversationID\":\"si_8294976623155895_9000272886796423\",\"messageIDs\":[\"7d0970a361c9cd1796e228827968dfab\",\"d43a253cd8501499ffaf7a5786f01044\"],\"userID\":\"8294976623155895\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"reactions\":[{\"messageID\":\"7d0970a361c9cd1796e228827968dfab\",\"groups\":null,\"myReaction\":null},{\"messageID\":\"d43a253cd8501499ffaf7a5786f01044\",\"groups\":null,\"myReaction\":null}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://open.teamily.ai/agentapi/agent/im/list",
+      "status": 200,
+      "postData": "{\"imUid\":[\"9000410583699517\",\"9000310112293007\",\"9000212984795199\",\"9000540704641032\",\"9000185253105723\",\"9000387657633943\",\"9000018274717761\",\"9000050776379449\",\"9000437053952131\"]}",
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"id\":\"1994302950348034056\",\"name\":\"AI Stock Assistant\",\"description\":\"Cutting-edge AI Stock Assistant delivering market analysis, investment recommendation, and tokenized stock insights through multi-dimensional intelligence combining technical indicators, fundamental research, macroeconomic evaluation.\",\"details\":\"Cutting-edge AI Stock Assistant delivering market analysis, investment recommendation, and tokenized stock insights through multi-dimensional intelligence combining technical indicators, fundamental research, macroeconomic evaluation.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/AI_Stock_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000540704641032\",\"createTime\":\"2025-11-28T07:10:50\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969302364259225665\",\"name\":\"Finance Assistant\",\"description\":\"A finance assistant that helps you make smarter financial decisions by analyzing your spending, savings, and goals. It turns complex financial data into clear insights, identifies potential risks, and recommends personalized strategies that fit your habits and situation.\",\"details\":\"A finance assistant that helps you make smarter financial decisions by analyzing your spending, savings, and goals. It turns complex financial data into clear insights, identifies potential risks, and recommends personalized strategies that fit your habits and situation.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Finance_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000018274717761\",\"createTime\":\"2025-09-20T07:27:26\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969301642767634583\",\"name\":\"Accounting Assistant\",\"description\":\"Accounting Assistant, an AI-powered assistant designed to support accounting and financial management tasks. It can help with bookkeeping, expense tracking, invoice management, financial reporting, and providing insights to improve budgeting and deci\",\"details\":\"Accounting Assistant, an AI-powered assistant designed to support accounting and financial management tasks. It can help with bookkeeping, expense tracking, invoice management, financial reporting, and providing insights to improve budgeting and decision-making.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Accounting_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000387657633943\",\"createTime\":\"2025-09-20T07:24:34\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969300944076279871\",\"name\":\"Travel Planner\",\"description\":\"Travel Planner turns constraints, like budget, dates, locations, into optimized travel itineraries. Capable of cross-comparing flights and hotels, generating schedules, organizing activities, and sending reminders for every key step of the trip.\",\"details\":\"Travel Planner turns constraints, like budget, dates, locations, into optimized travel itineraries. Capable of cross-comparing flights and hotels, generating schedules, organizing activities, and sending reminders for every key step of the trip.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Travel_Planner.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"90002129847"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_conversations_unread_reaction_count",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"conversationIDs\":[\"si_8294976623155895_9000410583699517\",\"si_8294976623155895_9000310112293007\",\"si_8294976623155895_9000212984795199\",\"si_8294976623155895_9000540704641032\",\"si_8294976623155895_9000185253105723\",\"si_8294976623155895_9000387657633943\",\"si_8294976623155895_9000018274717761\",\"si_8294976623155895_9000050776379449\",\"si_8294976623155895_9000437053952131\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_message_reactions",
+      "status": 200,
+      "postData": "{\"conversationID\":\"si_8294976623155895_9000272886796423\",\"messageIDs\":[\"7d0970a361c9cd1796e228827968dfab\",\"d43a253cd8501499ffaf7a5786f01044\"],\"userID\":\"8294976623155895\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"reactions\":[{\"messageID\":\"7d0970a361c9cd1796e228827968dfab\",\"groups\":null,\"myReaction\":null},{\"messageID\":\"d43a253cd8501499ffaf7a5786f01044\",\"groups\":null,\"myReaction\":null}]}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/message_replay/exists?template_id=9000272886796423",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"exists\":false}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_friend_apply_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":1000}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"FriendRequests\":null,\"total\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_self_friend_apply_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":1000}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"friendRequests\":null,\"total\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/group/get_incremental_join_groups",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"version\":0,\"versionID\":\"\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"version\":1,\"versionID\":\"6aed9035fbefe7cc03335d1f\",\"full\":true,\"delete\":null,\"insert\":null,\"update\":null,\"sortVersion\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/group/get_joined_group_list",
+      "status": 200,
+      "postData": "{\"fromUserID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":100}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"total\":0,\"groups\":null}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://open.teamily.ai/agentapi/agent/im/list",
+      "status": 200,
+      "postData": "{\"imUid\":[\"9000272886796423\"]}",
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"id\":\"1969296785637773447\",\"name\":\"Super Agent\",\"description\":\"A powerful all-in-one AI agent designed to assist with complex projects, offering expertise in information management, creative work, software development, data analysis, and strategic problem-solving.\",\"details\":\"A powerful all-in-one AI agent designed to assist with complex projects, offering expertise in information management, creative work, software development, data analysis, and strategic problem-solving.\",\"pictureUrl\":\"https://teamily-ai.becdn.net/_next/static/media/teamily-1280x1280.680f79a6.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000272886796423\",\"createTime\":\"2025-09-20T07:05:16\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6}]}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/_supabase/rest/v1/threads?select=thread_id%2Cproject_id%2Cprojects%28name%2Cupdated_at%29&projects.order=updated_at.desc.nullsfirst&metadata-%3E%3Eis_from_super_agent=eq.true&metadata-%3Egroup_id=is.null&account_id=eq.2e9d0c35-d2e6-45e9-bde1-ac0cb00bb878",
+      "status": 200,
+      "postData": null,
+      "responseBody": "[]"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/composio/profiles",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"success\":true,\"profiles\":[],\"capabilities\":{\"mailbox\":false,\"calendar\":false}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://open.teamily.ai/agentapi/agent/im/list",
+      "status": 200,
+      "postData": "{\"imUid\":[\"9000018274717761\",\"9000050776379449\",\"9000185253105723\",\"9000212984795199\",\"9000310112293007\",\"9000387657633943\",\"9000410583699517\",\"9000437053952131\",\"9000540704641032\"]}",
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"id\":\"1994302950348034056\",\"name\":\"AI Stock Assistant\",\"description\":\"Cutting-edge AI Stock Assistant delivering market analysis, investment recommendation, and tokenized stock insights through multi-dimensional intelligence combining technical indicators, fundamental research, macroeconomic evaluation.\",\"details\":\"Cutting-edge AI Stock Assistant delivering market analysis, investment recommendation, and tokenized stock insights through multi-dimensional intelligence combining technical indicators, fundamental research, macroeconomic evaluation.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/AI_Stock_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000540704641032\",\"createTime\":\"2025-11-28T07:10:50\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969302364259225665\",\"name\":\"Finance Assistant\",\"description\":\"A finance assistant that helps you make smarter financial decisions by analyzing your spending, savings, and goals. It turns complex financial data into clear insights, identifies potential risks, and recommends personalized strategies that fit your habits and situation.\",\"details\":\"A finance assistant that helps you make smarter financial decisions by analyzing your spending, savings, and goals. It turns complex financial data into clear insights, identifies potential risks, and recommends personalized strategies that fit your habits and situation.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Finance_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000018274717761\",\"createTime\":\"2025-09-20T07:27:26\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969301642767634583\",\"name\":\"Accounting Assistant\",\"description\":\"Accounting Assistant, an AI-powered assistant designed to support accounting and financial management tasks. It can help with bookkeeping, expense tracking, invoice management, financial reporting, and providing insights to improve budgeting and deci\",\"details\":\"Accounting Assistant, an AI-powered assistant designed to support accounting and financial management tasks. It can help with bookkeeping, expense tracking, invoice management, financial reporting, and providing insights to improve budgeting and decision-making.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Accounting_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000387657633943\",\"createTime\":\"2025-09-20T07:24:34\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969300944076279871\",\"name\":\"Travel Planner\",\"description\":\"Travel Planner turns constraints, like budget, dates, locations, into optimized travel itineraries. Capable of cross-comparing flights and hotels, generating schedules, organizing activities, and sending reminders for every key step of the trip.\",\"details\":\"Travel Planner turns constraints, like budget, dates, locations, into optimized travel itineraries. Capable of cross-comparing flights and hotels, generating schedules, organizing activities, and sending reminders for every key step of the trip.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Travel_Planner.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"90002129847"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_incremental_conversations",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"version\":0,\"versionID\":\"\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"version\":10,\"versionID\":\"6aed902c4f4bb2ce1fa022fa\",\"full\":true,\"delete\":null,\"insert\":null,\"update\":null}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/composio/toolkits",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"success\":true,\"toolkits\":[{\"slug\":\"gmail\",\"name\":\"Gmail\",\"description\":\"Gmail is Google’s email service, featuring spam protection, search functions, and seamless integration with other G Suite apps for productivity\",\"logo\":\"https://logos.composio.dev/api/gmail\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"github\",\"name\":\"GitHub\",\"description\":\"GitHub is a code hosting platform for version control and collaboration, offering Git-based repository management, issue tracking, and continuous integration features\",\"logo\":\"https://logos.composio.dev/api/github\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"googlecalendar\",\"name\":\"Google Calendar\",\"description\":\"Google Calendar is a time management tool providing scheduling features, event reminders, and integration with email and other apps for streamlined organization\",\"logo\":\"https://logos.composio.dev/api/googlecalendar\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"notion\",\"name\":\"Notion\",\"description\":\"Notion centralizes notes, docs, wikis, and tasks in a unified workspace, letting teams build custom workflows for collaboration and knowledge management\",\"logo\":\"https://logos.composio.dev/api/notion\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\",\"API_KEY\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"googlesheets\",\"name\":\"Google Sheets\",\"description\":\"Google Sheets is a cloud-based spreadsheet tool enabling real-time collaboration, data analysis, and integration with other Google Workspace apps\",\"logo\":\"https://logos.composio.dev/api/googlesheets\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"slack\",\"name\":\"Slack\",\"description\":\"Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services, and find the information they need to do their best work - all within a secure, enterprise-grade environment.\",\"logo\":\"https://logos.composio.dev/api/slack\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"supabase\",\"name\":\"Supabase\",\"description\":\"Supabase is an open-source backend-as-a-service providing a Postgres database, authentication, storage, and real-time subscription APIs for building modern applications\",\"logo\":\"https://logos.composio.dev/api/supabase\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\",\"API_KEY\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"outlook\",\"name\":\"Outlook\",\"description\":\"Outlook is Microsoft's email and calendaring platform integrating contacts and scheduling, enabling users to manage communications and events in a unified workspace\",\"logo\":\"https://logos.composio.dev/api/outlook\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\",\"S2S_OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"twitter\",\"name\":\"Twitter\",\"description\":\"Twitter, Inc. was an American social media company based in San Francisco, California, which operated and was named for named for its flagship social media network prior to its rebrand as X.\",\"logo\":\"https://logos.composio.dev/api/twitter\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[]},{\"slug\":\"googledrive\",\"name\":\"Google Drive\",\"description\":\"Google Drive is a cloud storage solution for uploading, sharing, and collaborating on files across devices, with robust search and offline access\",\"logo\":\"https://logos.composio.dev/api/googledrive\",\"tags\":[],\"auth_schemes\":[\"OAUTH2\"],\"categories\":[],\"connectable\":true,\"composio_managed_auth_schemes\":[\"OAUTH2\"]},{\"slug\":\"googledocs\",\"name\":\"Google Docs\",\"description\":\"Google Docs is "
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_owner_conversation",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":300}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"total\":10,\"conversations\":[{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000018274717761\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000018274717761\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000050776379449\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000050776379449\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000185253105723\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000185253105723\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000212984795199\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000212984795199\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000272886796423\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000272886796423\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000310112293007\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000310112293007\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000387657633943\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000387657633943\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000410583699517\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000410583699517\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000437053952131\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000437053952131\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false},{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000540704641032\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000540704641032\",\"groupID\":\"\",\"isPinned\":false,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/msg/get_conversations_has_read_and_max_seq",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"conversationIDs\":[\"si_8294976623155895_9000018274717761\",\"si_8294976623155895_9000050776379449\",\"si_8294976623155895_9000185253105723\",\"si_8294976623155895_9000212984795199\",\"si_8294976623155895_9000272886796423\",\"si_8294976623155895_9000310112293007\",\"si_8294976623155895_9000387657633943\",\"si_8294976623155895_9000410583699517\",\"si_8294976623155895_9000437053952131\",\"si_8294976623155895_9000540704641032\"]}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"seqs\":{\"si_8294976623155895_9000018274717761\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836437,\"subtractUnread\":1},\"si_8294976623155895_9000050776379449\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836393,\"subtractUnread\":1},\"si_8294976623155895_9000185253105723\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836463,\"subtractUnread\":1},\"si_8294976623155895_9000212984795199\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836459,\"subtractUnread\":1},\"si_8294976623155895_9000272886796423\":{\"maxSeq\":2,\"hasReadSeq\":2,\"maxSeqTime\":1793953837367,\"subtractUnread\":0},\"si_8294976623155895_9000310112293007\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836462,\"subtractUnread\":1},\"si_8294976623155895_9000387657633943\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836447,\"subtractUnread\":1},\"si_8294976623155895_9000410583699517\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836420,\"subtractUnread\":1},\"si_8294976623155895_9000437053952131\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836468,\"subtractUnread\":1},\"si_8294976623155895_9000540704641032\":{\"maxSeq\":1,\"hasReadSeq\":0,\"maxSeqTime\":1793953836452,\"subtractUnread\":1}},\"pinnedConversationIDs\":null}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-1RDX1PCR2L&gtm=45je6b41v9252877960za200zb9264289444zd9264289444xf1&_p=1793954119451&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2047879603&_eu=AEAAAGQC&ae=a&cid=1141038279.1793953814&frm=0&pscdl=noapi&rcb=3&sr=1440x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=2&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814183&sid=1793953813&sct=1&seg=1&dl=https%3A%2F%2Fteamily.ai%2Fchat&dt=Teamily%20AI%20-%20The%20Human%E2%80%93Agent%20Platform%20Where%20You%20and%20Always-on%20Agents%20Get%20Work%20Done%20Together%20in%20One%20Unified%20and%20Context-Aware%20Space&en=scroll&epn.percent_scrolled=90&_et=10&tfd=6277",
+      "status": 204,
+      "postData": null,
+      "responseBody": null
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_black_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":200}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"blacks\":null,\"total\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_black_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":200}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"blacks\":null,\"total\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_incremental_friends",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"version\":0,\"versionID\":\"\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"version\":1,\"versionID\":\"6aed902cb6b2d6f8de5f735e\",\"full\":true,\"delete\":null,\"insert\":null,\"update\":null,\"sortVersion\":0}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/friend/get_friend_list",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"pagination\":{\"pageNumber\":1,\"showNumber\":200}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"friendsInfo\":[{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000437053952131\",\"nickname\":\"Teamily Agent\",\"faceURL\":\"https://tensoropera-public-v2.s3.us-west-1.amazonaws.com/1789817250119agent-avatar.webp\",\"ex\":\"{\\\"playerType\\\":2,\\\"isOfficial\\\":true}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000018274717761\",\"nickname\":\"Finance Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Finance_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000387657633943\",\"nickname\":\"Accounting Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Accounting_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000212984795199\",\"nickname\":\"Travel Planner\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Travel_Planner.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000410583699517\",\"nickname\":\"Market Research\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Market_Research.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000310112293007\",\"nickname\":\"Health Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Health_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000185253105723\",\"nickname\":\"Webpage Developer\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Webpage_Developer.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000050776379449\",\"nickname\":\"Slides Assistant\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Slides_Assistant.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0RpBBDL3u\",\"ex\":\"\",\"isPinned\":false},{\"ownerUserID\":\"8294976623155895\",\"remark\":\"\",\"createTime\":1793953836,\"friendUser\":{\"userID\":\"9000272886796423\",\"nickname\":\"Super Agent\",\"faceURL\":\"https://teamily-public.s3.us-west-1.amazonaws.com/super_agent.webp\",\"ex\":\"{\\\"playerType\\\":2}\",\"createTime\":0,\"appMangerLevel\":0,\"globalRecvMsgOpt\":0,\"status\":0,\"addFriendPermission\":0},\"addSource\":1,\"operatorUserID\":\"sKI5z3uk1ZJ1hHSLBXzAI0R"
+    },
+    {
+      "method": "POST",
+      "url": "https://open.teamily.ai/agentapi/agent/im/list",
+      "status": 200,
+      "postData": "{\"imUid\":[\"9000018274717761\",\"9000050776379449\",\"9000185253105723\",\"9000212984795199\",\"9000272886796423\",\"9000310112293007\",\"9000387657633943\",\"9000410583699517\",\"9000437053952131\",\"9000540704641032\"]}",
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":[{\"id\":\"1994302950348034056\",\"name\":\"AI Stock Assistant\",\"description\":\"Cutting-edge AI Stock Assistant delivering market analysis, investment recommendation, and tokenized stock insights through multi-dimensional intelligence combining technical indicators, fundamental research, macroeconomic evaluation.\",\"details\":\"Cutting-edge AI Stock Assistant delivering market analysis, investment recommendation, and tokenized stock insights through multi-dimensional intelligence combining technical indicators, fundamental research, macroeconomic evaluation.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/AI_Stock_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000540704641032\",\"createTime\":\"2025-11-28T07:10:50\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969302364259225665\",\"name\":\"Finance Assistant\",\"description\":\"A finance assistant that helps you make smarter financial decisions by analyzing your spending, savings, and goals. It turns complex financial data into clear insights, identifies potential risks, and recommends personalized strategies that fit your habits and situation.\",\"details\":\"A finance assistant that helps you make smarter financial decisions by analyzing your spending, savings, and goals. It turns complex financial data into clear insights, identifies potential risks, and recommends personalized strategies that fit your habits and situation.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Finance_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000018274717761\",\"createTime\":\"2025-09-20T07:27:26\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969301642767634583\",\"name\":\"Accounting Assistant\",\"description\":\"Accounting Assistant, an AI-powered assistant designed to support accounting and financial management tasks. It can help with bookkeeping, expense tracking, invoice management, financial reporting, and providing insights to improve budgeting and deci\",\"details\":\"Accounting Assistant, an AI-powered assistant designed to support accounting and financial management tasks. It can help with bookkeeping, expense tracking, invoice management, financial reporting, and providing insights to improve budgeting and decision-making.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Accounting_Assistant.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"9000387657633943\",\"createTime\":\"2025-09-20T07:24:34\",\"updateTime\":\"2026-11-06T02:00:00\",\"source\":6},{\"id\":\"1969300944076279871\",\"name\":\"Travel Planner\",\"description\":\"Travel Planner turns constraints, like budget, dates, locations, into optimized travel itineraries. Capable of cross-comparing flights and hotels, generating schedules, organizing activities, and sending reminders for every key step of the trip.\",\"details\":\"Travel Planner turns constraints, like budget, dates, locations, into optimized travel itineraries. Capable of cross-comparing flights and hotels, generating schedules, organizing activities, and sending reminders for every key step of the trip.\",\"pictureUrl\":\"https://teamily-public.s3.us-west-1.amazonaws.com/result/Travel_Planner.webp\",\"requestUrl\":\"https://router.tensoropera.ai/v1\",\"createBy\":\"Teamily\",\"displayName\":null,\"subscribed\":null,\"subscriptionId\":null,\"llmModelName\":\"Qwen3-32B\",\"tools\":null,\"toolsStr\":null,\"category\":null,\"users\":null,\"imUid\":\"90002129847"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/set_conversations",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"8294976623155895\"],\"conversation\":{\"conversationID\":\"si_8294976623155895_9000437053952131\",\"conversationType\":1,\"userID\":\"9000437053952131\",\"groupID\":\"\",\"isPinned\":true}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\"}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_incremental_conversations",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"version\":10,\"versionID\":\"6aed902c4f4bb2ce1fa022fa\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"version\":11,\"versionID\":\"6aed902c4f4bb2ce1fa022fa\",\"full\":false,\"delete\":null,\"insert\":null,\"update\":[{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000437053952131\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000437053952131\",\"groupID\":\"\",\"isPinned\":true,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false}]}}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/set_conversations",
+      "status": 200,
+      "postData": "{\"userIDs\":[\"8294976623155895\"],\"conversation\":{\"conversationID\":\"si_8294976623155895_9000437053952131\",\"conversationType\":1,\"userID\":\"9000437053952131\",\"groupID\":\"\",\"ex\":\"{\\\"default_pin_applied\\\":true}\"}}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\"}"
+    },
+    {
+      "method": "POST",
+      "url": "https://imserver.teamily.ai/im_api/conversation/get_incremental_conversations",
+      "status": 200,
+      "postData": "{\"userID\":\"8294976623155895\",\"version\":11,\"versionID\":\"6aed902c4f4bb2ce1fa022fa\"}",
+      "responseBody": "{\"errCode\":0,\"errMsg\":\"\",\"errDlt\":\"\",\"data\":{\"version\":12,\"versionID\":\"6aed902c4f4bb2ce1fa022fa\",\"full\":false,\"delete\":null,\"insert\":null,\"update\":[{\"ownerUserID\":\"8294976623155895\",\"conversationID\":\"si_8294976623155895_9000437053952131\",\"recvMsgOpt\":0,\"conversationType\":1,\"userID\":\"9000437053952131\",\"groupID\":\"\",\"isPinned\":true,\"attachedInfo\":\"\",\"isPrivateChat\":false,\"groupAtType\":0,\"ex\":\"{\\\"default_pin_applied\\\":true}\",\"burnDuration\":0,\"minSeq\":0,\"maxSeq\":0,\"msgDestructTime\":0,\"latestMsgDestructTime\":-62135596800000,\"isMsgDestruct\":false}]}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/invite/summary",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"accepted\":0,\"pending\":0,\"creditsCents\":0}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/userCenter/api/v1/client/invite/summary",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"accepted\":0,\"pending\":0,\"creditsCents\":0}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://teamily.ai/swarm/api/wiki/updates",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"new\":[],\"conflict\":[],\"count\":0}"
+    },
+    {
+      "method": "POST",
+      "url": "https://bat.bing.com/p/conversions/c/l",
+      "status": 204,
+      "postData": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003��A\n�0\u0014D�2�AbLԫ�,b�U��ЈH��K�i����vo�\u0018�yH�\u0014�\u00065u�h�)K\u001c�P]�>�\u000eĦ����H�\u001e�3h(\u001f0��>��LC���QĹ<M1!\u0010\u0011��VD\u001cu�,*�無�2F؊|�۶,O��*煚�V4��\u0015\u0013��\r�N $�\u0000\u0000\u0000",
+      "responseBody": null
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/deduction/list?status=AVAILABLE&locale=en",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"totalAvailableCents\":0,\"deductions\":[]}}"
+    },
+    {
+      "method": "GET",
+      "url": "https://open.teamily.ai/agentapi/user-subs/detail",
+      "status": 200,
+      "postData": null,
+      "responseBody": "{\"message\":\"Succeeded to process request\",\"code\":\"SUCCESS\",\"data\":{\"id\":2118623261087635119,\"planCode\":\"FREE\",\"realPlanCode\":null,\"planName\":\"Free\",\"price\":\"0\",\"credit\":0,\"nonExpiringCredit\":0,\"dailyCredit\":0,\"subscriptionCredit\":0,\"windowActive\":false,\"windowPercentRemaining\":100,\"windowResetInMinutes\":0,\"weeklyPercentRemaining\":100,\"weeklyResetTime\":\"2026-11-13T08:00:00\",\"onDemandEnabled\":false,\"onDemandMonthlyLimitDollars\":null,\"onDemandMonthSpentDollars\":0.0,\"onDemandUnpaidBalanceDollars\":0.0,\"onDemandPaymentSuspended\":false,\"onDemandPrepaidBalanceDollars\":null,\"onDemandMode\":\"POSTPAID\",\"onDemandSwitchOn\":false,\"bypassWindowEnabled\":false,\"monthlyQuotaTotalDollars\":3000.0,\"monthlyQuotaTotalCredits\":1500000,\"monthlyQuotaUsedCredits\":0,\"monthlyQuotaRemainingCredits\":1500000,\"agentEnabled\":true,\"store\":\"STRIPE\",\"startTime\":null,\"endTime\":null,\"futureId\":null,\"futurePlanCode\":null,\"futurePlanName\":null,\"futurePrice\":null,\"futureStore\":null,\"futureStartTime\":null,\"futureEndTime\":null,\"deductionSummary\":{\"totalAvailableCents\":0,\"deductionCount\":0,\"maxDeductible\":0,\"totalEarnedCents\":0,\"inviteEarnedCents\":0,\"totalAvailablePoints\":0,\"totalEarnedPoints\":0},\"registerTime\":\"1793953836191\"}}"
+    }
+  ]
+}
